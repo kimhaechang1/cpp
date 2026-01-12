@@ -1,41 +1,21 @@
-# Prerequisites
-*.d
+# C++ 알고리즘 학습 프로젝트 .gitignore
 
-# Compiled Object files
-*.slo
-*.lo
+# 컴파일된 실행 파일
+*.exe
+*.out
 *.o
 *.obj
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
+# 디버그 파일
+*.pdb
 *.ilk
 
-# Debugger Files
-*.pdb
+# IDE 설정
+.vscode/
+.idea/
+*.suo
+*.user
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
+# 임시 파일
+*.tmp
+*.temp
