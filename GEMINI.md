@@ -22,23 +22,28 @@ Gemini 에이전트는 다음 역할을 수행합니다:
 
 ```
 c:\cpp\
-├── GEMINI.md                    # 프로젝트 설정 및 에이전트 가이드 (현재 파일)
-├── LEARNER_PROFILE.md           # 학습자 프로필 및 진행 상황
-├── CURRICULUM.md                # 학습 커리큘럼
-├── .gitignore                   # Git 제외 파일 설정
-├── main.cpp                     # 현재 작업 중인 코드 파일 (연습장)
-└── {문제번호}/                  # 문제별 폴더
-    └── main.cpp                 # 해당 문제 풀이 코드
-```
-
-**예시:**
-```
-c:\cpp\
-├── 2557/
-│   └── main.cpp                 # 2557번 풀이
-├── 1000/
-│   └── main.cpp                 # 1000번 풀이
-└── ...
+├── GEMINI.md                    # 프로젝트 설정
+├── ... (커리큘럼 파일들)
+│
+├── cpp_basics/                  # [STEP 1] C++ 언어 기초 실습
+│   ├── module_01/               # ch.1 기초 문법
+│   └── project_rpg/             # 미니 프로젝트: 텍스트 RPG
+│
+├── algorithm/                   # [STEP 2] 알고리즘 & 자료구조
+│   ├── ps/                      # 백준 문제 풀이
+│   └── impl/                    # 알고리즘 원리 구현
+│
+├── data_structure/              # [STEP 2] 자료구조 직접 구현 (STL 금지)
+│
+├── cs_foundation/               # [STEP 2.5] CS 기초 (OS, Network)
+│   ├── os_sim/                  # OS 시뮬레이터 (스케줄러 등)
+│   └── net_chat/                # 채팅 서버 프로젝트
+│
+├── cpp_advanced/                # [STEP 3] 심화 & 아키텍처
+│   └── design_patterns/         # 디자인 패턴 예제
+│
+└── directx_game/                # [STEP 4] DirectX 게임 개발
+    └── engine/                  # 자체 엔진 소스
 ```
 
 ---
@@ -48,7 +53,11 @@ c:\cpp\
 | 파일명 | 설명 |
 |--------|------|
 | `LEARNER_PROFILE.md` | 학습자 수준, 진행 상황, 완료한 문제 목록 |
-| `CURRICULUM.md` | 단계별 학습 커리큘럼 및 추천 문제 목록 |
+| `CPP_BASICS_CURRICULUM.md` | **STEP 1: 언어 기초** (문법, 포인터, OOP, STL) |
+| `CPP_ALGORITHM_CURRICULUM.md` | **STEP 2: 알고리즘** (논리적 사고, 문제 해결) |
+| `CPP_CS_FOUNDATION.md` | **STEP 2.5: CS 기초** (운영체제, 네트워크, 시스템 프로그래밍) |
+| `CPP_ADVANCED_ARCHITECTURE.md` | **STEP 3: 심화 & 아키텍처** (디자인 패턴, 멀티스레드, 최적화) |
+| `DIRECTX_GAME_CURRICULUM.md` | **STEP 4: DirectX 게임 개발** (그래픽스, 엔진 기초) |
 
 ---
 
