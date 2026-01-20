@@ -16,9 +16,9 @@
 ### **0x02: STL vector, string 기초** ⬅️ 진행중
 
 **학습 체크리스트:**
-- [ ] `std::vector`의 `push_back`, `size`, `[]` 사용법
+- [x] `std::vector`의 `push_back`, `size`, `[]` 사용법
 - [ ] `std::string`의 문자열 연결, 접근, 함수 사용법
-- [ ] 범위 기반 for문 (`for(auto c : s)`)
+- [x] 범위 기반 for문 (`for(auto c : s)`)
 
 ---
 
