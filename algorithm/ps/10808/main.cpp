@@ -23,6 +23,12 @@ int main() {
     cin >> s;
 
     // 여기에 코드를 작성하세요
-    
+    int cnt[26] = { 0, };
+    for (char ch : S) {
+        cnt[ch - 'a']++;
+    }
+    for (int c : cnt) {
+        cout << c << " ";
+    }
     return 0;
 }
