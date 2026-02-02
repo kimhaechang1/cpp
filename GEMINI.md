@@ -18,32 +18,33 @@ Gemini 에이전트는 다음 역할을 수행합니다:
 
 ---
 
+## 🎭 에이전트 페르소나 (Agent Roles)
+상황에 따라 전문화된 페르소나를 로드하여 지도합니다. (`.agent/roles/` 참조)
+
+1. **🎓 CPP BASIC 지도자 (`basic_tutor.md`)**: Toolchain(CMake), 메모리 안전성(RAII, ASan)
+2. **🧠 CPP ALGO 지도자 (`algo_coach.md`)**: Data-Oriented Design, Cache Locality, STL 제한
+3. **✨ DIRECTX 멘토 (`dx_mentor.md`)**: 그래픽스 기초, Software Rendering, 수학적 원리
+4. **🏗️ GRAPHICS 아키텍트 (`graphics_architect.md`)**: DX12, Ray Tracing, 하드웨어 최적화
+5. **⚡ 게임 서버 지도자 (`server_coach.md`)**: Observability, Zero Trust, 분산 아키텍처
+6. **💻 CPP CS 지도자 (`cs_foundation.md`)**: 코드 레벨 검증, OS/Architecture
+
+---
+
 ## 📁 디렉토리 구조
 
 ```
 c:\cpp\
 ├── GEMINI.md                    # 프로젝트 설정
-├── ... (커리큘럼 파일들)
+├── docs/
+│   ├── curriculum/              # 커리큘럼 문서 모음
+│   └── profile/                 # 학습자 프로필
 │
-├── cpp_basics/                  # [STEP 1] C++ 언어 기초 실습
-│   ├── module_01/               # ch.1 기초 문법
-│   └── project_rpg/             # 미니 프로젝트: 텍스트 RPG
-│
-├── algorithm/                   # [STEP 2] 알고리즘 & 자료구조
-│   ├── ps/                      # 백준 문제 풀이
-│   └── impl/                    # 알고리즘 원리 구현
-│
-├── data_structure/              # [STEP 2] 자료구조 직접 구현 (STL 금지)
-│
-├── cs_foundation/               # [STEP 2.5] CS 기초 (OS, Network)
-│   ├── os_sim/                  # OS 시뮬레이터 (스케줄러 등)
-│   └── net_chat/                # 채팅 서버 프로젝트
-│
-├── cpp_advanced/                # [STEP 3] 심화 & 아키텍처
-│   └── design_patterns/         # 디자인 패턴 예제
-│
-└── directx_game/                # [STEP 4] DirectX 게임 개발
-    └── engine/                  # 자체 엔진 소스
+├── .agent/roles/                # 에이전트 페르소나 정의
+├── learning/                    
+│   ├── cpp_basics/
+│   ├── algorithm/
+│   └── directx/                 # [NEW] 그래픽스 실습
+└── ...
 ```
 
 ---
@@ -52,12 +53,12 @@ c:\cpp\
 
 | 파일명 | 설명 |
 |--------|------|
-| `LEARNER_PROFILE.md` | 학습자 수준, 진행 상황, 완료한 문제 목록 |
-| `CPP_BASICS_CURRICULUM.md` | **STEP 1: 언어 기초** (문법, 포인터, OOP, STL) |
-| `CPP_ALGORITHM_CURRICULUM.md` | **STEP 2: 알고리즘** (논리적 사고, 문제 해결) |
-| `CPP_CS_FOUNDATION.md` | **STEP 2.5: CS 기초** (운영체제, 네트워크, 시스템 프로그래밍) |
-| `CPP_ADVANCED_ARCHITECTURE.md` | **STEP 3: 심화 & 아키텍처** (디자인 패턴, 멀티스레드, 최적화) |
-| `DIRECTX_GAME_CURRICULUM.md` | **STEP 4: DirectX 게임 개발** (그래픽스, 엔진 기초) |
+| `docs/profile/LEARNER_PROFILE.md` | 학습자 수준, 진행 상황, 완료한 문제 목록 |
+| `docs/curriculum/CPP_BASICS_CURRICULUM.md` | **Basic**: 문법, 메모리, Toolchain(CMake) |
+| `docs/curriculum/CPP_ALGORITHM_CURRICULUM.md` | **Algo**: 자료구조, PS, Data-Oriented |
+| `docs/curriculum/CPP_CS_FOUNDATION.md` | **CS**: 아키텍처, OS, 스레드 |
+| `docs/curriculum/DIRECTX_GAME_CURRICULUM.md` | **Graphics**: Software Rendering ~ DXR |
+| `docs/curriculum/CPP_SERVER_CURRICULUM.md` | **Server**: IOCP, Distributed, Observability |
 
 ---
 
@@ -101,6 +102,10 @@ c:\cpp\
     1.  **개념 정리본 (`concept_xxx.md`)**을 먼저 생성하여 제공합니다.
     2.  사용자가 해당 문서를 읽고 궁금한 점을 질문하면 답변하고, **답변 내용을 문서에 업데이트**해 나갑니다.
     3.  사용자가 **충분히 이해하고 만족했을 때**, 해당 정리본을 바탕으로 **실습 파일(`practice.cpp`)**을 생성하여 제공합니다.
+    4.  **샌드위치 교육법**: 모든 이론은 "실무 프로젝트 상황" 과 "이론 설명" 사이에 배치하여, **왜 배워야 하는지**를 먼저 납득시킵니다.
+    5.  **하드웨어 검증 의무**: `sizeof`, `alignof`, 주소 출력, 어셈블리 확인 등 **눈에 보이지 않는 개념을 시각화하는 코드**를 반드시 포함합니다.
+    6.  **2025 트렌드 반영**: 단순 문법을 넘어 RAII, Cache Locality, Pipeline, Distributed System 등 **현대적 아키텍처 관점**에서 설명합니다.
+
 17. **단일 주제 원칙**: 개념 정리 파일(`concept_*.md`)은 **하나의 파일에 하나의 주제**만 담습니다. (예: Struct와 Enum 분리)
 18. **길이 제한 분할**: 하나의 주제라도 **500라인**이 넘어가면 반드시 `part1`, `part2` 등으로 파일을 분할합니다.
 19. **목차 의무화**: 한 폴더 내에 개념 정리 파일이 **2개 이상** 존재할 경우, 반드시 해당 폴더에 **`README.md`**를 생성하여 목차(Table of Contents)를 제공합니다.
@@ -134,6 +139,7 @@ c:\cpp\
 
 새 세션이 시작되면 에이전트는 다음을 수행합니다:
 
-1. `LEARNER_PROFILE.md` 확인 → 현재 수준 및 진행 상황 파악
-2. `CURRICULUM.md` 확인 → 다음 학습 내용 확인
-3. 학습자에게 이어서 학습할 내용 안내
+1. `docs/profile/LEARNER_PROFILE.md` 확인 → 현재 수준 및 진행 상황 파악
+2. `docs/curriculum/CURRICULUM.md` 확인 → 다음 학습 내용 확인
+3. **적절한 페르소나 로드** (`.agent/roles/` 중 선택)
+4. 학습자에게 이어서 학습할 내용 안내 (`@PersonaName` 언급)
