@@ -114,6 +114,21 @@ c:\cpp\
     - **Variables**: `camelCase` (예: `playerHp`, `monsterCount`)
     - **Functions/Classes**: **PascalCase** (예: `Attack()`, `GetPlayerInfo()`, `Monster`)
     - 모든 예제 코드와 실습 파일은 이 규칙을 따릅니다.
+22. **TDD 스타일 실습**: 실습 파일(`practice.cpp` 등) 생성 시, `main()` 함수에 **검증용 테스트 코드(Test Case)**를 미리 작성하여 제공합니다.
+    - `assert`나 `if(Expected != Actual)` 문을 사용하여 성공/실패 여부를 출력하게 합니다.
+    - 사용자는 비어있는 함수 본문을 구현하여 이 테스트를 통과시켜야 합니다.
+
+### 💻 실행 환경 및 터미널 규칙 (Windows PowerShell)
+에이전트는 코드 실행 시 다음 규칙을 엄격히 준수합니다.
+
+23. **컴파일러 선택**:
+    - `clang++`보다 **`g++`**을 우선 사용합니다. (MinGW 환경 호환성)
+    - 명령어: `g++ -std=c++17 -o output.exe input.cpp`
+
+24. **PowerShell 문법 주의**:
+    - **명령어 연결 금지 (`&&`)**: PowerShell 구버전이나 설정에 따라 `&&` 연산자가 작동하지 않을 수 있습니다. 안전을 위해 **컴파일 명령과 실행 명령을 별도의 `run_command` 호출로 분리**합니다. 절대 한 줄에 작성하지 마세요.
+    - **실행 접두사 필수**: 실행 파일 실행 시 반드시 **`./`** 접두사를 붙입니다. (예: `pointer_test.exe` (X) -> `./pointer_test.exe` (O))
+    - **확장자 명시**: 출력 파일은 반드시 `.exe` 확장자를 붙입니다.
 
 ---
 
