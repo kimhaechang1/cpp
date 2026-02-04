@@ -57,8 +57,10 @@
 | 0x01 | 기초 코드 작성 요령 | ✅ 완료 |
 | 0x02 | 기초 STL (vector, string) | ✅ 완료 |
 | **0x03** | **배열 (Array)** | ✅ 완료 |
+| **0x04** | **연결 리스트 (Linked List)** | 🔄 진행 중 (구현 완료, 문제 풀이 대기) |
 | Module 2 | 제어 흐름 (Control Flow) | ✅ 완료 |
 | **Module 3** | **함수 (Function)** | ✅ 완료 |
+| **Module 4** | **포인터 (Pointer)** | ✅ 완료 (개념/연산) |
 | **Project** | **텍스트 RPG (절차지향)** | ✅ 완료 |
 | 0x06 | 큐 (Queue) | ⬜ 대기 |
 | 0x07 | 덱 (Deque) | ⬜ 대기 |
