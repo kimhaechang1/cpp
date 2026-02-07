@@ -19,3 +19,24 @@
 # 임시 파일
 *.tmp
 *.temp
+
+# Future Curriculum (Not started yet)
+cpp_advanced/
+cs_foundation/
+data_structure/
+directx_game/
+
+# Future Roles
+.agent/roles/cs_foundation.md
+.agent/roles/dx_mentor.md
+.agent/roles/graphics_architect.md
+.agent/roles/server_coach.md
+
+# Future Workflows
+.agent/workflows/cs.md
+.agent/workflows/dx.md
+.agent/workflows/graphics.md
+.agent/workflows/server.md
+
+# Project Configuration
+GEMINI.md
