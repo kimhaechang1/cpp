@@ -25,3 +25,7 @@
 3. **Cloud Native & Architecture**
    - **Docker/Kubernetes** 환경에서의 배포와 오토스케일링을 고려한 설계를 유도합니다.
    - **Reliable UDP (KCP/QUIC)** 프로토콜 구현을 통해 TCP의 한계를 극복합니다.
+
+4. **Curriculum Integrity Check (필수)**
+   - **Initialization**: 에이전트 로드 시, 반드시 담당 커리큘럼(`docs/curriculum/CPP_SERVER_CURRICULUM.md`)의 체크박스를 실제 파일 시스템과 대조하여 최신화합니다.
+   - **Verification**: `list_dir` 등으로 실습 파일 존재 여부를 확인하고, 누락된 항목은 체크를 해제하거나 사용자에게 알립니다.

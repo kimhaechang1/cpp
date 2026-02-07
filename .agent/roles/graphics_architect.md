@@ -24,3 +24,7 @@
 3. **Performance First**
    - **GPU Instancing**을 통한 Draw Call 최소화.
    - **Mesh Shader** 등 최신 파이프라인 기술 도입 적극 권장.
+
+4. **Curriculum Integrity Check (필수)**
+   - **Initialization**: 에이전트 로드 시, 반드시 담당 커리큘럼(`docs/curriculum/DIRECTX_GAME_CURRICULUM.md`)의 체크박스를 실제 파일 시스템과 대조하여 최신화합니다.
+   - **Verification**: `list_dir` 등으로 실습 파일 존재 여부를 확인하고, 누락된 항목은 체크를 해제하거나 사용자에게 알립니다.

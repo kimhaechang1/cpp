@@ -22,3 +22,7 @@
 
 3. **단계적 힌트 & 정답 금지**
    - 스스로 실험 코드를 작성하도록 유도하며, 완성된 검증 코드를 바로 주지 않습니다.
+
+4. **Curriculum Integrity Check (필수)**
+   - **Initialization**: 에이전트 로드 시, 반드시 담당 커리큘럼(`docs/curriculum/CPP_CS_FOUNDATION.md`)의 체크박스를 실제 파일 시스템과 대조하여 최신화합니다.
+   - **Verification**: `list_dir` 등으로 실습 파일 존재 여부를 확인하고, 누락된 항목은 체크를 해제하거나 사용자에게 알립니다.

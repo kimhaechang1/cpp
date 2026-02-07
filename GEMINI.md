@@ -1,9 +1,10 @@
-# C++ 알고리즘/자료구조 학습 프로젝트
+# C++ Game Development Master Course (2025 Standard)
 
 ## 📋 프로젝트 개요
 
-이 프로젝트는 **C++ 알고리즘/자료구조 학습**을 위한 워크스페이스입니다.
-Gemini 에이전트가 학습 진행 상황을 추적하고 맞춤형 문제를 추천합니다.
+이 프로젝트는 **C++ 게임 개발자**를 위한 올인원 학습 워크스페이스입니다.
+기초 문법부터 알고리즘, CS 지식, DirectX 그래픽스, 서버 아키텍처까지 **Full-Stack Game Programmer** 양성을 목표로 합니다.
+Gemini 에이전트가 학습자의 전문 멘토가 되어 커리큘럼을 관리하고 성장을 추적합니다.
 
 ---
 
@@ -59,6 +60,26 @@ c:\cpp\
 | `docs/curriculum/CPP_CS_FOUNDATION.md` | **CS**: 아키텍처, OS, 스레드 |
 | `docs/curriculum/DIRECTX_GAME_CURRICULUM.md` | **Graphics**: Software Rendering ~ DXR |
 | `docs/curriculum/CPP_SERVER_CURRICULUM.md` | **Server**: IOCP, Distributed, Observability |
+
+---
+
+## 🏗️ 시스템 아키텍처 원칙 (System Architecture)
+프로젝트의 유지보수성과 확장성을 위해 다음 요소의 역할을 엄격히 분리합니다.
+
+### 1. 🚦 Workflows (`.agent/workflows/*.md`)
+- **역할**: "어떻게 실행하는가?" (Procedure)
+- **내용**: 페르소나 로드 절차, 에이전트 초기화 루틴.
+- **규칙**: 구체적인 교육 리소스나 행동 지침을 포함하지 않습니다. 오직 **순서와 절차**만 정의합니다. (예: "1. 파일 읽기 -> 2. 검증하기 -> 3. 페르소나 장착")
+
+### 2. 🎭 Roles (`.agent/roles/*.md`)
+- **역할**: "누가, 어떻게 가르치는가?" (Behavior & Pedagogy)
+- **내용**: 말투, 교육 철학, **필수 검증 규칙(Integrity Check)**, 금지 사항.
+- **규칙**: 커리큘럼의 내용을 직접 정의하지 않습니다. 대신 **"커리큘럼을 확인하라"**는 메타 규칙을 가집니다.
+
+### 3. 📜 Curriculum (`docs/curriculum/*.md`)
+- **역할**: "무엇을 배우는가?" (Content & Data)
+- **내용**: 학습 주제 리스트, 체크박스 Status, 문서 링크.
+- **규칙**: 에이전트의 행동 지침을 포함하지 않습니다. 순수한 **데이터(Data)**로서 존재합니다.
 
 ---
 
@@ -158,3 +179,16 @@ c:\cpp\
 2. `docs/curriculum/CURRICULUM.md` 확인 → 다음 학습 내용 확인
 3. **적절한 페르소나 로드** (`.agent/roles/` 중 선택)
 4. 학습자에게 이어서 학습할 내용 안내 (`@PersonaName` 언급)
+
+## 🔄 세션 운영 규칙 (Session Rules)
+
+### 1. 워크플로우 필수 호출 (Workflow Mandatory)
+- **모든 세션의 시작**은 반드시 `/slash_command` 형태의 워크플로우 호출로 시작해야 합니다.
+- 예: `/basic` (기초 학습), `/algo` (알고리즘), `/dx` (DirectX)
+- 이유: 에이전트의 페르소나를 확실히 고정하고, **커리큘럼 검증 루틴(Integrity Check)**을 실행하기 위함입니다.
+
+### 2. 단일 세션 단일 목표 (One Session, One Goal)
+- 하나의 세션(채팅창)에서는 **하나의 워크플로우**만 진행하는 것을 원칙으로 합니다.
+- 학습 주제가 바뀌면(예: 문법 -> 알고리즘), **"새 채팅(New Chat)"**을 열고 해당 워크플로우를 호출하세요.
+- 이유: 에이전트의 컨텍스트 혼란을 방지하고, 토큰 효율성을 극대화하기 위함입니다.
+
