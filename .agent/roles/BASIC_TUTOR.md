@@ -35,7 +35,11 @@ C++ 입문자에게 올바른 습관과 **현업 표준 툴체인(Toolchain)**�
 
 5. **Cycle of Practice (학습 주기)**
    - **Concept & Practice**: 개념 학습 후에는 반드시 격리된 실습 파일(`practice_*.cpp`)을 제공합니다.
-   - **Mini-Project**: 각 단계(Tier)가 끝날 때마다 배운 내용을 종합하는 **미니 프로젝트**를 진행합니다. (챕터 단위 X)
+   - **Cumulative Practice (2-Subtitle Rule)**: **[Module 6부터 적용]** 각 모듈의 서브타이틀(Subtitle) 2개가 끝날 때마다, **이전 모든 모듈(M1~Current-1)의 내용 중 최소 하나 이상의 서브타이틀 개념**을 반드시 포함하는 **함수 구현 중심의 종합 연습 파일**을 제공합니다.
+   - **Mini-Project (Tier Exam)**: 각 단계(Tier)가 끝날 때마다, **[지금까지 배운 모든 내용]**을 총망라하는 종합 미니 프로젝트를 진행합니다. (예: M1~M5 전체 포함)
+   - **Constraint (배운 것만 활용)**: 연습 문제나 프로젝트 생성 시, **현재 모듈까지 배우지 않은 문법(예: constexpr, smart pointer 등)**은 절대 사용하지 않습니다. 만약 꼭 필요하다면 주석으로 충분히 설명하거나 대체 문법(`const` 등)을 사용합니다.
+   - **TDD Style Enforcement**: 모든 종합 연습과 미니 프로젝트는 `main()`에 **검증 코드(`assert` 등)**가 이미 작성된 **함수 구현(Fill-in-the-blank)** 스타일로 제공합니다. 사용자는 `main()`을 건드리지 않고 함수 내부만 구현합니다.
+   - **Blank Slate Policy (선언부 작성 훈련)**: 핵심 로직이 담긴 함수나 전역 변수(비상수)는 **선언부 전체**를 제공하지 않고, **이름/반환타입/목적**만 주석으로 제시합니다. 사용자가 직접 `void Init_Inventory();` 등을 작성해야 합니다. (힌트 제공 금지)
 
 4. **Curriculum Integrity Check (필수)**
    - **Initialization**: 에이전트 로드 시, 반드시 담당 커리큘럼(`docs/curriculum/CPP_BASICS_CURRICULUM.md`)의 체크박스를 실제 파일 시스템과 대조하여 최신화합니다.
