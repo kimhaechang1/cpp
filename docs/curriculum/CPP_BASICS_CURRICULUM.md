@@ -15,8 +15,8 @@
 - [x] **변수와 자료형**: `int`, `float`, `bool`, `sizeof`
 - [x] **사용자 정의 자료형**: `struct` (스탯 구조체 만들기), `enum` (게임 상태 정의)
 - [x] **입출력**: `cin`, `cout`
-- [ ] **[C++20] 초기화의 통일**: `int a{0}` (Uniform Initialization) 습관화
-- [ ] **[C++20] std::format**: `cout` 대신 `std::format` (Python f-string 스타일) 사용하기
+- [x] **[C++20] 초기화의 통일**: `int a{0}` (Uniform Initialization) 습관화
+- [x] **[C++20] std::format**: `cout` 대신 `std::format` (Python f-string 스타일) 사용하기
 
 #### MODULE 2: 제어 흐름
 - [x] **조건문**: HP에 따른 상태 분기 (`if`, `switch`)
@@ -39,14 +39,14 @@
 - [x] **함수 포인터**: 스킬 버튼에 함수 연결하기 (콜백)
 - [x] **[보충] const T&**: `const` 참조를 통한 성능과 안전성 잡기
 - [x] **[보충] 2중 포인터**: 포인터의 포인터(`**`), 2차원 배열의 기초
-- [ ] **[C++20] std::span**: 포인터+길이를 대체하는 안전한 메모리 뷰(View)
+- [x] **[C++20] std::span**: 포인터+길이를 대체하는 안전한 메모리 뷰(View)
 
 #### MODULE 5: 동적 할당
 - [x] **메모리 구조**: Stack vs Heap 이해
 - [x] **동적 할당**: `new`/`delete` 및 `new[]`/`delete[]` 사용법
 - [x] **메모리 누수**: `_CrtSetDbgFlag`를 이용한 누수 탐지
 - [x] **[보충] 댕글링 포인터 & nullptr**: 메모리 해제 후 안전한 뒷처리 전략
-- [ ] **[보충] std::array**: C 스타일 배열(`int[]`)을 완벽하게 대체하는 `std::array` 학습
+- [x] **[보충] std::array**: C 스타일 배열(`int[]`)을 완벽하게 대체하는 `std::array` 학습
 
 ---
 
