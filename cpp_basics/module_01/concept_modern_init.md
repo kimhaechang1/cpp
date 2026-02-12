@@ -24,14 +24,14 @@ int arr[]{1, 2, 3}; // 배열 초기화
 
 ---
 
-## 2. `std::format` (C++20) - `cout`의 구원자 🚀
+## 2. `std::` (C++20) - `cout`의 구원자 🚀
 `cout << "HP: " << hp << ", MP: " << mp << endl;` 
 ...너무 길고 가독성이 떨어지죠? 
 Python의 f-string, C#의 String Interpolation처럼 우아하게 출력할 수 있습니다.
 
 ### 2.1 사용법
 ```cpp
-#include <format> // C++20 필수
+#include <> // C++20 필수
 #include <iostream>
 
 int main() {
