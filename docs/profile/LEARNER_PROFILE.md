@@ -23,8 +23,12 @@
 - [x] **MODULE 2: 제어 흐름** (if, switch, for, while)
 - [x] **MODULE 3: 함수** (매개변수, 리턴, 재귀)
 - [/] **MODULE 4: 포인터와 참조** (진행 중: 보충 학습 필요)
-- [/] **MODULE 5: 동적 할당** (진행 중: 보충 학습 필요)
-- [ ] **MODULE 6 ~ 10**: (대기 중): 포인터, 포인터 연산(배열), 함수 포인터, `std::function` 맛보기
+- [x] **MODULE 5: 동적 할당** (완료)
+- [ ] **MODULE 6: 클래스와 객체** (진행 중)
+    - [x] Namespace & Class Basics
+    - [x] Lifecycle (Constructor/Destructor)
+    - [ ] Copy Constructor (Next)
+- [ ] **MODULE 7 ~ 10**: (대기 중)
 
 ### **Module 04: 포인터와 메모리 (Pointers)** ✅ 완료
 **학습 체크리스트:**
