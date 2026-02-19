@@ -1,50 +1,57 @@
-# Module 06-3: 복사 생성자 (Copy Constructor)
+# 복사 생성자 (Copy Constructor)
 
-## 1. 객체의 복사
-C++에서는 객체를 대입하거나 복사할 때 **"복사 생성자"**가 호출되엇습니다.
+## 1. 🔍 정의 (Definition)
+객체를 생성할 때, **다른 객체(원본)를 인자로 받아** 그 내용을 복사하여 생성하는 생성자입니다.
 ```cpp
-Knight k1("Arthur", 100);
-Knight k2 = k1; // 여기서 [복사 생성자]가 호출됩니다!
-// Knight k2(k1); 과 똑같은 말입니다.
+ClassName(const ClassName& other);
 ```
 
-## 2. 얕은 복사 (Shallow Copy)의 함정 🚨
-만약 우리가 **복사 생성자를 직접 만들지 않으면**, 컴파일러가 알아서 "기본 복사 생성자"를 만들어줍니다.
-이 녀석은 **모든 멤버 변수를 그냥 똑같이 베껴씁니다.**
+## 2. 🚨 문제 상황: 포인터와 얕은 복사 (Shallow Copy)
+C++ 컴파일러가 기본으로 제공하는 복사 생성자는 **멤버 변수의 값을 그대로 복사**만 합니다.
+이때 `Item*`, `char*` 같은 포인터 멤버가 있다면, **주소값만 복사**되어 두 객체가 **같은 메모리**를 가리키게 됩니다.
 
-문제는 멤버 변수 중에 **포인터**가 있을 때 발생합니다.
+### 예시: Inventory의 비극 (The Tragedy of Inventory)
 ```cpp
-class Pet {
-    int* hp; // 포인터 변수!
-public:
-    Pet() { hp = new int(100); }
-    ~Pet() { delete hp; }
-};
-
-Pet p1;      // p1.hp가 0x100번지를 가리킴
-Pet p2 = p1; // p2.hp도 0x100번지를 가리킴 (주소만 복사!)
-```
-
-### 💣 대재앙 (Double Free)
-1.  `p1`이 죽을 때 소멸자 호출 -> `0x100`번지 `delete`.
-2.  `p2`가 죽을 때 소멸자 호출 -> **이미 지워진 `0x100`번지를 또 `delete` 시도!**
-3.  **프로그램 강제 종료 (Crash)** 💥
-
-## 3. 깊은 복사 (Deep Copy)
-이 문제를 해결하려면 **"직접" 복사 생성자**를 만들어서,
-**"새로운 메모리를 할당하고, 원본의 '값'을 복사해라"**라고 알려줘야 합니다.
-
-```cpp
-// 복사 생성자 문법: ClassName(const ClassName& other)
-Pet(const Pet& other) {
-    // 1. 새로운 메모리 할당
-    hp = new int; 
+{
+    Inventory A(100);
+    A.BuyItem("Sword", 50); // A가 Sword(Item 객체)를 가리킴 (주소: 0x100)
     
-    // 2. 원본(other)의 '값'을 복사 (주소 복사 X)
-    *hp = *other.hp; 
-}
+    Inventory B = A; // 복사! B도 Sword(Item 객체)를 가리킴 (주소: 0x100)
+    
+} // 블록이 끝남 -> 둘 다 죽음!
+```
+1. **B 소멸**: `0x100` 주소의 `Item`을 `delete`함. (성공)
+2. **A 소멸**: `0x100` 주소의 `Item`을 또 `delete`하려고 함. (이미 해제된 메모리!)
+3. **Double Free Error**: 프로그램 강제 종료 (Crash) 💥
+
+## 3. 🛡️ 해결책: 깊은 복사 (Deep Copy)
+복사 생성자를 직접 정의하여, **새로운 메모리를 할당하고 내용물만 복사**해야 합니다.
+
+### 구현 예시
+```cpp
+class Inventory {
+    vector<Item*> items;
+public:
+    // [복사 생성자]
+    Inventory(const Inventory& other) {
+        // 1. 일반 멤버 복사
+        this->gold = other.gold;
+        
+        // 2. 깊은 복사 (Deep Copy)
+        for (const Item* pItem : other.items) {
+            // 원본(other)의 아이템 내용을 복사해서 새 Item을 만듦
+            Item* newItem = new Item(pItem->GetName(), pItem->GetCost());
+            this->items.push_back(newItem);
+        }
+    }
+    // ... (기존 생성자/소멸자) ...
+};
 ```
 
-이렇게 하면 `p1`과 `p2`는 서로 다른 메모리(`0x100`, `0x200`)를 가지게 되어 안전합니다.
+## 4. 📝 Rule of Three (3의 규칙)
+클래스 내에서 동적 할당(`new`)을 사용해 리소스를 관리한다면, 다음 3가지를 반드시 직접 구현해야 합니다.
+1. **소멸자 (Destructor)**: 리소스 해제 (`delete`)
+2. **복사 생성자 (Copy Constructor)**: 깊은 복사 구현
+3. **복사 대입 연산자 (Copy Assignment Operator)**: `A = B;` 형태의 깊은 복사 구현
 
-> **Rule of Three (3의 법칙)**: **소멸자**를 직접 만들었다면(뭔가 `delete` 한다는 뜻), **복사 생성자**와 **대입 연산자**도 반드시 직접 만들어야 합니다.
+> **Modern C++ Tip**: `std::unique_ptr`를 쓰면(Rule of Zero), 컴파일러가 알아서 복사를 금지해주거나 이동(Move)만 허용하여 훨씬 안전합니다. (Module 9에서 학습)
