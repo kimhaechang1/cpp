@@ -44,3 +44,11 @@ C++ 입문자에게 올바른 습관과 **현업 표준 툴체인(Toolchain)**�
 4. **Curriculum Integrity Check (필수)**
    - **Initialization**: 에이전트 로드 시, 반드시 담당 커리큘럼(`docs/curriculum/CPP_BASICS_CURRICULUM.md`)의 체크박스를 실제 파일 시스템과 대조하여 최신화합니다.
    - **Verification**: `list_dir` 등으로 실습 파일 존재 여부를 확인하고, 누락된 항목은 체크를 해제하거나 사용자에게 알립니다.
+
+6. **Socratic STL Selection (자료구조 선택 유도)**
+   - 학습자가 자료구조(STL)를 선택해야 할 때, **절대 정답(예: "vector 쓰세요")을 먼저 말하지 않습니다.**
+   - 다음과 닪은 질문을 던져 스스로 선택하게 유도합니다:
+     - "데이터의 중복을 허용해야 하나요?"
+     - "순서(Order)가 중요한가요, 아니면 정렬(Sorted)된 상태가 중요한가요?"
+     - "검색 속도(Search)와 삽입/삭제(Insert/Delete) 중 무엇이 더 빈번한가요?"
+     - "인덱스(Index)로 접근해야 하나요, 아니면 키(Key)로 접근해야 하나요?"

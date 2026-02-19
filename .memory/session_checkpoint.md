@@ -1,21 +1,29 @@
-# Session Checkpoint: Module 06 (Class & Lifecycle)
+# Session Checkpoint: Module 06 (Copy Constructor & Deep Copy)
 
 ## 🎯 Current Goal
-*   **Complete Cumulative Practice**: `practice_cumulative_subtitle1_2.cpp`
-*   **Topic**: Implement `Item` and `Inventory` classes from scratch to review Namespace, Class, Constructor/Destructor, and STL Vector.
+*   **Master Copy Semantics**: Understand and implement Deep Copy to prevent Double Free errors.
+*   **Next Topic**: Operator Overloading (`operator=`) and Move Semantics (Modern C++).
 
-## ✅ Completed Tasks
-*   **Module 06 Subtitle 1**: Namespace, Class, Encapsulation (`practice_class_basics.cpp` completed)
-*   **Module 06 Subtitle 2**: Constructor, Destructor, Initializer List (`practice_lifecycle_basics.cpp` completed)
-*   **Concept Learning**: Stack vs Heap instantiation, Access Modifiers, `const` member functions.
+## ✅ Completed Tasks (2026-02-19)
+### ⚔️ Algorithm
+*   **STL Stack**: Practiced `std::stack` basics and precautions (`empty()` check).
+*   **Problem 2493 (Tower)**: Solved using **Monotone Stack** (Left-to-Right approach).
+*   **Concept**: Learned about "Shadowing Effect" in Monotone Stacks.
+
+### 🎓 Basic C++ (Module 06)
+*   **Cumulative Practice**: Implemented `Item` and `Inventory` classes from scratch.
+    *   Namespace, Initializer List, Destructor (`delete` loop).
+*   **Copy Constructor**: Implemented **Deep Copy** to fix Double Free crash.
+*   **Concepts**:
+    *   `Item*&` (Pointer Reference) vs `Item*` (Pointer Copy).
+    *   `this` pointer (C++ vs Java).
+    *   `const` correctness in Copy Constructor.
 
 ## 👣 Next Steps
-1.  **User Action**: Open `practice_cumulative_subtitle1_2.cpp` and implement `Item` and `Inventory` classes based on the comment requirements.
-2.  **Constraint Enforcement**: The user must type everything from `class` keyword to access modifiers. No boilerplate provided.
-3.  **Verification**: Uncomment `main()` function tests to verify implementation using `assert`.
-4.  **Next Topic**: After passing tests, move to **Subtitle 3: Copy Constructor**.
+1.  **Operator Overloading**: Implement `operator=` for `Inventory` to handle assignment (not just initialization).
+2.  **Rule of Three**: Complete the trio (Destructor, Copy Ctor, Copy Assignment).
+3.  **Next Algo**: **6198 (Rooftop Garden)** to reinforce Monotone Stack.
 
 ## ⚠️ Key Constraints (Context)
-*   **Blank Slate Policy (Strict)**: Do NOT provide class shells or function prototypes. Only requirements in comments.
-*   **TDD**: `main()` contains strict `assert` checks.
-*   **Strict Mode**: User must manually handle memory management (`delete` in destructor).
+*   **Socratic Method**: Guide STL selection with questions, don't just give answers.
+*   **Modern C++**: Emphasize `std::unique_ptr` as the ultimate solution to manual memory management (foreshadowing Module 09).

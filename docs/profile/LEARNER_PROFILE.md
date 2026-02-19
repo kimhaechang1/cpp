@@ -25,7 +25,6 @@
 - [/] **MODULE 4: 포인터와 참조** (진행 중: 보충 학습 필요)
 - [x] **MODULE 5: 동적 할당** (완료)
 - [ ] **MODULE 6: 클래스와 객체** (진행 중)
-    - [x] Namespace & Class Basics
     - [x] Lifecycle (Constructor/Destructor)
     - [ ] Copy Constructor (Next)
 - [ ] **MODULE 7 ~ 10**: (대기 중)

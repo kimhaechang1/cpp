@@ -54,26 +54,36 @@
 **목표**: "설계"를 한다. 데이터와 기능을 묶어 관리하고, 상속을 통해 코드를 재사용한다.
 
 #### MODULE 6: 클래스와 객체 (설계의 기초)
-- [ ] **[신규] 네임스페이스 (Namespace)**: 이름 충돌 방지 및 `std::`의 의미 이해, `using` 문구의 올바른 사용법
-- [ ] **클래스**: `struct`와 `class`의 차이, 접근 지정자 (`private`, `public`)
-- [ ] **생성자/소멸자**: 객체의 탄생과 죽음 관리 (RAII)
-- [ ] **[보충] 초기화 리스트**: 대입(`=`)이 아닌 리스트(`:`) 사용법 (성능 및 `const` 멤버)
-- [ ] **복사 생성자**: 얕은 복사 vs 깊은 복사 (메모리 관리의 시작)
+- [x] **[신규] 네임스페이스 (Namespace)**: 이름 충돌 방지 및 `std::`의 의미 이해, `using` 문구의 올바른 사용법
+- [x] **클래스**: `struct`와 `class`의 차이, 접근 지정자 (`private`, `public`)
+- [x] **[Cumulative Practice]**: Namespace & Class Basics
+- [x] **생성자/소멸자**: 객체의 탄생과 죽음 관리 (RAII)
+- [x] **[보충] 초기화 리스트**: 대입(`=`)이 아닌 리스트(`:`) 사용법 (성능 및 `const` 멤버)
+- [x] **[Cumulative Practice]**: Lifecycle (Constructor, Destructor, Init List)
+- [x] **복사 생성자**: 얕은 복사 vs 깊은 복사 (메모리 관리의 시작)
 - [ ] **연산자 오버로딩**: `+`, `==`, `<<` 등 연산자 재정의 및 대입 연산자(`=`) 오버로딩
+- [ ] **[Cumulative Practice]**: Deep Copy & Operator Overloading
 - [ ] **Friend 키워드**: 클래스 외부에서 `private` 멤버에 접근하는 예외적 허용
 - [ ] **클래스의 정적 멤버**: `static` 변수/함수를 이용한 공유 데이터 관리
+- [ ] **[Cumulative Practice]**: Friend & Static Members
 - [ ] **[심화] 3/5/0 규칙**: 직접 구현하기보다 `std::unique_ptr`를 활용해 컴파일러에게 맡기는(Rule of Zero) 패턴
 - [ ] **[C++11~26] constexpr**: 런타임이 아닌 컴파일 타임에 값 계산하기 (성능 최적화)
+- [ ] **[Cumulative Practice]**: Rule of 3/5/0 & constexpr
+
 
 #### MODULE 7: 상속과 다형성 (설계의 심화)
 - [ ] **상속**: `Monster`를 상속받는 `Slime`, `Orc` 만들기
 - [ ] **[보충] protected 접근 제어자**: 상속 관계에서만 허용되는 접근 범위
+- [ ] **[Cumulative Practice]**: Inheritance Basics & Access Modifiers
 - [ ] **[추가] 다중 상속과 다이아몬드 문제**: `가상 상속(Virtual Inheritance)`을 통한 메모리 중복 해결
 - [ ] **가상 함수**: `virtual Attack()`으로 다형성 구현하기
+- [ ] **[Cumulative Practice]**: Multiple Inheritance & Polymorphism
 - [ ] **[보충] 가상 소멸자**: 부모 포인터로 자식 삭제 시 메모리 누수 방지 (필수)
 - [ ] **[보충] override 키워드**: 실수 방지를 위한 명시적 오버라이딩
+- [ ] **[Cumulative Practice]**: Safety in Polymorphism (Virtual Dtor & Override)
 - [ ] **순수 가상 함수 & 추상 클래스**: 인스턴스화가 불가능한 인터페이스 설계법
 - [ ] **[심화] 데이터 지향 설계(DOD) 맛보기**: `AoS`(구조체 배열) vs `SoA`(배열의 구조체)와 캐시 적중률(Cache Hit) 이해
+- [ ] **[Cumulative Practice]**: Abstract Class & Data Oriented Design
 
 ---
 
@@ -83,25 +93,35 @@
 #### MODULE 8: 템플릿과 STL
 - [ ] **템플릿**: 타입에 상관없는 `Box<T>` 만들기 (일반화 프로그래밍)
 - [ ] **STL**: `std::vector`, `std::map` 등으로 인벤토리/타일맵 구현
+- [ ] **[Cumulative Practice]**: Templates & Basic STL
 - [ ] **반복자(Iterator)**: 컨테이너의 내부 구조를 몰라도 순회할 수 있는 인터페이스
 - [ ] **함수 객체(Functor) & 람다**: 알고리즘 함수(`std::sort` 등)에 사용자 정의 로직 주입
+- [ ] **[Cumulative Practice]**: Iterators & Functors/Lambdas
 - [ ] **[C++20] Ranges & Views**: 파이프(`|`)를 사용해 직관적인 데이터 변환 및 필터링 (`std::ranges::sort`)
 - [ ] **[C++20] Concepts**: 템플릿의 `typename T`에 제약조건 걸기 (`Integral T`)
+- [ ] **[Cumulative Practice]**: Modern STL (Ranges & Concepts)
 
 #### MODULE 9: 모던 C++ (RAII & 효율성)
 - [ ] **스마트 포인터**: `unique_ptr`, `shared_ptr`, `weak_ptr` (메모리 직접 해제 금지)
 - [ ] **이동 시맨틱**: `std::move`와 R-value reference(`&&`)로 성능 최적화
+- [ ] **[Cumulative Practice]**: Smart Pointers & Move Semantics
 - [ ] **Type Inference**: `auto` & `decltype`으로 복잡한 타입 추론
 - [ ] **[C++17] Structured Binding**: `auto [key, val] = map` 구조 분해
+- [ ] **[Cumulative Practice]**: Type Inference & Structured Binding
 - [ ] **[C++17/23] Modern Types**: `std::optional`, `std::variant`, `std::expected` (에러 처리 트렌드)
+- [ ] **[Cumulative Practice]**: Modern Error Handling & Types
 
 #### MODULE 10: 프로페셔널 도구 (Toolchain & QA)
 - [ ] **Build Systems**: CMake를 사용하여 멀티 플랫폼 프로젝트 구성하기.
 - [ ] **Package Manager**: Vcpkg나 Conan을 통해 외부 라이브러리 연동하기.
+- [ ] **[Cumulative Practice]**: Build System & Package Manager
 - [ ] **Profiling & Sanitizers**: AddressSanitizer(ASan)를 이용한 메모리 오염 실시간 탐지.
 - [ ] **단위 테스트(Unit Test)**: Google Test나 Catch2를 활용한 코드 검증.
+- [ ] **[Cumulative Practice]**: Debugging & Testing
 - [ ] **협업 기초**: .gitignore 작성 및 Git 버전 관리 전략.
+- [ ] **[Cumulative Practice]**: Version Control & Collaboration
 
 #### MODULE 11: [신규] 병렬 프로그래밍 (Concurrency)
 - [ ] **Thread 기초**: `std::thread`, `std::mutex`로 레이스 컨디션 이해하기
 - [ ] **[C++20] jthread**: 자동으로 Join되는 안전한 스레드 (`std::jthread`) 사용하기
+- [ ] **[Cumulative Practice]**: Basic Concurrency (Thread & jthread)
