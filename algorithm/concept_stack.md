@@ -44,14 +44,37 @@ int pos = 0; // 다음 원소가 들어갈 인덱스 (현재 원소 개수와 �
     int top() { return dat[pos-1]; }
     ```
 
-## 5. 🔍 STL Stack
+## 5. 🔍 STL Stack (`<stack>`)
 실전(코딩테스트)에서는 직접 구현보다 `std::stack`을 주로 씁니다.
-하지만 **내부 원리를 모르면 응용할 수 없으므로** 이번 챕터에서는 직접 구현부터 연습합니다.
 
+### 5.1 기본 메서드
 ```cpp
 #include <stack>
+
 std::stack<int> s;
-s.push(10);
-s.pop();
-cout << s.top();
+
+// 1. 삽입 (Push)
+s.push(10); // [10]
+s.push(20); // [10, 20]
+
+// 2. 삭제 (Pop) - 반환값 없음!
+s.pop();    // [10] (20 삭제)
+
+// 3. 최상단 원소 확인 (Top)
+int val = s.top(); // 10
+
+// 4. 상태 확인
+if(s.empty()) cout << "비어있음";
+cout << s.size(); // 1
+```
+
+### 5.2 ⚠️ 주의사항 (Runtime Error)
+C++ STL Stack은 **비어있을 때 `top()`이나 `pop()`을 호출하면 프로그램이 뻗습니다(Crash).**
+항상 `!s.empty()`를 먼저 확인해야 합니다.
+
+```cpp
+if(!s.empty()) {
+    cout << s.top();
+    s.pop();
+}
 ```
