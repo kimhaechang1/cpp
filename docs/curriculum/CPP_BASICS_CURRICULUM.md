@@ -61,8 +61,8 @@
 - [x] **[보충] 초기화 리스트**: 대입(`=`)이 아닌 리스트(`:`) 사용법 (성능 및 `const` 멤버)
 - [x] **[Cumulative Practice]**: Lifecycle (Constructor, Destructor, Init List)
 - [x] **복사 생성자**: 얕은 복사 vs 깊은 복사 (메모리 관리의 시작)
-- [ ] **연산자 오버로딩**: `+`, `==`, `<<` 등 연산자 재정의 및 대입 연산자(`=`) 오버로딩
-- [ ] **[Cumulative Practice]**: Deep Copy & Operator Overloading
+- [x] **연산자 오버로딩**: `+`, `==`, `<<` 등 연산자 재정의 및 대입 연산자(`=`) 오버로딩
+- [x] **[Cumulative Practice]**: Deep Copy & Operator Overloading
 - [ ] **Friend 키워드**: 클래스 외부에서 `private` 멤버에 접근하는 예외적 허용
 - [ ] **클래스의 정적 멤버**: `static` 변수/함수를 이용한 공유 데이터 관리
 - [ ] **[Cumulative Practice]**: Friend & Static Members
