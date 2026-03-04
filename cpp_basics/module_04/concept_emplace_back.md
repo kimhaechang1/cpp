@@ -108,3 +108,12 @@ int main() {
 | **int, char 등 기본 타입** | 상관 없음 | 복사 비용이 워낙 작아서 차이 없음 |
 
 > **꿀팁**: `vector<vector<int>>` 같은 중첩 벡터를 다룰 때 `emplace_back` 효과가 엄청납니다!
+
+---
+
+## 5. 🚨 치명적 주의사항 (Exception Safety 함정)
+
+"우와, 성능 최고네! 그럼 앞으로 모든 곳에 `emplace_back`만 써야지!" 라고 생각하기 쉽지만, 추후에 배우게 될 **모던 C++ 스마트 포인터(`std::unique_ptr`)**를 다룰 때는 `emplace_back`이 끔찍한 **메모리 누수(Memory Leak)**를 유발할 수 있습니다. 
+
+자세한 실행 순서의 비극과 그 해결법(`std::make_unique`)은 스마트 포인터를 배우는 단계에서 완벽하게 파헤칩니다!
+👉 **[스마트 포인터와 emplace_back의 비극 확인하기](../module_06/concept_smart_pointer_preview.md#6-심화-vector에-스마트-포인터-넣기-emplace_back의-배신)**

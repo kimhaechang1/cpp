@@ -54,4 +54,7 @@ public:
 2. **복사 생성자 (Copy Constructor)**: 깊은 복사 구현
 3. **복사 대입 연산자 (Copy Assignment Operator)**: `A = B;` 형태의 깊은 복사 구현
 
-> **Modern C++ Tip**: `std::unique_ptr`를 쓰면(Rule of Zero), 컴파일러가 알아서 복사를 금지해주거나 이동(Move)만 허용하여 훨씬 안전합니다. (Module 9에서 학습)
+> **💡 Knowledge Connectivity**: 매번 직접 `new`/`delete`와 깊은 복사를 구현하는 것은 매우 번거롭고 실수하기 쉽습니다. 
+> Modern C++에서는 이를 해결하기 위해 **스마트 포인터(Smart Pointer)**를 활용하여 메모리를 관리하지 않고도 안전하게 자원을 유지하는 **'3/5/0 규칙'** 중 **'0의 규칙(Rule of Zero)'**을 지향합니다.
+> 자세한 내용은 다음 심화 미리보기 문서를 참고하세요: [**Module 06: [Advanced] 스마트 포인터 미리보기**](./concept_smart_pointer_preview.md) 👉
+

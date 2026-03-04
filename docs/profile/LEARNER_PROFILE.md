@@ -24,10 +24,13 @@
 - [x] **MODULE 3: 함수** (매개변수, 리턴, 재귀)
 - [/] **MODULE 4: 포인터와 참조** (진행 중: 보충 학습 필요)
 - [x] **MODULE 5: 동적 할당** (완료)
-- [ ] **MODULE 6: 클래스와 객체** (진행 중)
+- [x] **MODULE 6: 클래스와 객체** (진행 중)
     - [x] Lifecycle (Constructor/Destructor)
-    - [ ] Copy Constructor (Next)
-- [ ] **MODULE 7 ~ 10**: (대기 중)
+    - [x] Copy Constructor
+    - [x] Operator Overloading
+    - [x] Friend & Static Members
+    - [x] Rule of 3/5/0 (Completed)
+    - [ ] constexpr (Next)
 
 ### **Module 04: 포인터와 메모리 (Pointers)** ✅ 완료
 **학습 체크리스트:**
