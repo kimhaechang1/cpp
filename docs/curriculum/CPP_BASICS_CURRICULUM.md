@@ -67,8 +67,8 @@
 - [x] **클래스의 정적 멤버**: `static` 변수/함수를 이용한 공유 데이터 관리
 - [x] **[Cumulative Practice]**: Friend & Static Members (범위: Friend/Static + [현재 M6 과거 소제목 중 랜덤 1개] + [M1~M5] 각 모듈 최소 1개)
 - [x] **[심화] 3/5/0 규칙**: 직접 구현하기보다 `std::unique_ptr`를 활용해 컴파일러에게 맡기는(Rule of Zero) 패턴
-- [ ] **[C++11~26] constexpr**: 런타임이 아닌 컴파일 타임에 값 계산하기 (성능 최적화)
-- [ ] **[Cumulative Practice]**: Rule of 3/5/0 & constexpr (범위: 3/5/0 & constexpr + [현재 M6 과거 소제목 중 랜덤 1개] + [M1~M5] 각 모듈 최소 1개 필수)
+- [x] **[C++11~26] constexpr**: 런타임이 아닌 컴파일 타임에 값 계산하기 (성능 최적화)
+- [x] **[Cumulative Practice]**: Rule of 3/5/0 & constexpr (범위: 3/5/0 & constexpr + [현재 M6 과거 소제목 중 랜덤 1개] + [M1~M5] 각 모듈 최소 1개 필수)
 
 
 #### MODULE 7: 상속과 다형성 (설계의 심화)

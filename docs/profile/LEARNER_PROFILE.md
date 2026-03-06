@@ -24,13 +24,22 @@
 - [x] **MODULE 3: 함수** (매개변수, 리턴, 재귀)
 - [/] **MODULE 4: 포인터와 참조** (진행 중: 보충 학습 필요)
 - [x] **MODULE 5: 동적 할당** (완료)
-- [x] **MODULE 6: 클래스와 객체** (진행 중)
-    - [x] Lifecycle (Constructor/Destructor)
-    - [x] Copy Constructor
-    - [x] Operator Overloading
-    - [x] Friend & Static Members
-    - [x] Rule of 3/5/0 (Completed)
-    - [ ] constexpr (Next)
+### **Module 06: 클래스와 객체 (설계의 기초)** ✅ 완료
+**학습 체크리스트:**
+- [x] 네임스페이스
+- [x] 캡슐화 및 클래스 기초
+- [x] 복사 생성자, 얕은/깊은 복사
+- [x] 대입 연산자 오버로딩
+- [x] Friend & Static Members
+- [x] Rule of 3/5/0 & unique_ptr
+- [x] constexpr 컴파일 타임 
+
+### **Module 07: 상속과 다형성 (설계의 심화)** 🔄 진행 중
+**학습 체크리스트 (Basics):**
+- [ ] 상속 (Inheritance)
+- [ ] protected 접근 제어자
+- [ ] 가상 함수와 다형성 (Virtual function)
+- [ ] 가상 소멸자
 
 ### **Module 04: 포인터와 메모리 (Pointers)** ✅ 완료
 **학습 체크리스트:**
@@ -69,8 +78,8 @@
 | Module 2 | 제어 흐름 (Control Flow) | ✅ 완료 |
 | **Module 3** | **함수 (Function)** | ✅ 완료 |
 | **Module 4** | **포인터 (Pointer)** | ✅ 완료 (개념/연산) |
-| **0x05** | **스택 (Stack)** | 🔄 진행 중 (10828 ~ 6198 완료) |
-| 0x06 | 큐 (Queue) | ⬜ 대기 |
+| **0x05** | **스택 (Stack)** | ✅ 완료 (10828 ~ 6198 완료) |
+| **0x06** | **큐 (Queue)** | 🔄 진행 중 |
 | 0x07 | 덱 (Deque) | ⬜ 대기 |
 | 0x08 | 스택의 활용 | ⬜ 대기 |
 | 0x09 | BFS | ⬜ 대기 |
@@ -105,6 +114,7 @@
 | 1874 | 스택 수열 | 스택 | 실버 2 | 2026-02-11 | 1874/main.cpp |
 | 2493 | 탑 | 스택 | 골드 5 | 2026-02-19 | 2493/main.cpp |
 | 6198 | 옥상 정원 꾸미기 | 스택 | 골드 5 | 2026-02-26 | 6198/main.cpp |
+| 10845 | 큐 | 큐 | 실버 4 | 2026-03-06 | 10845/main.cpp |
 
 ### 현재 진행 중인 문제
 
