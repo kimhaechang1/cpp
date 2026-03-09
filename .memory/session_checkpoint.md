@@ -1,22 +1,19 @@
-# Session Checkpoint: C++ Basics (Module 6 종료 및 결산)
+# Session Checkpoint
 
-## 📌 Current Goal
-*   **[Module 6 완전 정복]**: 객체의 생명주기, 복사/이동 제어, Rule of Zero 뿐만 아니라 클래스 내부의 컴파일 타임 최적화(`constexpr`), 고유 식별 분리(`static`, `= delete`) 등 고급 클래스 설계 역량을 마스터한다.
-*   **[L-Value / R-Value 심화 탐구]**: 메모리의 "방(주소)" 여부를 기준으로 임시 객체(R-value)의 본질을 파악하고, 참조자(`&`)와 `const`가 컴파일 타임에 일으키는 생명 연장(Lifetime Extension)의 마법을 증명한다.
+## 🎯 Current Goal
+- Module 07: 상속과 다형성 전반부 (상속 기초, 접근 제어자) 마스터 및 누적 복습 완료
+- 바킹독 알고리즘 0x07 (덱) 도입 (대기 중)
 
 ## ✅ Completed Tasks
-1.  **[Module 6] `constexpr` 실습 완료**: 런타임 계산 비용을 0으로 만드는 컴파일 타임 최적화의 원리를 하드웨어 관점(어셈블리 상수 패킹)에서 입증. 정적 배열 크기 지정 등에서 `static_assert`를 통해 완벽히 검증.
-2.  **[Cumulative Practice M6 Final] 성공**: 
-    *   `std::span` + `std::vector` + `std::unique_ptr` 콤보를 활용한 무결점 뷰 데이터 순회 생성 구현.
-    *   C++11 `= delete` 및 C++14 `std::make_unique` 등 모던 철학 적용으로 리팩토링 완료.
-    *   Memory Leak 0% (Rule of Zero)의 자동 소멸 보장 설계 달성.
-3.  **[심화] L-value & R-value 원리 규명**: R-value(방이 없는 임시 값)가 `const &`를 만났을 때 스택 메모리에 임시 방이 새로 생성되는 과정 테스트 완료 (`practice_rvalue_address.cpp`).
+- [x] **상속(Inheritance) 기초 체득**: `Monster`, `Slime`, `Orc` 부모-자식 클래스 분리 및 초기화 리스트를 통한 부모 생성자 호출 실습 통과 (`practice_inheritance.cpp`).
+- [x] **접근 제어자 (protected) 매커니즘 완벽 이해**: 부모의 상속 모드에 따른 권한 필터링 원리, 그리고 `friend` 키워드와의 연관 관계를 깊이 있게 파악하고 증명 (`practice_protected.cpp`).
+- [x] **누적 복습 통과 (Cumulative M1~M7)**: 지난 7개의 모듈을 총결산하는 게임 로직 통합 실습 완수. 현업자 기준 피드백(`const` 참조, 자기 대입 방어, 제한적 `friend` 선언)까지 문서화하여 완벽 반영 (`practice_cumulative_m7_1.cpp`).
+- [x] `CPP_BASICS_CURRICULUM.md` 및 `LEARNER_PROFILE.md` 상태 최신화 동기화 완료.
 
 ## 🚀 Next Steps
-*   **[Tier 3 고급 진입 (Module 07)]**: 객체 지향의 두 번째 기둥, **상속(Inheritance)과 다형성(Polymorphism)** 시작. Base 클래스와 Derived 클래스의 관계망 설계 (`Monster` -> `Slime`, `Orc`).
-*   **[대규모 결산 준비]**: Module 7이 끝난 뒤 이어질 Tier 3(클래스/상속) 결산 미니 프로젝트(텍스트 RPG 개선판)에 대비하기.
+- **C++ Basics**: 다음 진도는 Module 07의 후반부인 **다중 상속과 다이아몬드 문제**, **가상 함수(`virtual`)를 통한 오버라이딩과 다형성**, 그리고 **순수 가상 함수(`= 0`)를 통한 인터페이스** 학습입니다.
+- **Algorithm**: 알고리즘 트랙을 선택할 경우 **[10866번: 덱]** 수동 배열 구현 최적화를 이어서 진행합니다.
 
-## ⚠️ Key Constraints & Learner Insights
-*   **뛰어난 직관력**: 학습자가 C++ 내부에서 일어나는 투명한 동작(참조자와 포인터의 구별, 이름 없는 임시 객체의 실체)을 의심하고 집요하게 파고들어 진리를 스스로 이끌어냄. 
-*   **조기 최적화 감각**: 작은 데이터 타입(`enum`, `int`)은 참조 오버헤드나 불필요한 스택 할당(Lifetime extension)보다 값 복사(Call by value)가 훨씬 효율적임을 정확히 계산하고 꿰뚫어 보는 능력을 지님.
-*   **멘토 지침**: 추후 Module 09 (모던 C++ 및 이동 시맨틱) 진입 시, 이번에 깨우친 L-Value/R-value 지식을 기반으로 폭발적인 성장이 기대됨! 관련된 이동 생성자(`&&`) 파트에서 현업 수준의 극한 최적화 모델을 제시할 것.
+## ⚠️ Key Constraints (Agent Memory)
+- **Workflow**: 다음 세션 시작 시, 사용자가 `@[/basic]` 혹은 `@[/algo]` 워크플로우를 호출하도록 대기.
+- **Context 유지**: 학습자의 C++ 메모리 이해도 및 문법 통찰력이 매우 높은 수준이므로, 다음 다형성 설명 시 아주 원론적이고 깊이 있는 시스템 레벨(vtable 등) 설명을 동반해도 충분히 소화할 수 있음.

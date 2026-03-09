@@ -72,9 +72,9 @@
 
 
 #### MODULE 7: 상속과 다형성 (설계의 심화)
-- [ ] **상속**: `Monster`를 상속받는 `Slime`, `Orc` 만들기
-- [ ] **[보충] protected 접근 제어자**: 상속 관계에서만 허용되는 접근 범위
-- [ ] **[Cumulative Practice]**: Inheritance Basics & Access Modifiers (범위: 상속/protected + [M1~M6] 각 모듈 최소 1개 필수)
+- [x] **상속**: `Monster`를 상속받는 `Slime`, `Orc` 만들기
+- [x] **[보충] protected 접근 제어자**: 상속 관계에서만 허용되는 접근 범위
+- [x] **[Cumulative Practice]**: Inheritance Basics & Access Modifiers (범위: 상속/protected + [M1~M6] 각 모듈 최소 1개 필수)
 - [ ] **[추가] 다중 상속과 다이아몬드 문제**: `가상 상속(Virtual Inheritance)`을 통한 메모리 중복 해결
 - [ ] **가상 함수**: `virtual Attack()`으로 다형성 구현하기
 - [ ] **[Cumulative Practice]**: Multiple Inheritance & Polymorphism (범위: 다중상속/다형성 + [현재 M7 과거 소제목 중 랜덤 1개] + [M1~M6] 각 모듈 최소 1개 필수)
