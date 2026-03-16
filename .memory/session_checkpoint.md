@@ -1,21 +1,40 @@
 # Session Checkpoint
 
 ## 🎯 Current Goal
-- Module 07: 상속과 다형성 - 가상 소멸자(Virtual Destructor) 실습 및 다형성 안정성 검증
+- **[Basics]** Module 07: 가상 소멸자 & override 완료 → 다음: 누적 실습 M7_3 (Safety in Polymorphism)
+- **[Algorithm]** 0x07 덱 10866 완료 → 다음: 1021번 (회전하는 큐)
 
-## ✅ Completed Tasks
-- [x] **누적 복습 통과 (Cumulative M1~M6 + M7)**: 다중 상속과 다형성을 중심으로 한 마법사 전투 시스템의 통합 실습 완수 (`practice_cumulative_m7_2.cpp`).
-- [x] **다중 상속(vbptr) 개념 완벽 체득**: 다이아몬드 상속 구조에서의 가장 하위 자식(Most Derived Class)의 생성자 호출 책임 분석 및 문서화 기여.
-- [x] **span과 범위 기반 for문 함정 발견**: `auto`와 `auto&` 사이의 복사 규칙, 참조 반환의 중요성을 깨닫고 문서 유지보수 직접 기여.
-- [x] **대입 연산자 &other 오버헤드 고찰**: 주소 비교와 객체 동등 비교 연산의 성능 차이를 완벽히 이해하고 반영.
-- [x] 에이전트 Rule에 **'명확한 네이밍(변수, 함수, enum 값 등) 규칙 지원' 정책** 추가 (불필요한 작명 부담 완화).
-- [x] `CPP_BASICS_CURRICULUM.md` 상태 최신화 완료 (다중 다형성 누적 실습 수료).
+## ✅ Completed Tasks (2026-03-16 세션)
+
+### Basics
+- [x] **vptr / vtable / vbptr 삼총사 완전 정복**: 하루 종일 Q&A를 통해 오해 교정 완료.
+    - vbptr = 클래스마다 / vptr = 객체마다 (기존 반대로 알고 있던 것 교정)
+    - 상속 메모리 = 연속 블록 (Node 기반 불연속 구조로 오해했던 것 교정)
+    - vtable = 컴파일 시점 고정 / vptr = 생성자 시퀀스로 덮어쓰기
+    - 해당 최종 정리를 `concept_polymorphism_and_virtual.md` 말미에 보존.
+- [x] **가상 소멸자 (Virtual Destructor)** 개념 문서(`concept_virtual_destructor.md`) 완독 및 이해.
+    - 문서에 예제 클래스 정의 섹션(섹션 0) 추가.
+    - "virtual 함수 있으면 소멸자도 virtual" 규칙 Q&A 문서에 보존.
+    - "가상 소멸자는 일반 소멸자의 역할도 한다" Q&A 보존.
+- [x] **가상 소멸자 실습** (`practice_virtual_destructor.cpp`) 완성 및 3/3 PASS.
+    - 코드 리뷰 피드백 반영: 출력 오타 4곳 수정.
+
+### Algorithm
+- [x] **0x07 덱(Deque)** 개념 2종 문서화 (`concept_deque.md`, `concept_deque_node.md`).
+- [x] **10866번 (덱)** 정적 배열 기반 직접 구현 완성.
+- [x] **STL std::deque 사용법** 문서화 (`concept_deque_stl.md`).
 
 ## 🚀 Next Steps
-- **C++ Basics (Next Session)**:
-  1. **가상 소멸자 (Virtual Destructor)** 실습 진행 (업캐스팅 상태 객체 삭제 시 발생하는 메모리 누수 방지).
-  2. **override 키워드**를 활용한 다형성 코드의 안전망 강구 실습.
+
+### C++ Basics (최우선)
+1. **누적 실습 M7_3**: Safety in Polymorphism
+   - 범위: 가상소멸자/override + [현재 M7 과거 소제목 중 랜덤 1개] + [M1~M6] 각 1개 필수
+2. **순수 가상 함수 & 추상 클래스** 개념 문서 → 실습
+
+### Algorithm (이어서)
+1. **1021번 (회전하는 큐)** — 덱을 회전시키는 횟수 최소화
 
 ## ⚠️ Key Constraints (Agent Memory)
-- **Workflow**: 다음 세션 시작 시, 사용자가 `@[/basic]` 워크플로우를 호출하면 이 체크포인트를 바탕으로 '가상 소멸자' 단독 실습부터 가이드할 것.
-- **Rule Update (Blank Slate Policy)**: 사용자의 작명 및 네이밍으로 인한 테스트 코드 씽크 매칭의 혼란을 방지하기 위해, 실습 문제 제공 시 **변수명, 함수명, 열거형 내부 값 등 명칭은 명확히 주석에 제시**할 것. 단, **타입(Type)과 구조**는 여전히 절대 노출 금지.
+- **Blank Slate Policy**: 실습 파일 제공 시 변수명/함수명은 주석으로 명시, 타입/구조는 절대 노출 금지.
+- **누적 실습에는 어떤 주석 힌트도 금지** — 오직 비즈니스 로직(목적)만 서술.
+- **M7_3 누적 실습**: 이전 누적 실습들이 RPG/전투 테마였으므로 다른 테마(예: 인벤토리, 서버 시스템 등) 고려.

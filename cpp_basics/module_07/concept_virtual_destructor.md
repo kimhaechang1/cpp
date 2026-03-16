@@ -6,6 +6,68 @@
 
 ---
 
+## 0. 이 문서에서 사용하는 예제 클래스 정의
+
+> 이 문서 전반에 걸쳐 아래 클래스들을 기준으로 설명합니다. 읽기 전에 구조를 먼저 파악해두세요.
+
+```cpp
+#include <iostream>
+#include <string>
+
+// 최상위 부모 클래스 (가상 소멸자 미적용 상태 - 이 문서의 '버그' 예시)
+class Monster {
+public:
+    int hp;
+
+    Monster(int hp) : hp(hp) {
+        std::cout << "[Monster] 생성! hp=" << hp << "\n";
+    }
+
+    // 가상 소멸자 없음 (문제의 원인)
+    ~Monster() {
+        std::cout << "[Monster] 소멸!\n";
+    }
+
+    virtual void Attack() {
+        std::cout << "[Monster] 일반 공격!\n";
+    }
+};
+
+// 자식 클래스: 힙에 추가 메모리를 동적 할당하는 경우
+class Slime : public Monster {
+public:
+    std::string* slimeName; // 동적 할당 멤버 (해제 안 되면 메모리 누수!)
+
+    Slime(int hp, const std::string& name) : Monster(hp) {
+        slimeName = new std::string(name); // 힙에 1GB짜리 자원이라고 가정
+        std::cout << "[Slime] 생성! name=" << *slimeName << "\n";
+    }
+
+    ~Slime() {
+        delete slimeName; // 자식 소멸자가 불려야만 이 해제가 실행됨!
+        std::cout << "[Slime] 소멸! (slimeName 해제 완료)\n";
+    }
+
+    void Attack() override {
+        std::cout << "[Slime] 점액 공격!\n";
+    }
+};
+
+// 참고: 가상 상속이 엮인 경우 (2연타 크래시 예시)
+class Character {
+public:
+    int level{1};
+    virtual ~Character() = default;
+};
+
+class Adventurer : virtual public Character { /* ... */ };
+class Slime_VB : public Adventurer { /* ... */ }; // Slime의 가상 상속 버전
+```
+
+> **이 문서에서 핵심으로 다루는 코드**: `Monster* pMonster = new Slime(100, "젤리");` 로 업캐스팅한 뒤 `delete pMonster;` 를 했을 때 어떤 재앙이 일어나는가.
+
+---
+
 ## 1. `delete` 연산자의 두 가지 임무
 우리가 `delete pMonster;` 라고 코드를 치면, C++ 내부에서는 정확히 2단계의 작업이 일어납니다.
 
@@ -145,3 +207,40 @@ public:
 > **"다형성을 사용하기 위해 부모 포인터로 자식 객체를 가리킬 (업캐스팅 할) 가능성이 단 1%라도 있는 클래스라면, 그 부모 클래스의 소멸자는 무조건!!!!!!!! `virtual`로 만들어야 한다. 선택이 아닌 필수다."**
 
 이 사실 하나만 명심하시면, 앞으로 C++로 게임을 만들면서 원인을 알 수 없는 메모리 누수 버그로 밤을 새우는 일을 90% 이상 예방할 수 있게 됩니다!
+
+---
+
+> 🙋‍♂️ **Q. 가상 소멸자를 써야 하는 경우의 특징이, 해당 클래스가 virtual 함수를 가진 경우에 업캐스팅/다운캐스팅이 일어날 수 있으므로 가상 소멸자를 붙이는 게 정배인가요?**
+> **A. 완벽하게 맞습니다! 이것이 C++ 업계의 절대 국룰입니다.**
+>
+> 논리적 흐름을 정리하면:
+> 1. 클래스에 `virtual` 함수가 1개라도 있다 → 이 클래스는 **다형적으로 사용될 의도**가 있다는 선언이다.
+> 2. 다형적으로 사용된다 → 부모 포인터(`Monster*`)로 자식 객체(`Slime`)를 가리키는 업캐스팅이 발생할 수 있다.
+> 3. 업캐스팅이 발생했다 → `delete pMonster;` 처럼 **부모 포인터를 통해 delete될 가능성**이 생긴다.
+> 4. 부모 소멸자가 non-virtual이면 → 자식 소멸자 미호출 + 잘못된 주소 반납 크래시.
+>
+> 따라서 **"virtual 함수가 있다 = 소멸자도 virtual로"** 는 항상 성립하는 등호 관계입니다.
+> Scott Meyers의 **"Effective C++"** 에서도 Item 7로 명시할 만큼 업계 표준입니다.
+
+---
+
+> 🙋‍♂️ **Q. 가상 소멸자가 일반 소멸자의 일도 수행해주는 건가요?**
+> **A. 네, 가상 소멸자는 그 자체로 100% 완전한 소멸자입니다. `virtual`은 '찾는 방식'만 바꿀 뿐, '하는 일'은 전혀 바꾸지 않습니다.**
+>
+> `virtual` 키워드가 하는 유일한 역할은:
+> - **없을 때**: 컴파일러가 포인터 껍데기 타입을 보고 '정적으로' 소멸자를 결정
+> - **있을 때**: 런타임에 vptr → vtable을 타고 '동적으로' 올바른 소멸자를 찾아냄
+>
+> 올바른 소멸자를 '찾는 방식'만 달라질 뿐, 찾고 나서 실행하는 본체(cleanup 코드)는 완전히 동일하게 동작합니다.
+> 그리고 C++ 상속의 기본 룰인 **소멸자 연쇄(Destructor Chaining)** 도 그대로 작동합니다.
+>
+> ```
+> delete pSafeWeapon; (SafeStaff 객체를 가리키고 있을 때)
+>
+> 1. vptr → SafeStaff vtable → 소멸자 항목 = SafeStaff::~SafeStaff 발견
+> 2. ~SafeStaff() 실행: mana 해제, "Destroyed, mana freed" 출력
+> 3. (자동 연쇄) ~SafeWeapon() 실행: "Destroyed: Holy Wand" 출력
+> 4. OS에 원래 시작 주소 정상 반납
+> ```
+>
+> **결론:** `virtual`은 체인의 '시작점을 올바른 자식에서 출발하게' 보장해줄 뿐, 소멸자 자체의 실행 능력이나 연쇄 호출 능력은 일반 소멸자와 완전히 동일합니다.

@@ -29,7 +29,15 @@
 - [x] **재귀 함수**: 팩토리얼(경험치 테이블 등)
 
 ---
-
+ 
+### 🏆 BEGINNER 대단원 마무리: 미니 프로젝트 (Tier Exam)
+> **[M1 ~ M3 전체]**를 아우르는 절차지향 프로그래밍의 기초 확인.
+> 복잡한 클래스 없이, 함수와 구조체만으로 동작하는 안정적인 로직 구축.
+ 
+- [x] **[Mini-Project]**: Text-based Command RPG Prototype (범위: 변수, 구조체, 함수, 제어문 통합 사용)
+ 
+---
+ 
 ### 🔧 INTERMEDIATE (중급)
 **목표**: 메모리를 직접 조작하고 관리하여, 고정된 크기의 배열을 넘어선다.
 
@@ -49,7 +57,15 @@
 - [x] **[보충] std::array**: C 스타일 배열(`int[]`)을 완벽하게 대체하는 `std::array` 학습
 
 ---
-
+ 
+### 🏆 INTERMEDIATE 대단원 마무리: 미니 프로젝트 (Tier Exam)
+> **[M4 ~ M5 전체]**를 아우르는 메모리 관리 및 저수준 조작 능력 확인.
+> 힙 메모리를 직접 다루며 누수 없는 코드를 작성하는 하드웨어 친화적 감각 배양.
+ 
+- [x] **[Mini-Project]**: Dynamic Memory Inventory System (범위: 포인터 연산, 동적 할당/해제, 메모리 누수 방지, std::span/array 활용)
+ 
+---
+ 
 ### 🏗️ ADVANCED (고급)
 **목표**: "설계"를 한다. 데이터와 기능을 묶어 관리하고, 상속을 통해 코드를 재사용한다.
 
@@ -78,12 +94,19 @@
 - [x] **[추가] 다중 상속과 다이아몬드 문제**: `가상 상속(Virtual Inheritance)`을 통한 메모리 중복 해결
 - [x] **가상 함수**: `virtual Attack()`으로 다형성 구현하기
 - [x] **[Cumulative Practice]**: Multiple Inheritance & Polymorphism (범위: 다중상속/다형성 + [현재 M7 과거 소제목 중 랜덤 1개] + [M1~M6] 각 모듈 최소 1개 필수)
-- [ ] **[보충] 가상 소멸자**: 부모 포인터로 자식 삭제 시 메모리 누수 방지 (필수)
-- [ ] **[보충] override 키워드**: 실수 방지를 위한 명시적 오버라이딩
-- [ ] **[Cumulative Practice]**: Safety in Polymorphism (Virtual Dtor & Override) (범위: 가상소멸자/override + [현재 M7 과거 소제목 중 랜덤 1개] + [M1~M6] 각 모듈 최소 1개 필수)
+- [x] **[보충] 가상 소멸자**: 부모 포인터로 자식 삭제 시 메모리 누수 방지 (필수)
+- [x] **[보충] override 키워드**: 실수 방지를 위한 명시적 오버라이딩
 - [ ] **순수 가상 함수 & 추상 클래스**: 인스턴스화가 불가능한 인터페이스 설계법
+- [ ] **[Cumulative Practice]**: Abstract Class & Polymorphism Safety (범위: 순수가상함수/추상클래스/가상소멸자/override + [현재 M7 과거 소제목 중 랜덤 1개] + [M1~M6] 각 모듈 최소 1개 필수)
 - [ ] **[심화] 데이터 지향 설계(DOD) 맛보기**: `AoS`(구조체 배열) vs `SoA`(배열의 구조체)와 캐시 적중률(Cache Hit) 이해
-- [ ] **[Cumulative Practice]**: Abstract Class & Data Oriented Design (범위: 추상클래스/DOD + [현재 M7 과거 소제목 중 랜덤 1개] + [M1~M6] 각 모듈 최소 1개 필수)
+
+---
+
+### 🏆 ADVANCED 대단원 마무리: 미니 프로젝트 (Tier Exam)
+> **[M1 ~ M7 전체]**를 총망라하는 종합 미니 프로젝트.
+> 절차지향 RPG(M1~M5) 이후, 객체지향 설계(M6~M7)의 모든 것을 통합하는 **OOP 기반 RPG 전투 시스템** 구현.
+
+- [ ] **[Mini-Project]**: OOP RPG Battle System (범위: M1~M7 전체, 추상 클래스/다형성/가상 소멸자/override/Rule of 3 등 설계 원칙 총동원)
 
 ---
 
@@ -125,3 +148,15 @@
 - [ ] **Thread 기초**: `std::thread`, `std::mutex`로 레이스 컨디션 이해하기
 - [ ] **[C++20] jthread**: 자동으로 Join되는 안전한 스레드 (`std::jthread`) 사용하기
 - [ ] **[Cumulative Practice]**: Basic Concurrency (Thread & jthread) (범위: Thread/jthread + [M1~M10] 각 모듈 최소 1개 필수)
++ 
++ ---
++ 
++ ### 🏆 EXPERT 대단원 마무리: 최종 졸업 프로젝트 (Master Exam)
++ > **[M1 ~ M11 전 범위]**를 총망라하는 C++ 마스터 프로젝트.
++ > 모던 C++의 정수와 멀티스레드, 빌드 시스템까지 통합한 상용 수준의 엔진 코어 설계.
++ 
++ - [ ] **[Final Project]**: Universal Game Engine Core (Lite) (범위: Templates, STL, Smart Pointers, Ranges, Concurrency, CMake 등 전 범위 통합)
++ 
++ ---
++ 
++ _본 커리큘럼은 학습자의 성장 속도에 따라 유동적으로 변경될 수 있습니다._
