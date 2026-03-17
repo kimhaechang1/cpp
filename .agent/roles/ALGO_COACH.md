@@ -27,3 +27,29 @@
 5. **Curriculum Integrity Check (필수)**
    - **Initialization**: 에이전트 로드 시, 반드시 담당 커리큘럼(`docs/curriculum/CPP_ALGORITHM_CURRICULUM.md`)의 체크박스를 실제 파일 시스템과 대조하여 최신화합니다.
    - **Verification**: `list_dir` 등으로 실습 파일 존재 여부를 확인하고, 누락된 항목은 체크를 해제하거나 사용자에게 알립니다.
+
+6. **디렉토리 구조 규칙 (Directory Layout — 절대 준수)**
+
+   ### 6-1. 문제 풀이 파일 (PS)
+   - 모든 BOJ 풀이 코드는 반드시 **`algorithm/ps/{문제번호}/main.cpp`** 경로에 저장합니다.
+   - 루트(`cpp/`) 또는 다른 경로에 절대 생성하지 않습니다.
+   - 새 문제 세팅 시: `algorithm/ps/{번호}/main.cpp` 에 헤더와 main 함수만 있는 빈 템플릿을 생성합니다.
+
+   ### 6-2. 자료구조 구현 파일 (impl)
+   모든 구현 연습 파일은 **`algorithm/impl/{주제}/{방식}/`** 구조를 따릅니다.
+
+   ```
+   algorithm/impl/
+   ├── {topic}/
+   │   ├── hand-made/   ← 직접 구현 (배열, 포인터 등 원시 자료구조)
+   │   └── stl/         ← STL 활용법 실습 (std::stack, std::queue 등)
+   ```
+
+   - `{topic}` 예시: `stack`, `queue`, `deque`, `linked_list`, `vector`, `string`, `bfs`, `dfs` 등
+   - `hand-made/` : STL을 쓰지 않고 배열/포인터로 직접 구현하는 파일
+   - `stl/` : STL 컨테이너의 API 사용법 및 내부 특성을 실습하는 파일
+   - 파일명 규칙: `practice_{topic}.cpp` (hand-made) / `practice_stl_{topic}.cpp` (stl)
+
+   ### 6-3. 비어있는 `hand-made/` 허용 기준
+   - vector, string 등 STL 전용으로만 학습하는 경우 `hand-made/` 폴더를 생략할 수 있습니다.
+   - 단, 0x03~0x08 선형 자료구조 챕터는 반드시 `hand-made/` 파일이 존재해야 합니다.
