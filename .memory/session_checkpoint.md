@@ -1,28 +1,25 @@
-# 🧠 Session Checkpoint (2026-03-17)
+# 🧠 Session Checkpoint (2026-03-18)
 
 ## 📍 Current Status
 *   **Persona**: `BASIC TUTOR` (Session ended)
 *   **Current Goal**: 
-    1.  **Basics**: Module 07 Inheritance & Polymorphism (Finish all basic concepts)
+    1.  **Basics**: Module 07 Inheritance & Polymorphism 완강 및 `Tier Exam` 진입 준비 완료.
     2.  **Algorithm**: 0x07 Deque (Next: BOJ 5430 AC)
 
 ## ✅ Completed Tasks (This Session)
-*   **Algorithm PS**: 
-    *   BOJ 1021 (회전하는 큐) 완료 (Deque implementation logic & memory analysis).
-    *   `MX=50` error analysis (Memory erosion in non-circular deque).
-*   **Algorithm Infrastructure**:
-    *   `algorithm/ps/` and `algorithm/impl/` directory reorganization.
-*   **Basics (Module 07)**:
-    *   **Pure Virtual Functions & Abstract Classes**: Concept document (`concept_abstract_class.md`) and Practice (`practice_abstract_class.cpp`) completed.
-    *   **vtable/vptr Deep Dive**: Detailed analysis of virtual destructor calling simulation added to `concept_virtual_destructor.md`.
-    *   **Memory Analysis**: Verified object size (8 bytes for vptr) and inheritance of vptr between base and derived classes.
+*   **Basics (Module 07 완강)**:
+    - **Cumulative Practice 3**: `practice_cumulative_m7_3.cpp` (다형성, 인터페이스, 가상 소멸자).
+    - **Casting & RTTI**: `concept_casting.md` 작성 (4가지 캐스팅 및 vtable/vptr 동작 원리).
+    - **Data-Oriented Design (DOD)**: `concept_dod_basics.md` 및 `practice_dod_compare.cpp` 작성 (AoS vs SoA, Cache Locality 벤치마킹 완료 - 약 2.6배 성능 향상 확인).
+*   **Pre-DirectX 트랙 준비**:
+    - `PRE_DIRECTX_CURRICULUM.md` 및 `pre_directx.md` 페르소나 뼈대 작성 완료.
 
 ## 🔜 Next Steps
-1.  **Basics**: `Module 07: Cumulative Practice` (Abstract Class & Polymorphism Safety).
-    - Requires mixing concepts from M1~M6 + M7 random topics.
-2.  **Algorithm**: `BOJ 5430 (AC)` - Focus on Zero-copy design using indicators (pointers/indices).
-3.  **Basics Project**: Prepare for the `OOP RPG Battle System` mini-project.
+1.  **Basics Project**: **`Tier Exam: OOP RPG Battle System`** 
+    - 경로: `cpp_basics/project_rpg_battle/main.cpp`
+    - 목표: M1~M7 지식 총망라 (Span, 4대 캐스팅, RAII, 다형성 등).
+2.  **트랙 선택**: 졸업 프로젝트 완료 후 `Pre-DirectX` 혹은 `Algorithm` 진행.
 
 ## ⚠️ Key Constraints
-*   **Cumulative Practice Rule**: Must follow "2-Subtitle Rule" (M1~M6 random + M7 current topics).
+*   **Blank Slate Policy**: 졸업 프로젝트 구현 시 문법 힌트 없이 주석 요구사항만 보고 구조를 직접 설계해야 함.
 *   **Design Rule**: Stick to Game Dev perspective (Cache Locality, Zero-copy).

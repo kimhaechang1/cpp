@@ -31,12 +31,14 @@ directx_game/
 .agent/roles/dx_mentor.md
 .agent/roles/graphics_architect.md
 .agent/roles/server_coach.md
+.agent/roles/pre_directx.md
 
 # Future Workflows
 .agent/workflows/cs.md
 .agent/workflows/dx.md
 .agent/workflows/graphics.md
 .agent/workflows/server.md
+.agent/workflows/pre_directx.md
 
 # Project Configuration
 GEMINI.md
@@ -46,3 +48,4 @@ docs/curriculum/CPP_ADVANCED_ARCHITECTURE.md
 docs/curriculum/CPP_CS_FOUNDATION.md
 docs/curriculum/DIRECTX_GAME_CURRICULUM.md
 docs/curriculum/CPP_SERVER_CURRICULUM.md
+docs/curriculum/CPP_PRE_DIRECTX_CURRICULUM.md

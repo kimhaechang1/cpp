@@ -97,8 +97,8 @@
 - [x] **[보충] 가상 소멸자**: 부모 포인터로 자식 삭제 시 메모리 누수 방지 (필수)
 - [x] **[보충] override 키워드**: 실수 방지를 위한 명시적 오버라이딩
 - [x] **순수 가상 함수 & 추상 클래스**: 인스턴스화가 불가능한 인터페이스 설계법 ([concept](cpp_basics/module_07/concept_abstract_class.md), [practice](cpp_basics/module_07/practice_abstract_class.cpp))
-- [ ] **[Cumulative Practice]**: Abstract Class & Polymorphism Safety (범위: 순수가상함수/추상클래스/가상소멸자/override + [현재 M7 과거 소제목 중 랜덤 1개] + [M1~M6] 각 모듈 최소 1개 필수)
-- [ ] **[심화] 데이터 지향 설계(DOD) 맛보기**: `AoS`(구조체 배열) vs `SoA`(배열의 구조체)와 캐시 적중률(Cache Hit) 이해
+- [x] **[Cumulative Practice]**: Abstract Class & Polymorphism Safety (범위: 순수가상함수/추상클래스/가상소멸자/override + [현재 M7 과거 소제목 중 랜덤 1개] + [M1~M6] 각 모듈 최소 1개 필수) ([practice](cpp_basics/module_07/practice_cumulative_m7_3.cpp))
+- [x] **[심화] 데이터 지향 설계(DOD) 맛보기**: `AoS`(구조체 배열) vs `SoA`(배열의 구조체)와 캐시 적중률(Cache Hit) 이해 ([concept](cpp_basics/module_07/concept_dod_basics.md), [practice](cpp_basics/module_07/practice_dod_compare.cpp))
 
 ---
 
@@ -106,7 +106,7 @@
 > **[M1 ~ M7 전체]**를 총망라하는 종합 미니 프로젝트.
 > 절차지향 RPG(M1~M5) 이후, 객체지향 설계(M6~M7)의 모든 것을 통합하는 **OOP 기반 RPG 전투 시스템** 구현.
 
-- [ ] **[Mini-Project]**: OOP RPG Battle System (범위: M1~M7 전체, 추상 클래스/다형성/가상 소멸자/override/Rule of 3 등 설계 원칙 총동원)
+- [/] **[Mini-Project]**: OOP RPG Battle System (범위: M1~M7 전체, 추상 클래스/다형성/가상 소멸자/override/Rule of 3 등 설계 원칙 총동원)
 
 ---
 

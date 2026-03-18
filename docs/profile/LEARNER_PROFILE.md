@@ -41,6 +41,10 @@
 - [x] 가상 함수와 다형성 (Virtual function)
 - [x] 가상 소멸자
 - [x] 순수 가상 함수 & 추상 클래스
+- [x] 누적 연습 3차: 다형성 안전성 (Cumulative Practice M7_3)
+- [x] 캐스팅(Casting) 원리 및 RTTI 이해
+- [x] 데이터 지향 설계(DOD) 기초 (AoS vs SoA)
+- [/] **[Tier Exam]** OOP RPG Battle System (진행 중)
 
 ### **Module 04: 포인터와 메모리 (Pointers)** ✅ 완료
 **학습 체크리스트:**
