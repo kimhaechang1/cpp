@@ -106,7 +106,7 @@
 > **[M1 ~ M7 전체]**를 총망라하는 종합 미니 프로젝트.
 > 절차지향 RPG(M1~M5) 이후, 객체지향 설계(M6~M7)의 모든 것을 통합하는 **OOP 기반 RPG 전투 시스템** 구현.
 
-- [/] **[Mini-Project]**: OOP RPG Battle System (범위: M1~M7 전체, 추상 클래스/다형성/가상 소멸자/override/Rule of 3 등 설계 원칙 총동원)
+- [x] **[Mini-Project]**: OOP RPG Battle System (범위: M1~M7 전체, 추상 클래스/다형성/가상 소멸자/override/Rule of 3 등 설계 원칙 총동원)
 
 ---
 

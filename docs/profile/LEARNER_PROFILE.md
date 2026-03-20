@@ -6,7 +6,7 @@
 |------|-----|
 | **현재 수준** | 입문자 (0x07 단계) |
 | **시작일** | 2026-01-12 |
-| **마지막 학습일** | 2026-03-19 |
+| **마지막 학습일** | 2026-03-20 |
 | **총 해결 문제 수** | 25 |
 
 ---
@@ -34,7 +34,7 @@
 - [x] Rule of 3/5/0 & unique_ptr
 - [x] constexpr 컴파일 타임 
 
-### **Module 07: 상속과 다형성 (설계의 심화)** 🔄 진행 중
+### **Module 07: 상속과 다형성 (설계의 심화)** ✅ 완료
 **학습 체크리스트 (Basics):**
 - [x] 상속 (Inheritance)
 - [x] protected 접근 제어자
@@ -44,7 +44,7 @@
 - [x] 누적 연습 3차: 다형성 안전성 (Cumulative Practice M7_3)
 - [x] 캐스팅(Casting) 원리 및 RTTI 이해
 - [x] 데이터 지향 설계(DOD) 기초 (AoS vs SoA)
-- [/] **[Tier Exam]** OOP RPG Battle System (진행 중)
+- [x] **[Tier Exam]** OOP RPG Battle System (완료)
 
 ### **Module 04: 포인터와 메모리 (Pointers)** ✅ 완료
 **학습 체크리스트:**

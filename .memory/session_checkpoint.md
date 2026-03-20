@@ -1,26 +1,26 @@
-# 🧠 Session Checkpoint (2026-03-19)
+# 🧠 Session Checkpoint (2026-03-20)
 
 ## 📍 Current Status
-*   **Persona**: `ALGO COACH` (Session ended)
+*   **Persona**: `BASIC TUTOR` (Session ended)
 *   **Current Goal**: 
-    1.  **Basics**: Module 07 Inheritance & Polymorphism 완강 및 `Tier Exam` 진입 준비 완료.
-    2.  **Algorithm**: 0x07 Deque 완강 (BOJ 5430 AC 완료)
+    1.  **Basics**: Module 01 ~ 07 `Tier Exam: OOP RPG Battle System` 완료.
+    2.  **Algorithm**: (대기 중) 0x08 스택의 활용 진입 예정.
 
 ## ✅ Completed Tasks (This Session)
-*   **Algorithm**: 
-    - BOJ 5430 (AC) 골드 5 문제 해결. 
-    - `substr` 사용으로 인한 Heap Allocation 오버헤드를 발견하고, O(N^2) 문자열 복사 병목 현상을 파악함.
-    - 임시 벡터(`xs`) 저장소를 제거하고 문자를 순회하며 문자를 읽는 즉시 정수로 조합해 바로 `deq`에 꽂아 넣는 극강의 **Zero-copy 파싱 로직** 구현 성공. (DOD 관점 통과)
+*   **Basics Project**: 
+    - `cpp_basics/project_rpg_battle/main.cpp` 프로젝트 완벽 구현 (메모리 누수 없음).
+    - 가상 소멸자, `dynamic_cast`, 다형성, `std::span`을 활용한 복합 구조 설계 성공.
+*   **Policy Update**: 
+    - 향후 시험 및 누적 학습에 쓰일 **`Blank Slate Policy (엄격 적용 모드)`**를 `.agent/roles/basic_tutor.md`에 명시적으로 업데이트.
+    - [클래스 구조, 접근제한자 이름 제공 / 변수 용도 및 범위만 명시 / 메서드 시그니처(리턴/파라미터) 숨김 / 가상 소멸자 판단 유도 / Enum 값 전체 제공] 규칙 확립.
 *   **Progress Tracking**:
-    - `LEARNER_PROFILE.md` 업데이트 완료 (해결 문제 수: 25).
-    - `CPP_ALGORITHM_CURRICULUM.md` 0x07 덱 파트 완료 목록 갱신.
+    - `CPP_BASICS_CURRICULUM.md` M1~M7 Tier Exam 완료 및 M1~M7 이수 처리.
+    - `LEARNER_PROFILE.md` M07 완료 처리 및 마지막 학습일 갱신 (2026-03-20).
 
 ## 🔜 Next Steps
-1.  **Basics Project**: **`Tier Exam: OOP RPG Battle System`** 
-    - 경로: `cpp_basics/project_rpg_battle/main.cpp`
-    - 목표: M1~M7 지식 총망라 (다형성, 가상 소멸자, 캐스팅 등).
-2.  **Algorithm**: 다음 챕터인 `0x08 스택의 활용` 문제 진입.
+1.  **Basics**: `Module 8: 템플릿과 STL`의 제네릭 프로그래밍(Generic Programming) 진입 논의 필요.
+2.  **Algorithm**: 바킹독 커리큘럼 `0x08 스택의 활용` 문제 풀이 시작.
 
 ## ⚠️ Key Constraints
-*   **Blank Slate Policy**: 졸업 프로젝트 구현 시 문법 힌트 없이 주석 요구사항만 보고 구조를 직접 설계해야 함.
-*   **Design Rule**: Stick to Game Dev perspective (Cache Locality, Zero-copy).
+*   **Blank Slate Policy (Strict Mode)**: 다음 Basics 실습 설계 시, 절대 먼저 문법적인 힌트(`int`, `virtual` 소멸자 여부, 매개변수 타입 등)를 제공하지 않고 비즈니스 요구사항만 설명할 것.
+*   **Design Rule**: Stick to Game Dev perspective.
