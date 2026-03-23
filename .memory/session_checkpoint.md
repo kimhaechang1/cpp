@@ -1,26 +1,24 @@
-# 🧠 Session Checkpoint (2026-03-20)
+# Session Checkpoint (C++ Basics Training)
 
-## 📍 Current Status
-*   **Persona**: `BASIC TUTOR` (Session ended)
-*   **Current Goal**: 
-    1.  **Basics**: Module 01 ~ 07 `Tier Exam: OOP RPG Battle System` 완료.
-    2.  **Algorithm**: (대기 중) 0x08 스택의 활용 진입 예정.
+## 🎯 Current Goal
+- **Phase**: C++ Basics (Module 8: 템플릿과 STL)
+- **Active Task**: M8 [반복자(Iterator)] 학습 준비
 
-## ✅ Completed Tasks (This Session)
-*   **Basics Project**: 
-    - `cpp_basics/project_rpg_battle/main.cpp` 프로젝트 완벽 구현 (메모리 누수 없음).
-    - 가상 소멸자, `dynamic_cast`, 다형성, `std::span`을 활용한 복합 구조 설계 성공.
-*   **Policy Update**: 
-    - 향후 시험 및 누적 학습에 쓰일 **`Blank Slate Policy (엄격 적용 모드)`**를 `.agent/roles/basic_tutor.md`에 명시적으로 업데이트.
-    - [클래스 구조, 접근제한자 이름 제공 / 변수 용도 및 범위만 명시 / 메서드 시그니처(리턴/파라미터) 숨김 / 가상 소멸자 판단 유도 / Enum 값 전체 제공] 규칙 확립.
-*   **Progress Tracking**:
-    - `CPP_BASICS_CURRICULUM.md` M1~M7 Tier Exam 완료 및 M1~M7 이수 처리.
-    - `LEARNER_PROFILE.md` M07 완료 처리 및 마지막 학습일 갱신 (2026-03-20).
+## ✅ Completed Tasks (Recent)
+1. **Module 8 절반 완성**: 
+   - `concept_template_basics.md` & `practice_templates.cpp` 완료
+   - `concept_stl_containers.md` & `practice_stl_containers.cpp` 완료
+2. **누적 연습 완수**:
+   - `cumulative_practice_8_1.cpp` (제네릭 인벤토리와 파밍 시스템) 완벽 통과 (M1~M8 종합)
+3. **에이전트 헌법 대규모 리팩토링 (가장 중요한 성과)**:
+   - 사용자의 피드백을 수용하여 `basic_tutor.md`의 **Blank Slate Policy**를 전면 개편.
+   - M1부터 M11까지의 커리큘럼 핵심 진도를 모두 포괄하는 **[종합 지시어 템플릿(Master Prompt Templates)] 30여 개**를 구축 및 박제 완료. (이제 정답 단어 누출 없이 철저한 암시적 유도 가능)
 
-## 🔜 Next Steps
-1.  **Basics**: `Module 8: 템플릿과 STL`의 제네릭 프로그래밍(Generic Programming) 진입 논의 필요.
-2.  **Algorithm**: 바킹독 커리큘럼 `0x08 스택의 활용` 문제 풀이 시작.
+## 🏃 Next Steps
+- **다음 접속 시**: Module 8의 세 번째 서브타이틀인 **반복자(Iterator)** 개념 학습 시작.
+- (컨테이너의 내부 구조를 몰라도 동일하게 순회할 수 있는 추상화 포인터 인터페이스 학습 예정)
 
 ## ⚠️ Key Constraints
-*   **Blank Slate Policy (Strict Mode)**: 다음 Basics 실습 설계 시, 절대 먼저 문법적인 힌트(`int`, `virtual` 소멸자 여부, 매개변수 타입 등)를 제공하지 않고 비즈니스 요구사항만 설명할 것.
-*   **Design Rule**: Stick to Game Dev perspective.
+- **에이전트 제약 사항**: `basic_tutor.md`의 **[Master Prompt Templates]**을 반드시 복사하여 사용할 것. 
+- 이모티콘 코드 내 사용 절대 금지, 명시적 타입 이름(vector, class 등) 지시문 제공 금지.
+- Socratic STL Selection(질문법)을 통한 자료구조 선택 유도.
