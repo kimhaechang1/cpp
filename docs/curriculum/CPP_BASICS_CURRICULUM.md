@@ -117,8 +117,8 @@
 - [x] **템플릿**: 타입에 상관없는 `Box<T>` 만들기 (일반화 프로그래밍) ([concept](cpp_basics/module_08/concept_template_basics.md), [practice](cpp_basics/module_08/practice_templates.cpp))
 - [x] **STL**: `std::vector`, `std::map` 등으로 인벤토리/타일맵 구현 ([concept](cpp_basics/module_08/concept_stl_containers.md), [practice](cpp_basics/module_08/practice_stl_containers.cpp))
 - [x] **[Cumulative Practice]**: Templates & Basic STL (범위: 템플릿/STL + [M1~M7] 각 모듈 최소 1개 필수) ([practice](cpp_basics/module_08/cumulative_practice_8_1.cpp))
-- [ ] **반복자(Iterator)**: 컨테이너의 내부 구조를 몰라도 순회할 수 있는 인터페이스
-- [ ] **함수 객체(Functor) & 람다**: 알고리즘 함수(`std::sort` 등)에 사용자 정의 로직 주입
+- [x] **반복자(Iterator)**: 컨테이너의 내부 구조를 몰라도 순회할 수 있는 인터페이스 ([concept](cpp_basics/module_08/concept_iterator.md), [practice](cpp_basics/module_08/practice_iterator.cpp))
+- [x] **함수 객체(Functor) & 람다**: 알고리즘 함수(`std::sort` 등)에 사용자 정의 로직 주입 ([concept](cpp_basics/module_08/concept_lambda.md), [practice](cpp_basics/module_08/practice_lambda.cpp))
 - [ ] **[Cumulative Practice]**: Iterators & Functors/Lambdas (범위: 반복자/람다 + [현재 M8 과거 소제목 중 랜덤 1개] + [M1~M7] 각 모듈 최소 1개 필수)
 - [ ] **[C++20] Ranges & Views**: 파이프(`|`)를 사용해 직관적인 데이터 변환 및 필터링 (`std::ranges::sort`)
 - [ ] **[C++20] Concepts**: 템플릿의 `typename T`에 제약조건 걸기 (`Integral T`)
