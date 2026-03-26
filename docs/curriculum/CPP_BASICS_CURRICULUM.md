@@ -119,10 +119,10 @@
 - [x] **[Cumulative Practice]**: Templates & Basic STL (범위: 템플릿/STL + [M1~M7] 각 모듈 최소 1개 필수) ([practice](cpp_basics/module_08/cumulative_practice_8_1.cpp))
 - [x] **반복자(Iterator)**: 컨테이너의 내부 구조를 몰라도 순회할 수 있는 인터페이스 ([concept](cpp_basics/module_08/concept_iterator.md), [practice](cpp_basics/module_08/practice_iterator.cpp))
 - [x] **함수 객체(Functor) & 람다**: 알고리즘 함수(`std::sort` 등)에 사용자 정의 로직 주입 ([concept](cpp_basics/module_08/concept_lambda.md), [practice](cpp_basics/module_08/practice_lambda.cpp))
-- [ ] **[Cumulative Practice]**: Iterators & Functors/Lambdas (범위: 반복자/람다 + [현재 M8 과거 소제목 중 랜덤 1개] + [M1~M7] 각 모듈 최소 1개 필수)
-- [ ] **[C++20] Ranges & Views**: 파이프(`|`)를 사용해 직관적인 데이터 변환 및 필터링 (`std::ranges::sort`)
-- [ ] **[C++20] Concepts**: 템플릿의 `typename T`에 제약조건 걸기 (`Integral T`)
-- [ ] **[Cumulative Practice]**: Modern STL (Ranges & Concepts) (범위: Ranges/Concepts + [현재 M8 과거 소제목 중 랜덤 1개] + [M1~M7] 각 모듈 최소 1개 필수)
+- [x] **[Cumulative Practice]**: Iterators & Functors/Lambdas (범위: 반복자/람다 + [현재 M8 과거 소제목 중 랜덤 1개] + [M1~M7] 각 모듈 최소 1개 필수) ([practice](cpp_basics/module_08/practice_cumulative_8_2.cpp))
+- [x] **[C++20] Ranges & Views**: 파이프(`|`)를 사용해 직관적인 데이터 변환 및 필터링 (`std::ranges::sort`) ([concept](cpp_basics/module_08/concept_ranges.md), [practice](cpp_basics/module_08/practice_ranges.cpp))
+- [x] **[C++20] Concepts**: 템플릿의 `typename T`에 제약조건 걸기 (`Integral T`) ([concept](cpp_basics/module_08/concept_concepts.md), [practice](cpp_basics/module_08/practice_concepts.cpp))
+- [x] **[Cumulative Practice]**: Modern STL (Ranges & Concepts) ([practice](cpp_basics/module_08/practice_cumulative_8_3.cpp)) ✅ 완료
 
 #### MODULE 9: 모던 C++ (RAII & 효율성)
 - [ ] **스마트 포인터**: `unique_ptr`, `shared_ptr`, `weak_ptr` (메모리 직접 해제 금지)

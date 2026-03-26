@@ -1,23 +1,21 @@
-# Session Checkpoint (C++ Basics Training)
+# Session Checkpoint (2026-03-26)
 
 ## 🎯 Current Goal
-- **Phase**: C++ Basics (Module 8: 템플릿과 STL)
-- **Active Task**: M8 [반복자], [람다] 완전 정복 및 다음 단계 [Ranges & Views] 대기
+- **Module 08 마스터 및 완주** (성공)
+- **Next Goal**: Module 09: 모던 C++ (RAII & 효율성) 시작
 
-## ✅ Completed Tasks (Recent)
-1. **Module 8 람다(Lambda) 및 알고리즘 마스터**:
-   - `concept_lambda.md` & `practice_lambda.cpp` 완벽 통과 (TDD Success)
-   - `std::sort`의 커스텀 조건식 설계 원리(true 반환 조건 분석) 완벽 수행.
-2. **Module 8 반복자(Iterator) 마스터**:
-   - `concept_iterator.md` & `practice_iterator.cpp` 완수.
-3. **Module 8 절반 완성**: 
-   - 템플릿/STL 컨테이너 기초 및 누적 실습(`cumulative_practice_8_1.cpp`) 전체 패스.
-4. **에이전트 헌법 리팩토링 적용 완료**:
-   - `basic_tutor.md`의 Blank Slate Policy 적용 성공
+## ✅ Completed Tasks (Module 08)
+1. **Templates & STL 기초**: 제네릭 설계와 `std::vector`, `std::string` 활용 숙달.
+2. **Iterator & Functors/Lambdas**: 컨테이너 순회 추상화 및 함수 주입(Lambda) 정복.
+3. **C++20 Ranges & Views**: Lazy Evaluation 기반의 데이터 파이프라인(`filter`, `transform`) 구축.
+4. **C++20 Concepts**: `requires` 절을 이용한 타입 제약 조건(`Printable`, `HasPower`) 설계.
+5. **Cumulative Practice 8-3**: M1~M8 전 범위를 아우르는 통합 실습 통과.
 
-## 🏃 Next Steps
-- **다음 세션**: M8 누적 연습 혹은 C++20 최신 트렌드 **Ranges & Views (`|` 파이프 연산자 활용)** 대기.
+## 🚀 Next Steps
+- **Module 09 시작**: `std::unique_ptr`, `std::shared_ptr`를 통한 수동 `delete` 추방.
+- **Move Semantics**: R-value reference(`&&`)와 `std::move`로 성능 최적화 원리 이해.
 
-## ⚠️ Key Constraints
-- **에이전트 제약 사항**: `[Master Prompt Templates]` 필수 복사. 명시적 타입 이름(vector, map 등) 제공 금지.
-- Socratic STL Selection(질문법)을 통한 자료구조 선택 유도.
+## ⚠️ Key Constraints & Learnings
+- **Memory Safety**: 다형성 객체 복사 시 Raw Pointer 대신 `Clone()` 패턴과 Deep Copy의 중요성 재확인.
+- **Modern C++ Style**: C++20 표준(`-std=c++20`) 기반의 코딩 컨벤션(PascalCase/camelCase) 준수.
+- **Constraint Handling**: `std::ranges` 알고리즘 사용 시 `totally_ordered` 등 엄격한 Concept 요구사항 대응 능력 배양.
