@@ -125,8 +125,9 @@
 - [x] **[Cumulative Practice]**: Modern STL (Ranges & Concepts) ([practice](cpp_basics/module_08/practice_cumulative_8_3.cpp)) ✅ 완료
 
 #### MODULE 9: 모던 C++ (RAII & 효율성)
-- [ ] **스마트 포인터**: `unique_ptr`, `shared_ptr`, `weak_ptr` (메모리 직접 해제 금지)
-- [ ] **이동 시맨틱**: `std::move`와 R-value reference(`&&`)로 성능 최적화
+- [x] **스마트 포인터**: `unique_ptr`, `shared_ptr`, `weak_ptr` (메모리 직접 해제 금지)
+- [x] **이동 시맨틱**: `std::move`와 R-value reference(`&&`)로 성능 최적화
+
 - [ ] **[Cumulative Practice]**: Smart Pointers & Move Semantics (범위: 스마트포인터/이동시맨틱 + [M1~M8] 각 모듈 최소 1개 필수)
 - [ ] **Type Inference**: `auto` & `decltype`으로 복잡한 타입 추론
 - [ ] **[C++17] Structured Binding**: `auto [key, val] = map` 구조 분해
@@ -148,15 +149,15 @@
 - [ ] **Thread 기초**: `std::thread`, `std::mutex`로 레이스 컨디션 이해하기
 - [ ] **[C++20] jthread**: 자동으로 Join되는 안전한 스레드 (`std::jthread`) 사용하기
 - [ ] **[Cumulative Practice]**: Basic Concurrency (Thread & jthread) (범위: Thread/jthread + [M1~M10] 각 모듈 최소 1개 필수)
-+ 
-+ ---
-+ 
-+ ### 🏆 EXPERT 대단원 마무리: 최종 졸업 프로젝트 (Master Exam)
-+ > **[M1 ~ M11 전 범위]**를 총망라하는 C++ 마스터 프로젝트.
-+ > 모던 C++의 정수와 멀티스레드, 빌드 시스템까지 통합한 상용 수준의 엔진 코어 설계.
-+ 
-+ - [ ] **[Final Project]**: Universal Game Engine Core (Lite) (범위: Templates, STL, Smart Pointers, Ranges, Concurrency, CMake 등 전 범위 통합)
-+ 
-+ ---
-+ 
-+ _본 커리큘럼은 학습자의 성장 속도에 따라 유동적으로 변경될 수 있습니다._
+
+---
+
+### 🏆 EXPERT 대단원 마무리: 최종 졸업 프로젝트 (Master Exam)
+> **[M1 ~ M11 전 범위]**를 총망라하는 C++ 마스터 프로젝트.
+> 모던 C++의 정수와 멀티스레드, 빌드 시스템까지 통합한 상용 수준의 엔진 코어 설계.
+
+- [ ] **[Final Project]**: Universal Game Engine Core (Lite) (범위: Templates, STL, Smart Pointers, Ranges, Concurrency, CMake 등 전 범위 통합)
+
+---
+
+_본 커리큘럼은 학습자의 성장 속도에 따라 유동적으로 변경될 수 있습니다._

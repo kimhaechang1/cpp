@@ -1,19 +1,16 @@
-# Session Checkpoint (2026-03-26)
+# Session Checkpoint (2026-03-27)
 
 ## 🎯 Current Goal
-- **Module 08 마스터 및 완주** (성공)
-- **Next Goal**: Module 09: 모던 C++ (RAII & 효율성) 시작
+- **Module 09: 스마트 포인터 & 이동 시맨틱** (성공)
+- **Next Goal**: Cumulative Practice 9-1 및 Type Inference(`auto`/`decltype`) 정복
 
-## ✅ Completed Tasks (Module 08)
-1. **Templates & STL 기초**: 제네릭 설계와 `std::vector`, `std::string` 활용 숙달.
-2. **Iterator & Functors/Lambdas**: 컨테이너 순회 추상화 및 함수 주입(Lambda) 정복.
-3. **C++20 Ranges & Views**: Lazy Evaluation 기반의 데이터 파이프라인(`filter`, `transform`) 구축.
-4. **C++20 Concepts**: `requires` 절을 이용한 타입 제약 조건(`Printable`, `HasPower`) 설계.
-5. **Cumulative Practice 8-3**: M1~M8 전 범위를 아우르는 통합 실습 통과.
+## ✅ Completed Tasks (Module 09)
+1. **스마트 포인터**: `unique_ptr`, `shared_ptr`, `weak_ptr`의 소유권 개념 및 RAII 완벽 이해.
+2. **이동 시맨틱**: L-value/R-value 구분, `&&` 바인딩 규칙, 자원 강탈(Move)의 논리적 필연성 정복.
 
 ## 🚀 Next Steps
-- **Module 09 시작**: `std::unique_ptr`, `std::shared_ptr`를 통한 수동 `delete` 추방.
-- **Move Semantics**: R-value reference(`&&`)와 `std::move`로 성능 최적화 원리 이해.
+- **Cumulative Practice 9-1**: 스마트 포인터와 이동 시맨틱을 결합한 고성능 컨테이너 설계.
+- **Type Inference**: `auto`와 `decltype`을 이용한 유연한 타입 추론 학습.
 
 ## ⚠️ Key Constraints & Learnings
 - **Memory Safety**: 다형성 객체 복사 시 Raw Pointer 대신 `Clone()` 패턴과 Deep Copy의 중요성 재확인.

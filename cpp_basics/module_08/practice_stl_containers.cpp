@@ -36,9 +36,15 @@ void RecordDamage(std::vector<int>& record) {
 
 // 코드 작성
 std::pair<int, int>* GetSpawnLocation() {
-    auto pp = std::pair<int, int>(10, 20);
-    auto* rf = &pp;
-    return rf;
+    // auto pp = std::pair<int, int>(10, 20);
+    // auto* rf = &pp;
+    // return rf;
+    // 위의 코드는 댕글링 포인터를 일으킬 수 있다.
+    // 왜냐하면 스택프레임이 종료되면서 해당 스택메모리가 다 날라가기 때문이다.
+    // 그러면 pp 의 주소에 있는 값은 존재하지 않게 되고 rf 도 이상한값을 가져오려고 할수 있다.
+
+    auto* pp = new std::pair<int, int>{10, 20};
+    return pp;
 }
 
 
@@ -91,5 +97,7 @@ int main() {
     std::cout << "[PASS] 테스트 3: std::unordered_map 완료" << std::endl;
 
     std::cout << "========= 모든 컨테이너 기초 훈련 완벽하게 통과! =========" << std::endl;
+    delete loc;
+    delete ptr;
     return 0; // 정상 종료
 }
