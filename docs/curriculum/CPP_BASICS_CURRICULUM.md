@@ -128,7 +128,7 @@
 - [x] **스마트 포인터**: `unique_ptr`, `shared_ptr`, `weak_ptr` (메모리 직접 해제 금지)
 - [x] **이동 시맨틱**: `std::move`와 R-value reference(`&&`)로 성능 최적화
 
-- [ ] **[Cumulative Practice]**: Smart Pointers & Move Semantics (범위: 스마트포인터/이동시맨틱 + [M1~M8] 각 모듈 최소 1개 필수)
+- [x] **[Cumulative Practice]**: Smart Pointers & Move Semantics (범위: 스마트포인터/이동시맨틱 + [M1~M8] 각 모듈 최소 1개 필수) ([practice](cpp_basics/module_09/practice_cumulative_9_1.cpp))
 - [ ] **Type Inference**: `auto` & `decltype`으로 복잡한 타입 추론
 - [ ] **[C++17] Structured Binding**: `auto [key, val] = map` 구조 분해
 - [ ] **[Cumulative Practice]**: Type Inference & Structured Binding (범위: 타입추론/구조분해 + [현재 M9 과거 소제목 중 랜덤 1개] + [M1~M8] 각 모듈 최소 1개 필수)

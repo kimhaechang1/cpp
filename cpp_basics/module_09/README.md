@@ -14,9 +14,9 @@ M5에서 배운 `new/delete` 기반 수동 메모리 관리를 졸업하고,
 
 | 순서 | 소제목 | 개념 문서 | 실습 파일 | 상태 |
 |------|--------|-----------|-----------|------|
-| 1 | 스마트 포인터 (`unique_ptr`, `shared_ptr`, `weak_ptr`) | [concept](concept_smart_pointers.md) | [practice](practice_smart_pointers.cpp) | ⬜ |
-| 2 | 이동 시맨틱 (`std::move`, R-value `&&`) | concept_move_semantics.md | practice_move_semantics.cpp | ⬜ |
-| 3 | **[Cumulative Practice]** Smart Pointers & Move Semantics | - | practice_cumulative_9_1.cpp | ⬜ |
+| 1 | 스마트 포인터 (`unique_ptr`, `shared_ptr`, `weak_ptr`) | [concept](concept_smart_pointers.md) | [practice](practice_smart_pointers.cpp) | ✅ |
+| 2 | 이동 시맨틱 (`std::move`, R-value `&&`) | [concept](concept_move_semantics.md) | [practice](practice_move_semantics.cpp) | ✅ |
+| 3 | **[Cumulative Practice]** Smart Pointers & Move Semantics | - | practice_cumulative_9_1.cpp | ✅ |
 | 4 | Type Inference (`auto`, `decltype`) | concept_type_inference.md | practice_type_inference.cpp | ⬜ |
 | 5 | Structured Binding (`auto [key, val]`) | concept_structured_binding.md | practice_structured_binding.cpp | ⬜ |
 | 6 | **[Cumulative Practice]** Type Inference & Structured Binding | - | practice_cumulative_9_2.cpp | ⬜ |

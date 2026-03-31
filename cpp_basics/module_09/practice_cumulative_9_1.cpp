@@ -155,7 +155,7 @@
         int GetSize() const {
             return this->resources.size();
         }
-        const std::vector<std::unique_ptr<EnergyCell>>& GetResources() const {
+        const std::vector<std::unique_ptr<EnergyCell>>& GetResources() {
             // 앞에 오는 const 는 함수 바디내에 this-> 를 모두 읽기전용으로 가져온다.
             // 뒤에 오는 const 는 함수자체가 const 반환을 한다.
             // 여기서 중요한것은 EnergyCell 포인터변수가 수정이 불가능한거지 EnergyCell 포인터가 가리키는 힙은 수정이 가능하다.
