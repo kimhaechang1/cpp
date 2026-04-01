@@ -15,6 +15,9 @@ int globalData = 100;
 // [TODO 1] globalData의 참조(별명)를 반환하는 함수 'GetGlobalData'를 만드세요.
 // 이 함수가 반환하는 값은 복사본이 아니라, globalData 원본 그 자체(참조)여야 합니다.
 // -> 여기에 작성
+int& GetGlobalData() {
+    return globalData;
+}
 
 
 int main() {
@@ -25,14 +28,16 @@ int main() {
     // ---------------------------------------------------------
     // [TODO 2] GetGlobalData()를 호출하되, 단순히 'auto' 키워드만 사용하여 변수 'a'에 받으세요.
     // -> 여기에 작성
-    
+    auto a = GetGlobalData();
+
     // [TODO 3] a의 값을 999로 변경해보세요.
     // -> 여기에 작성
-    
+    a = 999;
+
     // [검증] a는 단순히 복사된 값이므로 원본 globalData는 100을 유지해야 합니다.
-    // assert(globalData == 100);
-    // assert(a == 999);
-    
+     assert(globalData == 100);
+     assert(a == 999);
+
     std::cout << "1. auto (Copy) Test OK!\n";
 
     // ---------------------------------------------------------
@@ -41,27 +46,31 @@ int main() {
     // [TODO 4] 이번에는 GetGlobalData()를 호출하되, 복사본이 아닌 원본을 직접 조작할 수 있도록 
     // 적절한 기호를 붙인 auto를 사용하여 변수 'b'에 받으세요. (수정이 가능해야 함)
     // -> 여기에 작성
-    
+    auto& b = GetGlobalData();
+
     // [TODO 5] b의 값을 777로 변경해보세요.
     // -> 여기에 작성
-    
+    b = 777;
+
     // [검증] 원본과 묶여있으므로, globalData 역시 777로 강제 수정되었어야 합니다!
-    // assert(globalData == 777);
+     assert(globalData == 777);
 
     std::cout << "2. auto& (Reference) Test OK!\n";
-    
+
     // ---------------------------------------------------------
     // 3. decltype 실습
     // ---------------------------------------------------------
     // [TODO 6] b와 "완벽하게 동일한 타입"을 가지는 변수 'c'를 선언하려 합니다.
     // 변수 'b'의 타입을 decltype()으로 추출하여 선언하고, 다시 한 번 globalData와 연결하세요.
     // -> 여기에 작성
-    
+    decltype(b) c = GetGlobalData();
+
     // [TODO 7] c의 값을 0으로 변경해보세요.
     // -> 여기에 작성
-    
+    c = 0;
+
     // [검증] c도 b와 동일한 참조(Reference) 타입을 물려받았으므로 globalData가 0이 되어야 합니다.
-    // assert(globalData == 0);
+     assert(globalData == 0);
 
     std::cout << "3. decltype Test OK!\n";
     std::cout << "\n🌟 모든 검증을 통과했습니다! 🌟\n";
