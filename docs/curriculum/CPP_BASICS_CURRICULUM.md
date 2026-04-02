@@ -129,11 +129,11 @@
 - [x] **이동 시맨틱**: `std::move`와 R-value reference(`&&`)로 성능 최적화
 
 - [x] **[Cumulative Practice]**: Smart Pointers & Move Semantics (범위: 스마트포인터/이동시맨틱 + [M1~M8] 각 모듈 최소 1개 필수) ([practice](cpp_basics/module_09/practice_cumulative_9_1.cpp))
-- [ ] **Type Inference**: `auto` & `decltype`으로 복잡한 타입 추론
-- [ ] **[C++17] Structured Binding**: `auto [key, val] = map` 구조 분해
-- [ ] **[Cumulative Practice]**: Type Inference & Structured Binding (범위: 타입추론/구조분해 + [현재 M9 과거 소제목 중 랜덤 1개] + [M1~M8] 각 모듈 최소 1개 필수)
-- [ ] **[C++17/23] Modern Types**: `std::optional`, `std::variant`, `std::expected` (에러 처리 트렌드)
-- [ ] **[Cumulative Practice]**: Modern Error Handling & Types (범위: 근대화타입 + [현재 M9 과거 소제목 중 랜덤 1개] + [M1~M8] 각 모듈 최소 1개 필수)
+- [x] **Type Inference**: `auto` & `decltype`으로 복잡한 타입 추론 ([concept](cpp_basics/module_09/concept_type_inference.md), [practice](cpp_basics/module_09/practice_type_inference.cpp))
+- [x] **[C++17] Structured Binding**: `auto [key, val] = map` 구조 분해 ([concept](cpp_basics/module_09/concept_structured_binding.md), [practice](cpp_basics/module_09/practice_structured_binding.cpp))
+- [x] **[Cumulative Practice]**: Type Inference & Structured Binding (범위: 타입추론/구조분해 + [현재 M9 과거 소제목 중 랜덤 1개] + [M1~M8] 각 모듈 최소 1개 필수) ([practice](cpp_basics/module_09/practice_cumulative_9_2.cpp))
+- [x] **[C++17/23] Modern Types**: `std::optional`, `std::variant`, `std::expected` (에러 처리 트렌드) ([concept](cpp_basics/module_09/concept_modern_types.md), [practice](cpp_basics/module_09/practice_modern_types.cpp))
+- [x] **[Cumulative Practice]**: Modern Error Handling & Types (범위: 근대화타입 + [현재 M9 과거 소제목 중 랜덤 1개] + [M1~M8] 각 모듈 최소 1개 필수) ([practice](cpp_basics/module_09/practice_cumulative_9_3.cpp)) ✅ 완료
 
 #### MODULE 10: 프로페셔널 도구 (Toolchain & QA)
 - [ ] **Build Systems**: CMake를 사용하여 멀티 플랫폼 프로젝트 구성하기.

@@ -11,7 +11,7 @@
 *.ilk
 
 # IDE 설정
-# .vscode/
+.vscode/
 .idea/
 *.suo
 *.user

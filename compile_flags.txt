@@ -1,0 +1,12 @@
+-std=c++23
+-I"C:/msys64/ucrt64/include/c++/15.2.0"
+-I"C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32"
+-I"C:/msys64/ucrt64/include/c++/15.2.0/backward"
+-I"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include"
+-I"C:/msys64/ucrt64/include"
+-I"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed"
+-I.
+-Wall
+-Wextra
+-Wno-psabi
+-Wno-unknown-pragmas
