@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeCXXInformation.cmake"
   "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake"
   "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDependentOption.cmake"
+  "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeFindDependencyMacro.cmake"
   "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeGenericSystem.cmake"
   "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake"
   "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake"
@@ -52,6 +53,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/cpp/vcpkg/installed/x64-mingw-static/share/fmt/fmt-targets-debug.cmake"
   "C:/cpp/vcpkg/installed/x64-mingw-static/share/fmt/fmt-targets-release.cmake"
   "C:/cpp/vcpkg/installed/x64-mingw-static/share/fmt/fmt-targets.cmake"
+  "C:/cpp/vcpkg/installed/x64-mingw-static/share/gtest/GTestConfig.cmake"
+  "C:/cpp/vcpkg/installed/x64-mingw-static/share/gtest/GTestConfigVersion.cmake"
+  "C:/cpp/vcpkg/installed/x64-mingw-static/share/gtest/GTestTargets-debug.cmake"
+  "C:/cpp/vcpkg/installed/x64-mingw-static/share/gtest/GTestTargets-release.cmake"
+  "C:/cpp/vcpkg/installed/x64-mingw-static/share/gtest/GTestTargets.cmake"
   "C:/cpp/vcpkg/installed/x64-mingw-static/share/nlohmann_json/nlohmann_jsonConfig.cmake"
   "C:/cpp/vcpkg/installed/x64-mingw-static/share/nlohmann_json/nlohmann_jsonConfigVersion.cmake"
   "C:/cpp/vcpkg/installed/x64-mingw-static/share/nlohmann_json/nlohmann_jsonTargets.cmake"
@@ -72,4 +78,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/App.dir/DependInfo.cmake"
+  "CMakeFiles/TestApp.dir/DependInfo.cmake"
+  "CMakeFiles/QuestJournalTest.dir/DependInfo.cmake"
   )

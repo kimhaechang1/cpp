@@ -263,6 +263,9 @@ CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=C:/cpp/vcpkg/scripts/buildsystems/vcpkg.cmake
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//The directory containing a CMake configuration file for GTest.
+GTest_DIR:PATH=C:/cpp/vcpkg/installed/x64-mingw-static/share/gtest
+
 //Value Computed by CMake
 HelloCMake_BINARY_DIR:STATIC=C:/cpp/cpp_basics/module_10/build
 

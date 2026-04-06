@@ -63,10 +63,14 @@ CMAKE_BINARY_DIR = C:\cpp\cpp_basics\module_10\build
 
 # The main recursive "all" target.
 all: CMakeFiles/App.dir/all
+all: CMakeFiles/TestApp.dir/all
+all: CMakeFiles/QuestJournalTest.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/App.dir/codegen
+codegen: CMakeFiles/TestApp.dir/codegen
+codegen: CMakeFiles/QuestJournalTest.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,6 +79,8 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/App.dir/clean
+clean: CMakeFiles/TestApp.dir/clean
+clean: CMakeFiles/QuestJournalTest.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -108,6 +114,70 @@ CMakeFiles/App.dir/codegen:
 CMakeFiles/App.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\App.dir\build.make CMakeFiles/App.dir/clean
 .PHONY : CMakeFiles/App.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/TestApp.dir
+
+# All Build rule for target.
+CMakeFiles/TestApp.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestApp.dir\build.make CMakeFiles/TestApp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestApp.dir\build.make CMakeFiles/TestApp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_10\build\CMakeFiles --progress-num=6,7,8 "Built target TestApp"
+.PHONY : CMakeFiles/TestApp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/TestApp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_10\build\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/TestApp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_10\build\CMakeFiles 0
+.PHONY : CMakeFiles/TestApp.dir/rule
+
+# Convenience name for target.
+TestApp: CMakeFiles/TestApp.dir/rule
+.PHONY : TestApp
+
+# codegen rule for target.
+CMakeFiles/TestApp.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestApp.dir\build.make CMakeFiles/TestApp.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_10\build\CMakeFiles --progress-num=6,7,8 "Finished codegen for target TestApp"
+.PHONY : CMakeFiles/TestApp.dir/codegen
+
+# clean rule for target.
+CMakeFiles/TestApp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestApp.dir\build.make CMakeFiles/TestApp.dir/clean
+.PHONY : CMakeFiles/TestApp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/QuestJournalTest.dir
+
+# All Build rule for target.
+CMakeFiles/QuestJournalTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuestJournalTest.dir\build.make CMakeFiles/QuestJournalTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuestJournalTest.dir\build.make CMakeFiles/QuestJournalTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_10\build\CMakeFiles --progress-num=3,4,5 "Built target QuestJournalTest"
+.PHONY : CMakeFiles/QuestJournalTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/QuestJournalTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_10\build\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/QuestJournalTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_10\build\CMakeFiles 0
+.PHONY : CMakeFiles/QuestJournalTest.dir/rule
+
+# Convenience name for target.
+QuestJournalTest: CMakeFiles/QuestJournalTest.dir/rule
+.PHONY : QuestJournalTest
+
+# codegen rule for target.
+CMakeFiles/QuestJournalTest.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuestJournalTest.dir\build.make CMakeFiles/QuestJournalTest.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_10\build\CMakeFiles --progress-num=3,4,5 "Finished codegen for target QuestJournalTest"
+.PHONY : CMakeFiles/QuestJournalTest.dir/codegen
+
+# clean rule for target.
+CMakeFiles/QuestJournalTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuestJournalTest.dir\build.make CMakeFiles/QuestJournalTest.dir/clean
+.PHONY : CMakeFiles/QuestJournalTest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

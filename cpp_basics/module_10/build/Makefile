@@ -128,6 +128,80 @@ App/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\App.dir\build.make CMakeFiles/App.dir/build
 .PHONY : App/fast
 
+#=============================================================================
+# Target rules for targets named TestApp
+
+# Build rule for target.
+TestApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TestApp
+.PHONY : TestApp
+
+# fast build rule for target.
+TestApp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestApp.dir\build.make CMakeFiles/TestApp.dir/build
+.PHONY : TestApp/fast
+
+#=============================================================================
+# Target rules for targets named QuestJournalTest
+
+# Build rule for target.
+QuestJournalTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 QuestJournalTest
+.PHONY : QuestJournalTest
+
+# fast build rule for target.
+QuestJournalTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuestJournalTest.dir\build.make CMakeFiles/QuestJournalTest.dir/build
+.PHONY : QuestJournalTest/fast
+
+Calculator.obj: Calculator.cpp.obj
+.PHONY : Calculator.obj
+
+# target to build an object file
+Calculator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestApp.dir\build.make CMakeFiles/TestApp.dir/Calculator.cpp.obj
+.PHONY : Calculator.cpp.obj
+
+Calculator.i: Calculator.cpp.i
+.PHONY : Calculator.i
+
+# target to preprocess a source file
+Calculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestApp.dir\build.make CMakeFiles/TestApp.dir/Calculator.cpp.i
+.PHONY : Calculator.cpp.i
+
+Calculator.s: Calculator.cpp.s
+.PHONY : Calculator.s
+
+# target to generate assembly for a file
+Calculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestApp.dir\build.make CMakeFiles/TestApp.dir/Calculator.cpp.s
+.PHONY : Calculator.cpp.s
+
+QuestJournal.obj: QuestJournal.cpp.obj
+.PHONY : QuestJournal.obj
+
+# target to build an object file
+QuestJournal.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuestJournalTest.dir\build.make CMakeFiles/QuestJournalTest.dir/QuestJournal.cpp.obj
+.PHONY : QuestJournal.cpp.obj
+
+QuestJournal.i: QuestJournal.cpp.i
+.PHONY : QuestJournal.i
+
+# target to preprocess a source file
+QuestJournal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuestJournalTest.dir\build.make CMakeFiles/QuestJournalTest.dir/QuestJournal.cpp.i
+.PHONY : QuestJournal.cpp.i
+
+QuestJournal.s: QuestJournal.cpp.s
+.PHONY : QuestJournal.s
+
+# target to generate assembly for a file
+QuestJournal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuestJournalTest.dir\build.make CMakeFiles/QuestJournalTest.dir/QuestJournal.cpp.s
+.PHONY : QuestJournal.cpp.s
+
 practice_cumulative_10_1.obj: practice_cumulative_10_1.cpp.obj
 .PHONY : practice_cumulative_10_1.obj
 
@@ -152,6 +226,54 @@ practice_cumulative_10_1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\App.dir\build.make CMakeFiles/App.dir/practice_cumulative_10_1.cpp.s
 .PHONY : practice_cumulative_10_1.cpp.s
 
+practice_gtest.obj: practice_gtest.cpp.obj
+.PHONY : practice_gtest.obj
+
+# target to build an object file
+practice_gtest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestApp.dir\build.make CMakeFiles/TestApp.dir/practice_gtest.cpp.obj
+.PHONY : practice_gtest.cpp.obj
+
+practice_gtest.i: practice_gtest.cpp.i
+.PHONY : practice_gtest.i
+
+# target to preprocess a source file
+practice_gtest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestApp.dir\build.make CMakeFiles/TestApp.dir/practice_gtest.cpp.i
+.PHONY : practice_gtest.cpp.i
+
+practice_gtest.s: practice_gtest.cpp.s
+.PHONY : practice_gtest.s
+
+# target to generate assembly for a file
+practice_gtest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestApp.dir\build.make CMakeFiles/TestApp.dir/practice_gtest.cpp.s
+.PHONY : practice_gtest.cpp.s
+
+test_quest_journal.obj: test_quest_journal.cpp.obj
+.PHONY : test_quest_journal.obj
+
+# target to build an object file
+test_quest_journal.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuestJournalTest.dir\build.make CMakeFiles/QuestJournalTest.dir/test_quest_journal.cpp.obj
+.PHONY : test_quest_journal.cpp.obj
+
+test_quest_journal.i: test_quest_journal.cpp.i
+.PHONY : test_quest_journal.i
+
+# target to preprocess a source file
+test_quest_journal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuestJournalTest.dir\build.make CMakeFiles/QuestJournalTest.dir/test_quest_journal.cpp.i
+.PHONY : test_quest_journal.cpp.i
+
+test_quest_journal.s: test_quest_journal.cpp.s
+.PHONY : test_quest_journal.s
+
+# target to generate assembly for a file
+test_quest_journal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuestJournalTest.dir\build.make CMakeFiles/QuestJournalTest.dir/test_quest_journal.cpp.s
+.PHONY : test_quest_journal.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -161,9 +283,23 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... App
+	@echo ... QuestJournalTest
+	@echo ... TestApp
+	@echo ... Calculator.obj
+	@echo ... Calculator.i
+	@echo ... Calculator.s
+	@echo ... QuestJournal.obj
+	@echo ... QuestJournal.i
+	@echo ... QuestJournal.s
 	@echo ... practice_cumulative_10_1.obj
 	@echo ... practice_cumulative_10_1.i
 	@echo ... practice_cumulative_10_1.s
+	@echo ... practice_gtest.obj
+	@echo ... practice_gtest.i
+	@echo ... practice_gtest.s
+	@echo ... test_quest_journal.obj
+	@echo ... test_quest_journal.i
+	@echo ... test_quest_journal.s
 .PHONY : help
 
 

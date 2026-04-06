@@ -4,5 +4,29 @@
   "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/App.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\App.dir\\practice_cumulative_10_1.cpp.obj -c C:\\cpp\\cpp_basics\\module_10\\practice_cumulative_10_1.cpp",
   "file": "C:/cpp/cpp_basics/module_10/practice_cumulative_10_1.cpp",
   "output": "CMakeFiles/App.dir/practice_cumulative_10_1.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/TestApp.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\TestApp.dir\\practice_gtest.cpp.obj -c C:\\cpp\\cpp_basics\\module_10\\practice_gtest.cpp",
+  "file": "C:/cpp/cpp_basics/module_10/practice_gtest.cpp",
+  "output": "CMakeFiles/TestApp.dir/practice_gtest.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/TestApp.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\TestApp.dir\\Calculator.cpp.obj -c C:\\cpp\\cpp_basics\\module_10\\Calculator.cpp",
+  "file": "C:/cpp/cpp_basics/module_10/Calculator.cpp",
+  "output": "CMakeFiles/TestApp.dir/Calculator.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/QuestJournalTest.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\QuestJournalTest.dir\\test_quest_journal.cpp.obj -c C:\\cpp\\cpp_basics\\module_10\\test_quest_journal.cpp",
+  "file": "C:/cpp/cpp_basics/module_10/test_quest_journal.cpp",
+  "output": "CMakeFiles/QuestJournalTest.dir/test_quest_journal.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/QuestJournalTest.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\QuestJournalTest.dir\\QuestJournal.cpp.obj -c C:\\cpp\\cpp_basics\\module_10\\QuestJournal.cpp",
+  "file": "C:/cpp/cpp_basics/module_10/QuestJournal.cpp",
+  "output": "CMakeFiles/QuestJournalTest.dir/QuestJournal.cpp.obj"
 }
 ]
