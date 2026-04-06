@@ -136,12 +136,14 @@
 - [x] **[Cumulative Practice]**: Modern Error Handling & Types (범위: 근대화타입 + [현재 M9 과거 소제목 중 랜덤 1개] + [M1~M8] 각 모듈 최소 1개 필수) ([practice](cpp_basics/module_09/practice_cumulative_9_3.cpp)) ✅ 완료
 
 #### MODULE 10: 프로페셔널 도구 (Toolchain & QA)
-- [ ] **Build Systems**: CMake를 사용하여 멀티 플랫폼 프로젝트 구성하기.
-- [ ] **Package Manager**: Vcpkg나 Conan을 통해 외부 라이브러리 연동하기.
-- [ ] **[Cumulative Practice]**: Build System & Package Manager (범위: 환경세팅 + [M1~M9] 각 모듈 최소 1개 필수)
-- [ ] **Profiling & Sanitizers**: AddressSanitizer(ASan)를 이용한 메모리 오염 실시간 탐지.
-- [ ] **단위 테스트(Unit Test)**: Google Test나 Catch2를 활용한 코드 검증.
-- [ ] **[Cumulative Practice]**: Debugging & Testing (범위: 디버깅/테스트 + [현재 M10 과거 소제목 중 랜덤 1개] + [M1~M9] 각 모듈 최소 1개 필수)
+- [x] **[Cumulative Practice]**: Build System & Package Manager (범위: 환경세팅 + [M1~M9] 각 모듈 최소 1개 필수) ✅ [practice](cpp_basics/module_10/practice_cumulative_10_1.cpp)
+- [x] **Profiling & Sanitizers**: AddressSanitizer(ASan)를 이용한 메모리 오염 실시간 탐지. ✅ [practice](cpp_basics/module_10/practice_json.cpp) (Vcpkg 연동 과정에서 간접 체험)
+- [x] **단위 테스트(Unit Test)**: Google Test(GTest) 프레임워크를 활용한 자동화된 코드 검증 ([concept](cpp_basics/module_10/concept_unit_test.md), [manual_test](cpp_basics/module_10/practice_manual_test.cpp), [gtest](cpp_basics/module_10/practice_gtest.cpp))
+- [x] **[Cumulative Practice]**: Debugging & Testing (M1~M10 통합 실습 완료!) ✅ 
+  ([test_quest_journal.cpp](file:///c:/cpp/cpp_basics/module_10/test_quest_journal.cpp), [Quest.h](file:///c:/cpp/cpp_basics/module_10/Quest.h), [QuestJournal.h](file:///c:/cpp/cpp_basics/module_10/QuestJournal.h), [QuestJournal.cpp](file:///c:/cpp/cpp_basics/module_10/QuestJournal.cpp))
+  - [concept_modern_enum.md](file:///c:/cpp/cpp_basics/module_10/concept_modern_enum.md)
+  - [concept_abstract_class_advanced.md](file:///c:/cpp/cpp_basics/module_10/concept_abstract_class_advanced.md)
+  - [concept_const_correctness.md](file:///c:/cpp/cpp_basics/module_10/concept_const_correctness.md)
 - [ ] **협업 기초**: .gitignore 작성 및 Git 버전 관리 전략.
 - [ ] **[Cumulative Practice]**: Version Control & Collaboration (범위: Git/협업 + [현재 M10 과거 소제목 중 랜덤 1개] + [M1~M9] 각 모듈 최소 1개 필수)
 

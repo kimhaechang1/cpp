@@ -209,3 +209,12 @@ const std::vector<T>& GetResources() const {
     return this->resources;
 }
 ```
+---
+
+### 🚨 [Advanced] 상수 멤버 함수의 맹세 (M10 심화)
+"객체의 상태를 바꾸지 않는 함수에는 무조건 `const`를 붙이세요."
+
+- **Getter**: `const std::string& GetName() const { return name; }`
+- **조회 전용 함수**: `int GetCount() const { return count; }`
+
+**이유**: `const`가 없는 함수는 "언제든지 상태를 바꿀 수 있는 위험한 함수"로 낙인찍힙니다. `const` 객체를 사용하는 사람은 이런 함수를 아예 호출조차 할 수 없게 됩니다.
