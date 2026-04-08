@@ -148,7 +148,7 @@
 - [ ] **[Cumulative Practice]**: Version Control & Collaboration (범위: Git/협업 + [현재 M10 과거 소제목 중 랜덤 1개] + [M1~M9] 각 모듈 최소 1개 필수)
 
 #### MODULE 11: [신규] 병렬 프로그래밍 (Concurrency)
-- [ ] **Thread 기초**: `std::thread`, `std::mutex`로 레이스 컨디션 이해하기
+- [x] **Thread 기초**: `std::thread`, `std::mutex`로 레이스 컨디션 이해하기 ([concept](cpp_basics/module_11/concept_thread_basics.md), [practice](cpp_basics/module_11/practice_threads.cpp))
 - [ ] **[C++20] jthread**: 자동으로 Join되는 안전한 스레드 (`std::jthread`) 사용하기
 - [ ] **[Cumulative Practice]**: Basic Concurrency (Thread & jthread) (범위: Thread/jthread + [M1~M10] 각 모듈 최소 1개 필수)
 

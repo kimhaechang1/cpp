@@ -1,0 +1,26 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+
+# 1. 탭/스페이스 설정 (4칸 들여쓰기)
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+# 2. 한 줄 함수 바디 강제 닫힘 방지
+AllowShortFunctionsOnASingleLine: None
+AllowShortBlocksOnASingleLine: Never
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+
+# 3. 함수의 중괄호 위치 (새 줄에서 열기)
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true
+  AfterClass: true
+  AfterStruct: true
+  AfterControlStatement: false  # if, for 등은 여전히 같은 줄에 열기 (원하시면 true로 변경 가능)
+  AfterNamespace: false
+  BeforeElse: false
+  BeforeCatch: false
+...

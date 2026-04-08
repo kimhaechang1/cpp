@@ -1,25 +1,25 @@
-# Session Checkpoint (2026-04-06)
+# Session Checkpoint (2026-04-08)
 
 ## Current Goal
-- [x] Integrate Google Test (GTest) into the CMake build system.
-- [x] Complete Module 10 Cumulative Practice (TDD-based Quest Journal).
-- [x] Establish Multi-Agent Workflow (/design -> /generate).
+- [x] Master Module 11: Introduction to Concurrency (Thread Basics).
+- [ ] Learn Modern Concurrency: `std::jthread` (C++20).
+- [ ] Understand Mutex and Race Conditions.
 
 ## Completed Tasks
-1. **GTest Setup**: Successfully linked `GTest::gtest` and `GTest::gtest_main` via Vcpkg (x64-mingw-static).
-2. **Quest Journal Practice**: Implemented a complete quest system using `unique_ptr`, `std::expected`, `enum class`, and polymorphism.
-3. **Multi-Agent Workflow**: Successfully used Opus for design (Blueprint) and Gemini for generation.
-4. **Knowledge Archiving**: Created concept documents for `enum class`, `Advanced Abstract Classes`, and `Const Correctness`.
+1. **Thread Lifecycle**: Successfully implemented `std::thread` creation and safe termination using `join()`.
+2. **Argument Semantics**: Deeply analyzed why `std::thread` fails with `int&` and how it relates to internal Decay Copy and rvalue-passing.
+3. **std::ref Mastery**: Investigated `refwrap.h` to understand `reference_wrapper`'s conversion operator (`operator T&()`).
+4. **Practice**: Completed `practice_threads.cpp` and passed TDD-style assertions.
 
 ## Key Achievements
-- **TDD Success**: User successfully reverse-engineered interfaces from GTest code and passed 6/6 tests.
-- **Refactoring**: Applied feedback including member initializer lists, `const` member functions, and scoped enums.
+- **Deep Dive**: User reverse-engineered the internal mechanism of `std::ref` and linked it to compiler's implicit conversion.
+- **Mental Model**: Established a robust "Ownership & Data Flow" perspective (Moving into storage vs. Referencing original).
 
 ## Next Steps
-- **Module 10 Finish**: Move to Version Control basics (.gitignore & Git).
-- **Module 11**: Introduction to Concurrency (std::thread, mutex).
+- **Module 11 - Step 2**: Introduction to `std::jthread` for automatic joining and cancellation.
+- **Concurrency Safety**: Learning about data corruption when multiple threads share the same memory (Mutex basics).
 
 ## Key Constraints & Learnings
-- **Encoding**: Avoid emojis in `.cpp/.h` files due to Windows g++ encoding issues.
-- **Ownership**: `unique_ptr` cannot be returned by value for "viewing" purposes (use `.get()`).
-- **Abstract Classes**: Can have constructors for base sub-object initialization.
+- **Argument Decay**: `std::thread` always copies/moves arguments into internal storage.
+- **Binding Rule**: Non-const lvalue references (`T&`) cannot bind to the rvalues produced by thread invocation machinery.
+- **Header**: `std::ref` is in `<functional>`, not `<thread>`.

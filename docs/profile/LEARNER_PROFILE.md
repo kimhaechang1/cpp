@@ -4,9 +4,9 @@
 
 | 항목 | 값 |
 |------|-----|
-| **현재 수준** | 입문자 (0x0A 단계) |
+| **현재 수준** | 입문자 (Module 11 진행 중) |
 | **시작일** | 2026-01-12 |
-| **마지막 학습일** | 2026-04-06 (M10 Cumulative Practice 완료) |
+| **마지막 학습일** | 2026-04-08 (M11 Thread 기초 완료) |
 | **총 해결 문제 수** | 25 |
 
 ---
@@ -83,6 +83,11 @@
 - [x] **누적 실습 (M10)**: 외부 라이브러리 + 스마트 포인터 + 다형성 통합 인벤토리 시스템 구축
 - [x] **단위 테스트 (GTest)**: Google Test를 이용한 자동화된 TDD 스타일 테스트 작성 및 실행
 - [x] **[Cumulative Practice]**: Debugging & Testing (M1~M10 통합 퀘스트 시스템 완수) ✅
+
+### **Module 11: 병렬 프로그래밍 (Concurrency)** 🕒 진행 중
+**학습 체크리스트 (Basics):**
+- [x] **Thread 기초**: `std::thread`의 생성, `join/detach` 차이, 및 인자 전달(Decay Copy)과 `std::ref`의 원리 이해 ([concept](cpp_basics/module_11/concept_thread_basics.md), [practice](cpp_basics/module_11/practice_threads.cpp))
+- [ ] **[C++20] jthread**: 자동으로 Join되는 안전한 스레드 (`std::jthread`) 학습 예정
 
 
 ---
