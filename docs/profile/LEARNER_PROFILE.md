@@ -4,9 +4,9 @@
 
 | 항목 | 값 |
 |------|-----|
-| **현재 수준** | 입문자 (Module 11 진행 중) |
+| **현재 수준** | 입문자 (Module 11 진행 중 / M1~M10 통합 마스터) |
 | **시작일** | 2026-01-12 |
-| **마지막 학습일** | 2026-04-08 (M11 Thread 기초 완료) |
+| **마지막 학습일** | 2026-04-09 (M10 Cumulative 완수 및 컴파일러 내부 메커니즘 딥다이브) |
 | **총 해결 문제 수** | 25 |
 
 ---
@@ -83,6 +83,7 @@
 - [x] **누적 실습 (M10)**: 외부 라이브러리 + 스마트 포인터 + 다형성 통합 인벤토리 시스템 구축
 - [x] **단위 테스트 (GTest)**: Google Test를 이용한 자동화된 TDD 스타일 테스트 작성 및 실행
 - [x] **[Cumulative Practice]**: Debugging & Testing (M1~M10 통합 퀘스트 시스템 완수) ✅
+- [x] **[Cumulative Practice 2]**: Version Control & Collaboration (CommitAnalyzer TDD 설계, C++20 파이프라인, 내부 구조 딥다이브 완수) ✅
 
 ### **Module 11: 병렬 프로그래밍 (Concurrency)** 🕒 진행 중
 **학습 체크리스트 (Basics):**

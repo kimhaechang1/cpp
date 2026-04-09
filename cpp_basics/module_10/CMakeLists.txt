@@ -26,3 +26,10 @@ target_link_libraries(QuestJournalTest
     GTest::gtest_main
 )
 
+# [M10 Cumulative Practice 3] 커밋 분석기 TDD 테스트 타겟 추가
+add_executable(CommitAnalyzerTest test_commit_analyzer.cpp CommitAnalyzer.cpp Commit.cpp)
+target_link_libraries(CommitAnalyzerTest 
+    GTest::gtest 
+    GTest::gtest_main
+)
+

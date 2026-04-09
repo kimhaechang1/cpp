@@ -2,146 +2,200 @@
 
 ## Meta
 - **Type**: cumulative_practice
-- **Module**: 10
-- **Topic**: Debugging & Testing (GTest 기반 TDD)
+- **Module**: 10 (Cumulative Practice 10-3: Version Control & Collaboration)
+- **Topic**: Git/Collaboration + M1~M10 Full Integration
 - **Persona**: basic_tutor
-- **TDD Mode**: gtest
-- **Target File Prefix**: `practice_cumulative_10_2` (M10의 두번째 누적 실습)
-- **Working Directory**: `cpp_basics/module_10/`
+- **TDD Mode**: gtest (CMake project)
 
 ## Integrated Concepts (통합 출제 맵)
 
-- **[Core - M10]** GTest 단위 테스트: 전체 시스템의 정합성을 `TEST()` 매크로로 검증하는 테스트 파일이 시나리오의 뼈대. 학습자가 구현한 코드가 모든 테스트를 통과해야 함.
-- **[M10 past]** 멀티 파일 빌드: 헤더(.h)와 소스(.cpp)를 분리하고, CMakeLists.txt에 새 테스트 타겟을 추가하는 빌드 구조 설계.
-- **[M1]** enum class: 퀘스트의 상태(대기중/진행중/완료/실패)를 안전한 범위형 열거체로 정의.
-- **[M2]** switch: 퀘스트 상태에 따라 다른 행동을 분기하는 제어 흐름.
-- **[M3]** Call by Reference: 퀘스트의 상태를 외부에서 변경(진행중->완료)할 때 원본을 직접 수정.
-- **[M4]** const T&: 퀘스트 정보를 조회할 때 불필요한 복사 없이 읽기 전용으로 접근.
-- **[M5]** Stack vs Heap: 다형적 객체가 힙에 생성되어야 하는 이유 인식 (스마트 포인터와 연결).
-- **[M6]** operator==: 두 퀘스트가 동일한지(이름 기준) 비교하는 연산자 오버로딩.
-- **[M7]** 순수 가상 함수 & 추상 클래스: 퀘스트 기본 클래스에 보상 계산 메서드를 순수 가상으로 선언. MainQuest와 SideQuest가 각각 다르게 구현.
-- **[M8]** Lambda: 퀘스트 목록에서 특정 상태의 퀘스트만 필터링하는 즉석 로직.
-- **[M9]** unique_ptr + std::expected: 퀘스트의 독점 소유권 관리 + 중복 등록/미발견 에러를 안전하게 반환.
+> 이전 M10 누적 실습(QuestJournal)에서 사용한 `std::vector` + `std::expected` 패턴과의 **차별화**를 위해,
+> 이번에는 `std::map` 기반 저장소 + `std::optional` 반환 전략을 채택합니다.
+
+- **[Core - M10]** Git/협업 (버전 관리):
+  - 시나리오의 핵심 도메인. 커밋(Commit) 객체가 해시(Hash), 메시지(Message), 작성자(Author)를 가지며 버전 이력을 추적합니다.
+  - `.gitignore` 개념을 간접 반영: "무시 패턴" 목록에 해당하는 파일을 커밋에서 제외하는 필터링 로직.
+
+- **[M10 Past - Random]** 단위 테스트 (GTest):
+  - 모든 기능 검증을 `TEST()` 매크로로 수행. `EXPECT_EQ`, `ASSERT_TRUE`, `EXPECT_FALSE` 등 활용.
+
+- **[M1]** Uniform Initialization (`{}`) + `enum class`:
+  - 모든 변수/객체 초기화에 `{}` 사용 강제.
+  - 커밋 타입(Feature/Bugfix/Refactor)을 안전한 기호 집합(enum class)으로 정의.
+
+- **[M2]** 조건 분기 (`switch`):
+  - 커밋 타입(enum class)에 따라 서로 다른 우선순위(Priority) 점수를 부여하는 분기 로직.
+
+- **[M3]** Call by Reference (`const&`):
+  - 커밋 객체 전달 시 불필요한 복사를 방지하는 안전한 읽기 전용 참조 전달.
+
+- **[M4]** `std::span`:
+  - 주간 커밋 빈도 배열(7일치)에서 평일(월~금, 5개)만 잘라낸 "시야(View)"를 대여.
+
+- **[M5]** `std::array`:
+  - 7일 고정 크기의 주간 커밋 빈도 버퍼. `std::array<int, 7>` (월~일).
+
+- **[M6]** `operator<<` (Friend) + `static` 멤버:
+  - 커밋 객체를 `std::cout <<`으로 출력 시 "[타입] 해시(8자): 메시지" 형식으로 예쁘게 출력.
+  - 전체 커밋 생성 횟수를 추적하는 전역 공유 카운터 (static).
+
+- **[M7]** 상속 / 추상 클래스 / 가상 소멸자:
+  - `Commit` 추상 기반 클래스 → `FeatureCommit`, `BugfixCommit` 파생.
+  - 순수 가상 함수 `GetTypeLabel()`을 자식이 구현.
+  - **가상 소멸자는 스켈레톤에 제공하지 않음** (Blank Slate Policy). 업캐스팅 구조를 보고 학습자가 판단.
+
+- **[M8]** `std::map` + Lambda:
+  - 커밋 해시(string)를 키로, 커밋 소유권(unique_ptr)을 값으로 저장하는 자동 정렬 컨테이너.
+  - 람다를 인자로 받아 조건부 필터링 수행 (예: 특정 타입만 추출).
+
+- **[M9]** `std::unique_ptr` + `std::optional`:
+  - 커밋의 독점 소유권 관리.
+  - 해시로 커밋 조회 실패 시 "비어있을 수 있는 상자(optional)"에 담아 반환.
+  - `std::move`를 활용한 소유권 이전.
 
 ## Scenario (시나리오)
 
-> **"Quest Journal (퀘스트 저널) 시스템"**
+### "커밋 히스토리 분석기 (Commit History Analyzer)"
+
+> 당신은 게임 스튜디오의 **내부 빌드 관리 도구**를 개발하고 있습니다.
+> 개발팀은 Git으로 코드를 관리하며, 매일 수십 개의 커밋이 올라옵니다.
 >
-> 당신은 RPG 게임의 퀘스트 관리 시스템을 개발하고 있습니다.
-> 플레이어는 다양한 종류의 퀘스트(메인 퀘스트, 서브 퀘스트)를 수주하고,
-> 진행 상태를 추적하며, 완료 시 보상을 계산받습니다.
+> 팀장은 다음과 같은 기능을 가진 **"커밋 분석 시스템"**을 요청했습니다:
+> 1. 다양한 종류의 커밋(신규 기능, 버그 수정)을 등록하고 관리
+> 2. 커밋 해시로 특정 커밋을 빠르게 조회
+> 3. 이번 주에 요일별로 커밋이 몇 개 올라왔는지 통계 확인
+> 4. 특정 조건(타입별)으로 커밋 필터링
+> 5. 커밋 정보를 보기 좋게 출력
 >
-> 이 시스템은 반드시 **단위 테스트(GTest)**를 먼저 통과하는 방식으로 개발됩니다.
-> 테스트 파일(`test_quest_journal.cpp`)이 이미 작성되어 있으며,
-> 당신의 임무는 테스트가 컴파일되고 통과되도록 헤더와 소스 파일을 구현하는 것입니다.
->
-> **진정한 TDD**: 테스트 코드를 먼저 읽고, 그 테스트가 요구하는 인터페이스를 역추론하여
-> 클래스와 함수를 설계하세요.
+> 이 시스템의 핵심 클래스들을 TDD(테스트 주도 개발) 방식으로 구현하세요.
 
 ## File Structure (파일 구조)
 
-- `Quest.h`: 퀘스트 관련 열거형, 기본 퀘스트 클래스(추상), 파생 클래스(메인/서브) 선언. **학습자가 작성**. 주석 가이드만 제공.
-- `QuestJournal.h`: 퀘스트 저널(관리자) 클래스 선언. **학습자가 작성**. 주석 가이드만 제공.
-- `QuestJournal.cpp`: 퀘스트 저널 클래스 구현. **학습자가 작성**. 빈 파일로 제공.
-- `test_quest_journal.cpp`: GTest 테스트 파일. **에이전트가 완성하여 제공**. 학습자는 이 파일을 읽고 인터페이스를 역추론.
-- `CMakeLists.txt`: 기존 파일에 `QuestJournalTest` 타겟 추가.
-
-### TDD 적용 방식 (GTest 모드)
-> 기존 Blank Slate Policy에서는 함수 원형을 숨겼지만, GTest TDD 모드에서는 **테스트 코드 자체가 명세서(Specification)** 역할을 합니다.
-> - 테스트 파일이 `journal.AddQuest(...)`, `quest->GetReward()` 등을 호출하므로, **함수 이름과 호출 패턴**은 자연스럽게 노출됩니다.
-> - 학습자의 과제는: 테스트를 읽고, 필요한 **클래스 계층구조, 내부 자료구조, 메모리 관리 전략**을 스스로 설계하는 것입니다.
-> - **주석 가이드**는 Quest.h, QuestJournal.h에만 배치하며, "어떤 개념을 써야 하는지"를 암시합니다.
+- `Commit.h`: 커밋 기반 클래스 및 파생 클래스 선언 (스켈레톤 제공, 학습자가 빈칸 채움)
+- `Commit.cpp`: 커밋 클래스 멤버 함수 구현 (학습자가 전체 구현)
+- `CommitAnalyzer.h`: 커밋 관리자 클래스 선언 (스켈레톤 제공, 학습자가 빈칸 채움)
+- `CommitAnalyzer.cpp`: 커밋 관리자 멤버 함수 구현 (학습자가 전체 구현)
+- `test_commit_analyzer.cpp`: GTest 파일 (완전 제공, 학습자는 수정하지 않음)
+- `CMakeLists.txt`: 기존 파일에 새로운 테스트 타겟 추가
 
 ## Test Cases (테스트 케이스 설계)
 
-### Suite Name: `QuestJournalSuite`
+### Suite 1: CommitTest (커밋 객체 자체 검증)
 
-1. **TEST(QuestJournalSuite, AddAndCount)**
-   - 목적: 퀘스트를 추가하고 총 개수를 확인
-   - 기대 동작: MainQuest 1개, SideQuest 1개 추가 후 `GetQuestCount()` == 2
-   - 검증 개념: unique_ptr 소유권 이전(move), 가변 길이 컨테이너 저장
+1. **TEST(CommitTest, FeatureCommitCreation)**
+   - 목적: FeatureCommit이 올바르게 생성되고 GetTypeLabel()이 "Feature"를 반환하는지 검증
+   - 기대 동작: hash="abc12345", message="Add player", author="Kim" → GetTypeLabel() == "Feature", GetHash() == "abc12345"
 
-2. **TEST(QuestJournalSuite, DuplicateQuestError)**
-   - 목적: 같은 이름의 퀘스트를 중복 등록했을 때 에러 반환 확인
-   - 기대 동작: 두 번째 AddQuest 호출의 반환값이 에러 상태 (`std::expected`의 에러 채널)
-   - 검증 개념: std::expected를 통한 에러 처리, operator== (이름 비교)
+2. **TEST(CommitTest, BugfixCommitCreation)**
+   - 목적: BugfixCommit이 올바르게 생성되고 GetTypeLabel()이 "Bugfix"를 반환하는지 검증
+   - 기대 동작: hash="def67890", message="Fix crash" → GetTypeLabel() == "Bugfix"
 
-3. **TEST(QuestJournalSuite, FindQuest)**
-   - 목적: 이름으로 퀘스트를 검색하고, 없는 퀘스트 검색 시 에러 반환
-   - 기대 동작: 존재하는 이름 -> 퀘스트의 const 참조 반환. 없는 이름 -> expected 에러.
-   - 검증 개념: const T& 반환, std::expected, 범위 순회
+3. **TEST(CommitTest, StreamOutput)**
+   - 목적: `operator<<`가 "[타입] 해시(8자): 메시지" 형식으로 출력하는지 검증
+   - 기대 동작: FeatureCommit → 출력 문자열이 "[Feature] abc12345: Add player system" 형식과 일치
+   - 검증 방법: `std::ostringstream`에 출력 후 문자열 비교
 
-4. **TEST(QuestJournalSuite, StateTransition)**
-   - 목적: 퀘스트 상태를 변경(대기->진행->완료)하고 올바르게 전이되는지 확인
-   - 기대 동작: `AdvanceState(questName)` 호출 시 상태가 순차적으로 전이. switch로 분기.
-   - 검증 개념: enum class 상태값, Call by Reference로 상태 변경, switch 분기
+4. **TEST(CommitTest, StaticCommitCounter)**
+   - 목적: 모든 Commit 파생 객체의 생성 횟수를 static 카운터가 정확히 추적하는지 검증
+   - 기대 동작: FeatureCommit 2개 + BugfixCommit 1개 생성 → static 카운터 == 3
+   - 주의: 테스트 간 간섭 방지를 위해 테스트 시작 시 카운터 리셋 필요 (ResetCounter static 함수)
 
-5. **TEST(QuestJournalSuite, FilterByState)**
-   - 목적: 특정 상태의 퀘스트만 필터링하여 개수 확인
-   - 기대 동작: 진행중인 퀘스트만 뽑아낸 결과의 size 검증
-   - 검증 개념: Lambda를 인자로 받는 필터 함수, const T& 순회
+5. **TEST(CommitTest, PriorityByType)**
+   - 목적: 커밋 타입에 따라 우선순위 점수가 다르게 반환되는지 검증 (switch 분기)
+   - 기대 동작: Feature → 1, Bugfix → 3 (버그 수정이 더 급함)
+   - 이 함수는 Commit의 멤버 함수로, 내부에서 GetTypeLabel()의 결과에 따라 switch 분기
 
-6. **TEST(QuestJournalSuite, PolymorphicReward)**
-   - 목적: MainQuest와 SideQuest의 보상 계산이 다형적으로 동작하는지 확인
-   - 기대 동작: 같은 `GetReward()` 호출이지만, MainQuest는 기본보상*2, SideQuest는 기본보상*1 반환 (각 파생 클래스마다 다른 배율)
-   - 검증 개념: 순수 가상 함수, 업캐스팅된 포인터를 통한 호출, 다형성
+### Suite 2: AnalyzerTest (관리자 검증)
+
+6. **TEST(AnalyzerTest, RegisterAndFindCommit)**
+   - 목적: 커밋을 등록하고 해시로 조회했을 때 올바른 커밋이 반환되는지 검증
+   - 기대 동작: RegisterCommit → FindByHash("abc12345") → optional이 값을 가지며, 해당 커밋의 메시지가 일치
+
+7. **TEST(AnalyzerTest, FindReturnsEmptyOnMiss)**
+   - 목적: 존재하지 않는 해시로 조회 시 빈 optional이 반환되는지 검증
+   - 기대 동작: FindByHash("nonexistent") → has_value() == false
+
+8. **TEST(AnalyzerTest, WeeklyStatsArray)**
+   - 목적: 7일 고정 크기 통계 배열에 요일별 커밋 수를 기록하고 정확히 반환하는지 검증
+   - 기대 동작: RecordCommitOnDay(0, 3) → GetWeeklyStats()[0] == 3 (월요일에 3개)
+   - 반환 타입: const std::array<int, 7>&
+
+9. **TEST(AnalyzerTest, WeekdayStatsSpanView)**
+   - 목적: 7일 배열에서 평일(인덱스 0~4)만 잘라낸 span을 반환하는지 검증
+   - 기대 동작: GetWeekdayStats() → span의 size() == 5, 각 요소가 원본 배열의 0~4번과 동일
+   - 반환 타입: std::span<const int, 5> (또는 동적 span)
+
+10. **TEST(AnalyzerTest, FilterByTypeWithLambda)**
+    - 목적: 람다를 인자로 받아 특정 타입의 커밋만 필터링하는지 검증
+    - 기대 동작: Feature 2개, Bugfix 1개 등록 → Feature만 필터링 → 결과 크기 == 2
+    - 람다: `[](const Commit& c) { return c.GetTypeLabel() == "Feature"; }`
+
+11. **TEST(AnalyzerTest, GetTotalCommitCount)**
+    - 목적: Analyzer에 등록된 커밋의 총 개수를 정확히 반환하는지 검증
+    - 기대 동작: 3개 등록 → GetTotalCount() == 3
 
 ## Comment Guide (주석 가이드 - Blank Slate Policy)
 
-### Quest.h 주석
+> 아래 문구들은 `.agent/roles/basic_tutor.md`의 Master Prompt Templates에서 직접 인용하거나 변형한 것입니다.
+> 정답 키워드(vector, map, virtual, unique_ptr 등)를 절대 노출하지 않습니다.
 
-1. **enum (QuestState)**:
-   "오류 원천 차단을 위해, 퀘스트의 진행 상태(대기/진행/완료/실패)를 한정된 카테고리로 묶어 안전한 기호 집합으로 정의하세요."
+### Commit.h 주석
 
-2. **Base Quest class (추상)**:
-   - 클래스 설명: "모든 퀘스트 종류의 공통 계약(Contract)을 정의하는 기반 설계도입니다. 이 설계도 자체로는 실체화(인스턴스)가 불가능합니다."
-   - 멤버 데이터: "퀘스트 이름(문자열)과 기본 보상(정수), 그리고 현재 상태를 보관합니다."
-   - 상태 접근: "현재 상태를 외부에서 읽을 수 있어야 합니다. 불필요한 복사 없이."
-   - 이름 접근: "현재 이름을 외부에서 읽을 수 있어야 합니다. 불필요한 복사 없이."
-   - 보상 계산: "파생 타입마다 보상 배율이 다릅니다. 기반 클래스에서는 계산 공식의 빈 껍데기만 약속하세요."
-   - 비교 연산: "두 퀘스트가 '같다'는 것은 이름이 동일하다는 뜻입니다. 비교 연산자를 재정의하세요."
-   - 상태 전이: "함수 호출이 끝난 후에도 원본 상태가 수정된 결과를 보존해야 합니다. 대기->진행->완료 순서로 전이하며, 상태에 따라 분기하세요."
-   - 소멸: (주석 없음 - 학습자가 업캐스팅 구조를 보고 가상 소멸자 필요성을 스스로 인지해야 함)
+- **CommitType enum class**:
+  "오류 원천 차단을 위해, 커밋의 종류(신규 기능 추가, 버그 수정)를 한정된 카테고리로 묶어 안전한 기호 집합으로 정의하세요."
 
-3. **MainQuest class (파생)**:
-   "메인 스토리 퀘스트입니다. 보상은 기본 보상의 2배입니다."
+- **Commit 기반 클래스**:
+  "인스턴스화가 불가능한 인터페이스 설계법을 사용하세요. 커밋의 종류를 문자열로 반환하는 행위를 자식 클래스가 반드시 구현하도록 강제하세요."
 
-4. **SideQuest class (파생)**:
-   "부가 퀘스트입니다. 보상은 기본 보상 그대로(1배)입니다."
+- **소멸자 (Blank Slate - 제공 금지!)**:
+  주석 없음. 업캐스팅 구조(`unique_ptr<Commit>`)를 보고 학습자가 스스로 판단.
+  단, 헤더에 `// [Safety] 이 클래스의 사용 패턴을 고려하여, 필요하다면 소멸자를 설계하세요.` 정도의 넌지시 유도만 허용.
 
-### QuestJournal.h 주석
+- **static 카운터**:
+  "수많은 커밋 인스턴스가 생성되더라도 메모리 상에 오직 단 하나만 존재하여 전역적으로 공유되어야 하는 카운터입니다."
 
-1. **클래스 설명**:
-   "퀘스트들의 원본을 독점 소유하며 관리하는 저널입니다. 스택 수명 스코프를 벗어나는 즉시 자동으로 정리되는 똑똑한 독점 래퍼로 각 퀘스트를 감싸서 보관하세요."
+- **operator<< (Friend)**:
+  "외부(main, 테스트)에서 private 멤버에 접근하여 커밋의 타입, 해시, 메시지를 예쁘게 스트림에 출력할 수 있도록 예외적 허용을 사용하세요."
 
-2. **내부 저장소**:
-   "퀘스트 래퍼들을 1차원으로 순차적, 연속적으로 보관하는 가변 길이 컨테이너를 사용하세요."
+- **GetPriority 함수**:
+  "커밋의 종류에 따라 서로 다른 우선순위 점수를 반환해야 합니다. 종류별로 갈라지는 다중 경로 분기를 사용하세요." (switch 유도)
 
-3. **AddQuest 함수**:
-   "새 퀘스트를 저널에 등록합니다. 이미 같은 이름이 존재하면 에러를 반환하세요. 에러 방지를 위해 성공/실패를 안전상자로 포장해 반환하세요. 퀘스트의 소유권은 저널로 완전히 이전됩니다(복사 금지, 강탈만 허용)."
+- **FeatureCommit / BugfixCommit**:
+  "조상 클래스의 인터페이스를 구체적으로 실현하는 파생 클래스입니다."
 
-4. **FindQuest 함수**:
-   "이름으로 퀘스트를 검색합니다. 찾으면 원본의 읽기 전용 참조를, 못 찾으면 에러를 안전상자에 담아 반환하세요."
+### CommitAnalyzer.h 주석
 
-5. **AdvanceState 함수**:
-   "이름으로 퀘스트를 찾아 상태를 한 단계 전진시킵니다."
+- **커밋 저장소 (데이터 멤버)**:
+  "항상 정렬된 상태를 자동 유지하며 특정 Key(해시 문자열)로 Value(커밋)를 찾는 컨테이너를 사용하세요."
 
-6. **FilterByState 함수**:
-   "현장에서 이름 없는 1회용 로직 덩어리를 받아서, 조건에 맞는 퀘스트들의 읽기 전용 참조 목록을 반환하세요."
+- **Value의 소유권**:
+  "스택 수명 스코프를 벗어나는 즉시 delete를 스스로 뱉어내는 똑똑한 독점 메모리 래퍼를 사용하세요."
 
-7. **GetQuestCount 함수**:
-   "현재 등록된 퀘스트의 총 개수를 반환합니다."
+- **RegisterCommit 함수**:
+  "커밋의 소유권을 통째로 강탈(이동)하여 저장소에 등록합니다. 무거운 데이터를 복사하여 CPU를 낭비하지 마세요."
+
+- **FindByHash 함수**:
+  "에러 방지를 위해 -1이나 nullptr 대신 '값이 있을 수도 비어있을 수도 있는' 안전상자로 포장해 반환하세요."
+
+- **주간 통계 배열 (데이터 멤버)**:
+  "7일이라는 고정된 하드웨어 크기를 가지는 연속 메모리 블록을 사용하세요." (std::array 유도)
+
+- **GetWeekdayStats 함수**:
+  "원본 배열의 소유권은 갖지 않은 채, 연속된 데이터 중 평일(5일)의 '시야(View)'만 대여받아 요소를 읽을 수 있도록 반환하세요."
+
+- **FilterByType 함수**:
+  "함수를 외부에 억지로 빼지 말고, 그 즉시 현장에서 이름 없는 1회용 로직 덩어리를 만들어 넘겨받으세요. 불필요한 복사 없이 읽기 전용 참조로 결과를 전달하세요."
 
 ## Constraints (제약 사항)
 
-- **금지 키워드 (주석/가이드에서 절대 노출 금지)**: `vector`, `unique_ptr`, `virtual`, `override`, `abstract`, `expected`, `move`, `lambda`, `enum class` (대신 Master Prompt Templates의 암시적 문구 사용)
-- **소멸자 힌트 금지**: 가상 소멸자는 학습자가 업캐스팅 + 힙 할당 구조를 보고 스스로 떠올려야 함
-- **난이도 조절**: 
-  - `std::expected`의 에러 타입은 단순 `std::string`으로 충분 (복잡한 에러 계층 불필요)
-  - FilterByState의 반환 타입은 `std::vector<const Quest*>` 수준으로 단순화 (소유권 이전 불필요, 읽기 전용 포인터만)
-  - 상태 전이는 단방향(Inactive->Active->Completed)만 지원. Failed 상태는 별도 함수 없이 enum에만 정의.
-- **.cpp/.h 파일 내 이모지(이모티콘) 사용 절대 금지** (Windows g++ 인코딩 오류 방지)
-- **코딩 컨벤션**: Variables=camelCase, Functions/Classes=PascalCase
-- **Uniform Initialization** 사용 권장 (`int a{0}`)
-- **include guard**: `#pragma once` 사용
-- **C++ 표준**: C++23 (`-std=c++23`)
+1. **정답 코드 금지**: Blueprint에 학습자가 구현할 함수의 본문(Body) 없음.
+2. **함수 원형 미제공**: `.h` 파일의 함수 선언부도 주석(요구사항 설명)만 제공. 반환 타입/매개변수 타입은 학습자가 테스트 코드를 역추론하여 결정.
+3. **가상 소멸자 미제공**: `Commit` 클래스에 `virtual ~Commit()` 을 명시하지 않음. `unique_ptr<Commit>` 패턴을 보고 학습자가 추론.
+4. **이전 실습과의 차별화**:
+   - QuestJournal: `std::vector` + `std::expected` → 이번: `std::map` + `std::optional`
+   - 새로운 요소: `std::array` + `std::span` (주간 통계), `static` 카운터, `switch` 분기, `operator<<`
+5. **Uniform Initialization**: 모든 변수/멤버 초기화에 `{}` 사용.
+6. **소스 코드 내 이모지 금지**: `.cpp`, `.h` 파일에 이모지 절대 사용하지 않음.
+7. **static 카운터 테스트 간섭 방지**: `ResetCounter()` static 함수를 제공하여 각 테스트의 독립성 보장.
+8. **CMakeLists.txt**: 기존 타겟(App, TestApp, QuestJournalTest)을 유지하고 새 타겟(`CommitAnalyzerTest`)만 추가.
+9. **GetPriority의 switch 분기**: GetTypeLabel()이 반환하는 문자열이 아닌, 내부 CommitType enum을 기준으로 분기해야 자연스러움. 이를 위해 Commit 기반 클래스에 `GetType()` (CommitType 반환) 순수 가상 함수도 필요. 단, 주석에는 "종류를 기호 집합으로 반환하는 행위"로만 암시.

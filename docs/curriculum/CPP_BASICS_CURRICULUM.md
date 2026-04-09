@@ -126,7 +126,7 @@
 
 #### MODULE 9: 모던 C++ (RAII & 효율성)
 - [x] **스마트 포인터**: `unique_ptr`, `shared_ptr`, `weak_ptr` (메모리 직접 해제 금지)
-- [x] **이동 시맨틱**: `std::move`와 R-value reference(`&&`)로 성능 최적화
+- [x] **이동 시맨틱**: `std::move`와 R-value reference(`&&`)로 성능 최적화 (std::string 등 내부 자원 탈취 원리 포함)
 
 - [x] **[Cumulative Practice]**: Smart Pointers & Move Semantics (범위: 스마트포인터/이동시맨틱 + [M1~M8] 각 모듈 최소 1개 필수) ([practice](cpp_basics/module_09/practice_cumulative_9_1.cpp))
 - [x] **Type Inference**: `auto` & `decltype`으로 복잡한 타입 추론 ([concept](cpp_basics/module_09/concept_type_inference.md), [practice](cpp_basics/module_09/practice_type_inference.cpp))
@@ -144,21 +144,38 @@
   - [concept_modern_enum.md](file:///c:/cpp/cpp_basics/module_10/concept_modern_enum.md)
   - [concept_abstract_class_advanced.md](file:///c:/cpp/cpp_basics/module_10/concept_abstract_class_advanced.md)
   - [concept_const_correctness.md](file:///c:/cpp/cpp_basics/module_10/concept_const_correctness.md)
-- [ ] **협업 기초**: .gitignore 작성 및 Git 버전 관리 전략.
-- [ ] **[Cumulative Practice]**: Version Control & Collaboration (범위: Git/협업 + [현재 M10 과거 소제목 중 랜덤 1개] + [M1~M9] 각 모듈 최소 1개 필수)
+- [x] **협업 기초**: .gitignore 작성 및 Git 버전 관리 전략. ✅ [concept](cpp_basics/module_10/concept_git_basics.md)
+- [x] **[Cumulative Practice]**: Version Control & Collaboration (범위: Git/협업 + [현재 M10 과거 소제목 중 랜덤 1개] + [M1~M9] 각 모듈 최소 1개 필수) ✅ [practice](cpp_basics/module_10/test_commit_analyzer.cpp)
 
 #### MODULE 11: [신규] 병렬 프로그래밍 (Concurrency)
 - [x] **Thread 기초**: `std::thread`, `std::mutex`로 레이스 컨디션 이해하기 ([concept](cpp_basics/module_11/concept_thread_basics.md), [practice](cpp_basics/module_11/practice_threads.cpp))
 - [ ] **[C++20] jthread**: 자동으로 Join되는 안전한 스레드 (`std::jthread`) 사용하기
 - [ ] **[Cumulative Practice]**: Basic Concurrency (Thread & jthread) (범위: Thread/jthread + [M1~M10] 각 모듈 최소 1개 필수)
 
+#### MODULE 12: [신규] 네트워크 프로토콜 기초 (TCP & UDP)
+> 멀티스레드(M11)의 위력을 극대화할 수 있는 실습 무대. 윈도우 기반 소켓 프로그래밍 입문.
+- [ ] **Winsock2 환경 세팅**: Windows API 설정 및 통신 흐름(IP/Port) 이해.
+- [ ] **신뢰성의 TCP**: 스트림(Stream) 기반 연결형 통신 실습.
+- [ ] **속도의 UDP**: 데이터그램(Datagram) 기반 비연결형 통신 실습.
+- [ ] **[Cumulative Practice 1]**: TCP/UDP Game Data Sync (범위: TCP/UDP 소켓 통신 + [M1~M10] 몬스터/플레이어 직렬화 전송)
+
+#### MODULE 13: [신규] 서버 아키텍처 기초 (Synchronous vs Asynchronous)
+> 진짜 게임 서버의 기틀이 되는 동기식 스레드풀과 멀티플렉싱 비동기 I/O 모델 비교.
+- [ ] **Thread Pool 모델 (동기식 다중 처리)**: 일꾼(Thread)들을 미리 만들어두고 클라이언트 요청을 Queue를 통해 효율적으로 처리하기 (M11 심화).
+- [ ] **Selector 모델 (비동기 처리 기초)**: `select()` 함수를 활용한 Non-blocking 다중 I/O 처리 맛보기.
+- [ ] **[Cumulative Practice 2]**: Hybrid Architecture Server (범위: 스레드풀/비동기 소켓 + 세션 컨텍스트 관리 + [M1~M10] 버무리기)
+
 ---
 
 ### 🏆 EXPERT 대단원 마무리: 최종 졸업 프로젝트 (Master Exam)
-> **[M1 ~ M11 전 범위]**를 총망라하는 C++ 마스터 프로젝트.
-> 모던 C++의 정수와 멀티스레드, 빌드 시스템까지 통합한 상용 수준의 엔진 코어 설계.
+> **[M1 ~ M13 전 범위]**를 총망라하는 C++ 마스터 프로젝트.
+> 클라이언트-서버 아키텍처 기반의 **'실시간 멀티스레드 터미널 로그라이크(Roguelike)'** 제작!
 
-- [ ] **[Final Project]**: Universal Game Engine Core (Lite) (범위: Templates, STL, Smart Pointers, Ranges, Concurrency, CMake 등 전 범위 통합)
+- [ ] **[Final Project]**: 무한 돌파형 랜덤 픽셀 던전 (Server-Client Terminal Game)
+  - **서버-클라이언트 (M12~M13)**: 서버(월드 상태/방 구조 통제)와 터미널 클라이언트 통신 매칭.
+  - **멀티스레드 기반 실시간 전투 (M11)**: 유저 상하좌우 이동 스레드와, 독립적으로 움직이며 1초 인접 시 데미지를 주는 '몬스터 자율 이동 스레드'의 병렬 실행 및 Mutex 자원 충돌 방어.
+  - **모던 C++ & 객체지향 (M6, M7)**: 무기/방어구 다형성 구조, 스마트 포인터 인벤토리, 방어력 차감 공식(최소 1 데미지 보장).
+  - **절차적 생성 및 루프 (M3, M8)**: 진입 시 3칸 랜덤 방 구조 생성, 보스 클리어 후 스탯 인플레이션(몹 데미지 증가 및 체력 보상) 무한 루프 구현.
 
 ---
 

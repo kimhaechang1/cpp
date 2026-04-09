@@ -1,25 +1,25 @@
-# Session Checkpoint (2026-04-08)
+# Session Checkpoint
+**Date:** 2026-04-09
 
 ## Current Goal
-- [x] Master Module 11: Introduction to Concurrency (Thread Basics).
-- [ ] Learn Modern Concurrency: `std::jthread` (C++20).
-- [ ] Understand Mutex and Race Conditions.
+- Transition to **Module 11 (Concurrency)** after successfully finalizing the Module 10 cumulative practice (`CommitAnalyzer`).
 
-## Completed Tasks
-1. **Thread Lifecycle**: Successfully implemented `std::thread` creation and safe termination using `join()`.
-2. **Argument Semantics**: Deeply analyzed why `std::thread` fails with `int&` and how it relates to internal Decay Copy and rvalue-passing.
-3. **std::ref Mastery**: Investigated `refwrap.h` to understand `reference_wrapper`'s conversion operator (`operator T&()`).
-4. **Practice**: Completed `practice_threads.cpp` and passed TDD-style assertions.
-
-## Key Achievements
-- **Deep Dive**: User reverse-engineered the internal mechanism of `std::ref` and linked it to compiler's implicit conversion.
-- **Mental Model**: Established a robust "Ownership & Data Flow" perspective (Moving into storage vs. Referencing original).
+## Completed Tasks (Recent)
+- Implemented `CommitAnalyzer`, tracking commit structures with TDD methodologies.
+- Applied C++20 `std::ranges` & `std::views` (Lazy Evaluation / Pipeline style).
+- Mastered internal memory management (`std::span` return-by-value optimization).
+- Explored deep C++ compiler internals: 
+  - Implicit Conversions & Temporary Object creation.
+  - The `explicit` keyword's role in preventing silent bugs (e.g. `optional` destruction by `0`).
+  - Unnamed dummy parameters in stdlib (`explicit constexpr nullopt_t(int)`).
+  - `nullptr` vs `NULL` (macro resolving to `int` causing overload ambiguity).
+- Created localized generic markdown concept documents without inter-module dependencies.
 
 ## Next Steps
-- **Module 11 - Step 2**: Introduction to `std::jthread` for automatic joining and cancellation.
-- **Concurrency Safety**: Learning about data corruption when multiple threads share the same memory (Mutex basics).
+- Proceed to Curriculum **Module 11: 병렬 프로그래밍 (Concurrency)**.
+- Re-initiate threads practice, focusing on `std::jthread` and handling resource races with `std::mutex`.
 
-## Key Constraints & Learnings
-- **Argument Decay**: `std::thread` always copies/moves arguments into internal storage.
-- **Binding Rule**: Non-const lvalue references (`T&`) cannot bind to the rvalues produced by thread invocation machinery.
-- **Header**: `std::ref` is in `<functional>`, not `<thread>`.
+## Key Constraints / Notes
+- The learner has an exceptionally sharp logical understanding and likes to peek into standard library implementations and compiler behaviors.
+- Do NOT use future modular cumulative code as examples in past core curriculum docs (always use generic, isolated C++ examples per module).
+- "Zero Warning" and optimization mental models are highly appreciated by the learner.
