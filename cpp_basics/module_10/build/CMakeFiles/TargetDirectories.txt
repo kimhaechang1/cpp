@@ -1,5 +1,6 @@
 C:/cpp/cpp_basics/module_10/build/CMakeFiles/App.dir
 C:/cpp/cpp_basics/module_10/build/CMakeFiles/TestApp.dir
 C:/cpp/cpp_basics/module_10/build/CMakeFiles/QuestJournalTest.dir
+C:/cpp/cpp_basics/module_10/build/CMakeFiles/CommitAnalyzerTest.dir
 C:/cpp/cpp_basics/module_10/build/CMakeFiles/edit_cache.dir
 C:/cpp/cpp_basics/module_10/build/CMakeFiles/rebuild_cache.dir

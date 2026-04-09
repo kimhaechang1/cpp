@@ -80,4 +80,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/App.dir/DependInfo.cmake"
   "CMakeFiles/TestApp.dir/DependInfo.cmake"
   "CMakeFiles/QuestJournalTest.dir/DependInfo.cmake"
+  "CMakeFiles/CommitAnalyzerTest.dir/DependInfo.cmake"
   )

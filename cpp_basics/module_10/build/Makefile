@@ -154,6 +154,19 @@ QuestJournalTest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuestJournalTest.dir\build.make CMakeFiles/QuestJournalTest.dir/build
 .PHONY : QuestJournalTest/fast
 
+#=============================================================================
+# Target rules for targets named CommitAnalyzerTest
+
+# Build rule for target.
+CommitAnalyzerTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CommitAnalyzerTest
+.PHONY : CommitAnalyzerTest
+
+# fast build rule for target.
+CommitAnalyzerTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommitAnalyzerTest.dir\build.make CMakeFiles/CommitAnalyzerTest.dir/build
+.PHONY : CommitAnalyzerTest/fast
+
 Calculator.obj: Calculator.cpp.obj
 .PHONY : Calculator.obj
 
@@ -177,6 +190,54 @@ Calculator.s: Calculator.cpp.s
 Calculator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestApp.dir\build.make CMakeFiles/TestApp.dir/Calculator.cpp.s
 .PHONY : Calculator.cpp.s
+
+Commit.obj: Commit.cpp.obj
+.PHONY : Commit.obj
+
+# target to build an object file
+Commit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommitAnalyzerTest.dir\build.make CMakeFiles/CommitAnalyzerTest.dir/Commit.cpp.obj
+.PHONY : Commit.cpp.obj
+
+Commit.i: Commit.cpp.i
+.PHONY : Commit.i
+
+# target to preprocess a source file
+Commit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommitAnalyzerTest.dir\build.make CMakeFiles/CommitAnalyzerTest.dir/Commit.cpp.i
+.PHONY : Commit.cpp.i
+
+Commit.s: Commit.cpp.s
+.PHONY : Commit.s
+
+# target to generate assembly for a file
+Commit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommitAnalyzerTest.dir\build.make CMakeFiles/CommitAnalyzerTest.dir/Commit.cpp.s
+.PHONY : Commit.cpp.s
+
+CommitAnalyzer.obj: CommitAnalyzer.cpp.obj
+.PHONY : CommitAnalyzer.obj
+
+# target to build an object file
+CommitAnalyzer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommitAnalyzerTest.dir\build.make CMakeFiles/CommitAnalyzerTest.dir/CommitAnalyzer.cpp.obj
+.PHONY : CommitAnalyzer.cpp.obj
+
+CommitAnalyzer.i: CommitAnalyzer.cpp.i
+.PHONY : CommitAnalyzer.i
+
+# target to preprocess a source file
+CommitAnalyzer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommitAnalyzerTest.dir\build.make CMakeFiles/CommitAnalyzerTest.dir/CommitAnalyzer.cpp.i
+.PHONY : CommitAnalyzer.cpp.i
+
+CommitAnalyzer.s: CommitAnalyzer.cpp.s
+.PHONY : CommitAnalyzer.s
+
+# target to generate assembly for a file
+CommitAnalyzer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommitAnalyzerTest.dir\build.make CMakeFiles/CommitAnalyzerTest.dir/CommitAnalyzer.cpp.s
+.PHONY : CommitAnalyzer.cpp.s
 
 QuestJournal.obj: QuestJournal.cpp.obj
 .PHONY : QuestJournal.obj
@@ -250,6 +311,30 @@ practice_gtest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestApp.dir\build.make CMakeFiles/TestApp.dir/practice_gtest.cpp.s
 .PHONY : practice_gtest.cpp.s
 
+test_commit_analyzer.obj: test_commit_analyzer.cpp.obj
+.PHONY : test_commit_analyzer.obj
+
+# target to build an object file
+test_commit_analyzer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommitAnalyzerTest.dir\build.make CMakeFiles/CommitAnalyzerTest.dir/test_commit_analyzer.cpp.obj
+.PHONY : test_commit_analyzer.cpp.obj
+
+test_commit_analyzer.i: test_commit_analyzer.cpp.i
+.PHONY : test_commit_analyzer.i
+
+# target to preprocess a source file
+test_commit_analyzer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommitAnalyzerTest.dir\build.make CMakeFiles/CommitAnalyzerTest.dir/test_commit_analyzer.cpp.i
+.PHONY : test_commit_analyzer.cpp.i
+
+test_commit_analyzer.s: test_commit_analyzer.cpp.s
+.PHONY : test_commit_analyzer.s
+
+# target to generate assembly for a file
+test_commit_analyzer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommitAnalyzerTest.dir\build.make CMakeFiles/CommitAnalyzerTest.dir/test_commit_analyzer.cpp.s
+.PHONY : test_commit_analyzer.cpp.s
+
 test_quest_journal.obj: test_quest_journal.cpp.obj
 .PHONY : test_quest_journal.obj
 
@@ -283,11 +368,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... App
+	@echo ... CommitAnalyzerTest
 	@echo ... QuestJournalTest
 	@echo ... TestApp
 	@echo ... Calculator.obj
 	@echo ... Calculator.i
 	@echo ... Calculator.s
+	@echo ... Commit.obj
+	@echo ... Commit.i
+	@echo ... Commit.s
+	@echo ... CommitAnalyzer.obj
+	@echo ... CommitAnalyzer.i
+	@echo ... CommitAnalyzer.s
 	@echo ... QuestJournal.obj
 	@echo ... QuestJournal.i
 	@echo ... QuestJournal.s
@@ -297,6 +389,9 @@ help:
 	@echo ... practice_gtest.obj
 	@echo ... practice_gtest.i
 	@echo ... practice_gtest.s
+	@echo ... test_commit_analyzer.obj
+	@echo ... test_commit_analyzer.i
+	@echo ... test_commit_analyzer.s
 	@echo ... test_quest_journal.obj
 	@echo ... test_quest_journal.i
 	@echo ... test_quest_journal.s

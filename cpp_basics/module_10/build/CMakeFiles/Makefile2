@@ -65,12 +65,14 @@ CMAKE_BINARY_DIR = C:\cpp\cpp_basics\module_10\build
 all: CMakeFiles/App.dir/all
 all: CMakeFiles/TestApp.dir/all
 all: CMakeFiles/QuestJournalTest.dir/all
+all: CMakeFiles/CommitAnalyzerTest.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/App.dir/codegen
 codegen: CMakeFiles/TestApp.dir/codegen
 codegen: CMakeFiles/QuestJournalTest.dir/codegen
+codegen: CMakeFiles/CommitAnalyzerTest.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -81,6 +83,7 @@ preinstall:
 clean: CMakeFiles/App.dir/clean
 clean: CMakeFiles/TestApp.dir/clean
 clean: CMakeFiles/QuestJournalTest.dir/clean
+clean: CMakeFiles/CommitAnalyzerTest.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -122,7 +125,7 @@ CMakeFiles/App.dir/clean:
 CMakeFiles/TestApp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestApp.dir\build.make CMakeFiles/TestApp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestApp.dir\build.make CMakeFiles/TestApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_10\build\CMakeFiles --progress-num=6,7,8 "Built target TestApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_10\build\CMakeFiles --progress-num=10,11,12 "Built target TestApp"
 .PHONY : CMakeFiles/TestApp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -139,7 +142,7 @@ TestApp: CMakeFiles/TestApp.dir/rule
 # codegen rule for target.
 CMakeFiles/TestApp.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestApp.dir\build.make CMakeFiles/TestApp.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_10\build\CMakeFiles --progress-num=6,7,8 "Finished codegen for target TestApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_10\build\CMakeFiles --progress-num=10,11,12 "Finished codegen for target TestApp"
 .PHONY : CMakeFiles/TestApp.dir/codegen
 
 # clean rule for target.
@@ -154,7 +157,7 @@ CMakeFiles/TestApp.dir/clean:
 CMakeFiles/QuestJournalTest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuestJournalTest.dir\build.make CMakeFiles/QuestJournalTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuestJournalTest.dir\build.make CMakeFiles/QuestJournalTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_10\build\CMakeFiles --progress-num=3,4,5 "Built target QuestJournalTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_10\build\CMakeFiles --progress-num=7,8,9 "Built target QuestJournalTest"
 .PHONY : CMakeFiles/QuestJournalTest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -171,13 +174,45 @@ QuestJournalTest: CMakeFiles/QuestJournalTest.dir/rule
 # codegen rule for target.
 CMakeFiles/QuestJournalTest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuestJournalTest.dir\build.make CMakeFiles/QuestJournalTest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_10\build\CMakeFiles --progress-num=3,4,5 "Finished codegen for target QuestJournalTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_10\build\CMakeFiles --progress-num=7,8,9 "Finished codegen for target QuestJournalTest"
 .PHONY : CMakeFiles/QuestJournalTest.dir/codegen
 
 # clean rule for target.
 CMakeFiles/QuestJournalTest.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuestJournalTest.dir\build.make CMakeFiles/QuestJournalTest.dir/clean
 .PHONY : CMakeFiles/QuestJournalTest.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/CommitAnalyzerTest.dir
+
+# All Build rule for target.
+CMakeFiles/CommitAnalyzerTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommitAnalyzerTest.dir\build.make CMakeFiles/CommitAnalyzerTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommitAnalyzerTest.dir\build.make CMakeFiles/CommitAnalyzerTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_10\build\CMakeFiles --progress-num=3,4,5,6 "Built target CommitAnalyzerTest"
+.PHONY : CMakeFiles/CommitAnalyzerTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/CommitAnalyzerTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_10\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/CommitAnalyzerTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_10\build\CMakeFiles 0
+.PHONY : CMakeFiles/CommitAnalyzerTest.dir/rule
+
+# Convenience name for target.
+CommitAnalyzerTest: CMakeFiles/CommitAnalyzerTest.dir/rule
+.PHONY : CommitAnalyzerTest
+
+# codegen rule for target.
+CMakeFiles/CommitAnalyzerTest.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommitAnalyzerTest.dir\build.make CMakeFiles/CommitAnalyzerTest.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_10\build\CMakeFiles --progress-num=3,4,5,6 "Finished codegen for target CommitAnalyzerTest"
+.PHONY : CMakeFiles/CommitAnalyzerTest.dir/codegen
+
+# clean rule for target.
+CMakeFiles/CommitAnalyzerTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommitAnalyzerTest.dir\build.make CMakeFiles/CommitAnalyzerTest.dir/clean
+.PHONY : CMakeFiles/CommitAnalyzerTest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
