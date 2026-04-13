@@ -1,0 +1,1 @@
+ "C:/cpp/vcpkg/installed/x64-mingw-static/debug/lib/libfmtd.a" "C:/cpp/vcpkg/installed/x64-mingw-static/debug/lib/manual-link/libgtest_main.a" "C:/cpp/vcpkg/installed/x64-mingw-static/debug/lib/libgtest.a" -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

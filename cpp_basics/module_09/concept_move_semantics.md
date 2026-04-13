@@ -236,3 +236,34 @@ Buffer& operator=(Buffer&& other) noexcept {
 - [x] 이동 생성자 vs 대입 연산자 차이점 정리 완료
 - [ ] `practice_move_semantics.cpp` 작성 (실습 문제 출제)
 - [ ] `session_checkpoint.md` 최종 업데이트 및 마무리
+
+---
+
+### 🚨 [Gotcha] 이름이 있는 것은 무엇이든 L-value다 (M11 심화)
+
+가장 많이 틀리는 **조용한 성능 버그**입니다.
+
+```cpp
+// ❌ 나쁜 예
+Goblin(Goblin&& other) : Monster(other) { ... }
+```
+
+`other`는 타입이 `Goblin&&`(rvalue 참조)이지만, **이름이 존재하므로 함수 내부에서는 L-value**로 취급됩니다. 따라서 `Monster(other)`는 **부모의 복사 생성자**를 호출하게 됩니다. 의도와 다르게 무거운 복사가 일어납니다.
+
+```cpp
+// ✅ 좋은 예
+Goblin(Goblin&& other) : Monster(std::move(other)) { ... }
+```
+
+반드시 `std::move()`를 다시 한번 사용하여 rvalue로 캐스팅해줘야 부모의 이동 생성자가 호출됩니다.
+
+---
+
+### 🧠 [Case Study] 언제 이동 생성자가 "놀고 있는 코드(Dead Code)"가 될까?
+
+프로젝트 설계에 따라 이동 생성자가 한 번도 호출되지 않을 수 있습니다.
+
+**상황**: 모든 객체를 `std::unique_ptr`로만 관리할 때
+- `unique_ptr`이 이동할 때는 **포인터(주소값) 8바이트**만 이동합니다.
+- 실제 내부 객체(Monster 등)의 이동 생성자는 호출되지 않습니다.
+- **교훈**: 사용하지 않는 코드는 버그의 온상이 됩니다. 꼭 필요한 경우가 아니라면 **Rule of Zero**나 `= delete`를 통해 명확히 설계하세요.

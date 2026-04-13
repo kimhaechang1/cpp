@@ -1,0 +1,20 @@
+[
+{
+  "directory": "C:/cpp/cpp_basics/module_11/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFMT_SHARED -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/DungeonRaidTest.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\DungeonRaidTest.dir\\test_dungeon_raid.cpp.obj -c C:\\cpp\\cpp_basics\\module_11\\test_dungeon_raid.cpp",
+  "file": "C:/cpp/cpp_basics/module_11/test_dungeon_raid.cpp",
+  "output": "CMakeFiles/DungeonRaidTest.dir/test_dungeon_raid.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_11/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFMT_SHARED -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/DungeonRaidTest.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\DungeonRaidTest.dir\\Monster.cpp.obj -c C:\\cpp\\cpp_basics\\module_11\\Monster.cpp",
+  "file": "C:/cpp/cpp_basics/module_11/Monster.cpp",
+  "output": "CMakeFiles/DungeonRaidTest.dir/Monster.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_11/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFMT_SHARED -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/DungeonRaidTest.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\DungeonRaidTest.dir\\DungeonRaid.cpp.obj -c C:\\cpp\\cpp_basics\\module_11\\DungeonRaid.cpp",
+  "file": "C:/cpp/cpp_basics/module_11/DungeonRaid.cpp",
+  "output": "CMakeFiles/DungeonRaidTest.dir/DungeonRaid.cpp.obj"
+}
+]

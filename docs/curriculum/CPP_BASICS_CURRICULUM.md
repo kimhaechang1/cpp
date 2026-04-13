@@ -149,8 +149,11 @@
 
 #### MODULE 11: [신규] 병렬 프로그래밍 (Concurrency)
 - [x] **Thread 기초**: `std::thread`, `std::mutex`로 레이스 컨디션 이해하기 ([concept](cpp_basics/module_11/concept_thread_basics.md), [practice](cpp_basics/module_11/practice_threads.cpp))
-- [ ] **[C++20] jthread**: 자동으로 Join되는 안전한 스레드 (`std::jthread`) 사용하기
-- [ ] **[Cumulative Practice]**: Basic Concurrency (Thread & jthread) (범위: Thread/jthread + [M1~M10] 각 모듈 최소 1개 필수)
+- [x] **[C++20] jthread**: 자동으로 Join되는 안전한 스레드 (`std::jthread`) 사용하기 ([concept](cpp_basics/module_11/concept_jthread.md), [practice](cpp_basics/module_11/practice_jthread.cpp))
+- [x] **[Cumulative Practice]**: Basic Concurrency (Thread & jthread) (완료! ✅)
+  - [test_dungeon_raid.cpp](file:///c:/cpp/cpp_basics/module_11/test_dungeon_raid.cpp)
+  - [DungeonRaid.h](file:///c:/cpp/cpp_basics/module_11/DungeonRaid.h)
+  - [Monster.h](file:///c:/cpp/cpp_basics/module_11/Monster.h)
 
 #### MODULE 12: [신규] 네트워크 프로토콜 기초 (TCP & UDP)
 > 멀티스레드(M11)의 위력을 극대화할 수 있는 실습 무대. 윈도우 기반 소켓 프로그래밍 입문.

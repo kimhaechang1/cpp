@@ -218,3 +218,35 @@ const std::vector<T>& GetResources() const {
 - **조회 전용 함수**: `int GetCount() const { return count; }`
 
 **이유**: `const`가 없는 함수는 "언제든지 상태를 바꿀 수 있는 위험한 함수"로 낙인찍힙니다. `const` 객체를 사용하는 사람은 이런 함수를 아예 호출조차 할 수 없게 됩니다.
+
+---
+
+### 🚨 [Advanced] 반환값에 `const` 를 쓸 때의 규칙 (M11 심화)
+
+Getter 함수를 작성할 때, **반환 타입에** `const` 를 붙이는 것은 상황에 따라 의미가 달라집니다.
+
+**1. 값 반환 (int, enum 등) - `const` 무의미**
+
+```cpp
+// 나쁜 예: const가 붙어도 아무 효과 없음
+const int GetHp() const { return hp; }
+
+// 좋은 예: 값 반환은 복사본이므로 const 불필요
+int GetHp() const { return hp; }
+```
+
+호출자가 받는 것은 원본이 아닌 **복사본**입니다. 복사본을 수정하든 말든 원본에 전혀 영향이 없으므로, `const` 를 붙여봤자 컴파일러에게 아무 의미도 전달하지 못합니다.
+
+**2. 참조 반환 (`string&` 등) - `const` 필수**
+
+```cpp
+// 나쁜 예: 원본 참조를 그대로 노출 -> 외부에서 내부 데이터 마음대로 수정 가능
+std::string& GetName() const { return name; }
+
+// 좋은 예: 읽기 전용 참조로 캡슐화 유지
+const std::string& GetName() const { return name; }
+```
+
+참조 반환은 원본의 **진짜 주소**를 넘기는 것이므로, `const` 가 없으면 외부에서 내부 데이터를 직접 수정할 수 있는 보안 구멍이 됩니다.
+
+**정리**: `const` 반환은 **참조 반환에만 의미가 있고, 값 반환에는 불필요**합니다.

@@ -4,10 +4,10 @@
 
 | 항목 | 값 |
 |------|-----|
-| **현재 수준** | 입문자 (Module 11 진행 중 / M1~M10 통합 마스터) |
+| **현재 수준** | 중급 (Module 11 마스터 / M1~M11 통합 마스터) |
 | **시작일** | 2026-01-12 |
-| **마지막 학습일** | 2026-04-09 (M10 Cumulative 완수 및 컴파일러 내부 메커니즘 딥다이브) |
-| **총 해결 문제 수** | 25 |
+| **마지막 학습일** | 2026-04-13 (M11 Concurrency 및 TDD 실습 완수) |
+| **총 해결 문제 수** | 26 |
 
 ---
 
@@ -85,10 +85,11 @@
 - [x] **[Cumulative Practice]**: Debugging & Testing (M1~M10 통합 퀘스트 시스템 완수) ✅
 - [x] **[Cumulative Practice 2]**: Version Control & Collaboration (CommitAnalyzer TDD 설계, C++20 파이프라인, 내부 구조 딥다이브 완수) ✅
 
-### **Module 11: 병렬 프로그래밍 (Concurrency)** 🕒 진행 중
+### **Module 11: 병렬 프로그래밍 (Concurrency)** ✅ 완료
 **학습 체크리스트 (Basics):**
 - [x] **Thread 기초**: `std::thread`의 생성, `join/detach` 차이, 및 인자 전달(Decay Copy)과 `std::ref`의 원리 이해 ([concept](cpp_basics/module_11/concept_thread_basics.md), [practice](cpp_basics/module_11/practice_threads.cpp))
-- [ ] **[C++20] jthread**: 자동으로 Join되는 안전한 스레드 (`std::jthread`) 학습 예정
+- [x] **[C++20] jthread**: 자동으로 Join되는 안전한 스레드 (`std::jthread`) 및 `stop_token` 활용 완수
+- [x] **[Cumulative Practice]**: 던전 레이드 TDD (스레드 세이프 기록 관리, `std::lock_guard`, `std::stop_token` 통합 실습) ✅
 
 
 ---
