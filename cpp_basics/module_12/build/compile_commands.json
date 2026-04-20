@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/cpp/cpp_basics/module_12/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++17 -o CMakeFiles\\practice_winsock_setup.dir\\practice_winsock_setup.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_winsock_setup.cpp",
+  "file": "C:/cpp/cpp_basics/module_12/practice_winsock_setup.cpp",
+  "output": "CMakeFiles/practice_winsock_setup.dir/practice_winsock_setup.cpp.obj"
+}
+]

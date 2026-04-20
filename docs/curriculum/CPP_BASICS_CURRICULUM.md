@@ -158,7 +158,7 @@
 
 #### MODULE 12: [신규] 네트워크 프로토콜 기초 (TCP & UDP)
 > 멀티스레드(M11)의 위력을 극대화할 수 있는 실습 무대. 윈도우 기반 소켓 프로그래밍 입문.
-- [ ] **Winsock2 환경 세팅**: Windows API 설정 및 통신 흐름(IP/Port) 이해.
+- [x] **Winsock2 환경 세팅**: Windows API 설정 및 통신 흐름(IP/Port) 이해. ([concept](cpp_basics/module_12/concept_winsock_setup.md), [practice](cpp_basics/module_12/practice_winsock_setup.cpp), [deep-dive](cpp_basics/module_12/concept_winapi_types.md))
 - [ ] **신뢰성의 TCP**: 스트림(Stream) 기반 연결형 통신 실습.
 - [ ] **속도의 UDP**: 데이터그램(Datagram) 기반 비연결형 통신 실습.
 - [ ] **[Cumulative Practice 1]**: TCP/UDP Game Data Sync (범위: TCP/UDP 소켓 통신 + [M1~M10] 몬스터/플레이어 직렬화 전송)

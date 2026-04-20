@@ -8,7 +8,7 @@ TabWidth: 4
 UseTab: Never
 
 # 2. 한 줄 함수 바디 강제 닫힘 방지
-AllowShortFunctionsOnASingleLine: None
+AllowShortFunctionsOnASingleLine: Empty
 AllowShortBlocksOnASingleLine: Never
 AllowShortIfStatementsOnASingleLine: Never
 AllowShortLoopsOnASingleLine: false
@@ -19,8 +19,8 @@ BraceWrapping:
   AfterFunction: true
   AfterClass: true
   AfterStruct: true
-  AfterControlStatement: false  # if, for 등은 여전히 같은 줄에 열기 (원하시면 true로 변경 가능)
-  AfterNamespace: false
-  BeforeElse: false
-  BeforeCatch: false
+  AfterControlStatement: true
+  AfterNamespace: true
+  BeforeElse: true
+  BeforeCatch: true
 ...
