@@ -128,6 +128,228 @@ practice_winsock_setup/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_winsock_setup.dir\build.make CMakeFiles/practice_winsock_setup.dir/build
 .PHONY : practice_winsock_setup/fast
 
+#=============================================================================
+# Target rules for targets named practice_tcp_socket
+
+# Build rule for target.
+practice_tcp_socket: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice_tcp_socket
+.PHONY : practice_tcp_socket
+
+# fast build rule for target.
+practice_tcp_socket/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_tcp_socket.dir\build.make CMakeFiles/practice_tcp_socket.dir/build
+.PHONY : practice_tcp_socket/fast
+
+#=============================================================================
+# Target rules for targets named practice_server_setup
+
+# Build rule for target.
+practice_server_setup: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice_server_setup
+.PHONY : practice_server_setup
+
+# fast build rule for target.
+practice_server_setup/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_server_setup.dir\build.make CMakeFiles/practice_server_setup.dir/build
+.PHONY : practice_server_setup/fast
+
+#=============================================================================
+# Target rules for targets named practice_server_accept
+
+# Build rule for target.
+practice_server_accept: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice_server_accept
+.PHONY : practice_server_accept
+
+# fast build rule for target.
+practice_server_accept/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_server_accept.dir\build.make CMakeFiles/practice_server_accept.dir/build
+.PHONY : practice_server_accept/fast
+
+#=============================================================================
+# Target rules for targets named practice_client_connect
+
+# Build rule for target.
+practice_client_connect: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice_client_connect
+.PHONY : practice_client_connect
+
+# fast build rule for target.
+practice_client_connect/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_client_connect.dir\build.make CMakeFiles/practice_client_connect.dir/build
+.PHONY : practice_client_connect/fast
+
+#=============================================================================
+# Target rules for targets named practice_echo_server
+
+# Build rule for target.
+practice_echo_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice_echo_server
+.PHONY : practice_echo_server
+
+# fast build rule for target.
+practice_echo_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_echo_server.dir\build.make CMakeFiles/practice_echo_server.dir/build
+.PHONY : practice_echo_server/fast
+
+#=============================================================================
+# Target rules for targets named practice_talk_client
+
+# Build rule for target.
+practice_talk_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice_talk_client
+.PHONY : practice_talk_client
+
+# fast build rule for target.
+practice_talk_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_talk_client.dir\build.make CMakeFiles/practice_talk_client.dir/build
+.PHONY : practice_talk_client/fast
+
+practice_client_connect.obj: practice_client_connect.cpp.obj
+.PHONY : practice_client_connect.obj
+
+# target to build an object file
+practice_client_connect.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_client_connect.dir\build.make CMakeFiles/practice_client_connect.dir/practice_client_connect.cpp.obj
+.PHONY : practice_client_connect.cpp.obj
+
+practice_client_connect.i: practice_client_connect.cpp.i
+.PHONY : practice_client_connect.i
+
+# target to preprocess a source file
+practice_client_connect.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_client_connect.dir\build.make CMakeFiles/practice_client_connect.dir/practice_client_connect.cpp.i
+.PHONY : practice_client_connect.cpp.i
+
+practice_client_connect.s: practice_client_connect.cpp.s
+.PHONY : practice_client_connect.s
+
+# target to generate assembly for a file
+practice_client_connect.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_client_connect.dir\build.make CMakeFiles/practice_client_connect.dir/practice_client_connect.cpp.s
+.PHONY : practice_client_connect.cpp.s
+
+practice_echo_server.obj: practice_echo_server.cpp.obj
+.PHONY : practice_echo_server.obj
+
+# target to build an object file
+practice_echo_server.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_echo_server.dir\build.make CMakeFiles/practice_echo_server.dir/practice_echo_server.cpp.obj
+.PHONY : practice_echo_server.cpp.obj
+
+practice_echo_server.i: practice_echo_server.cpp.i
+.PHONY : practice_echo_server.i
+
+# target to preprocess a source file
+practice_echo_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_echo_server.dir\build.make CMakeFiles/practice_echo_server.dir/practice_echo_server.cpp.i
+.PHONY : practice_echo_server.cpp.i
+
+practice_echo_server.s: practice_echo_server.cpp.s
+.PHONY : practice_echo_server.s
+
+# target to generate assembly for a file
+practice_echo_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_echo_server.dir\build.make CMakeFiles/practice_echo_server.dir/practice_echo_server.cpp.s
+.PHONY : practice_echo_server.cpp.s
+
+practice_server_accept.obj: practice_server_accept.cpp.obj
+.PHONY : practice_server_accept.obj
+
+# target to build an object file
+practice_server_accept.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_server_accept.dir\build.make CMakeFiles/practice_server_accept.dir/practice_server_accept.cpp.obj
+.PHONY : practice_server_accept.cpp.obj
+
+practice_server_accept.i: practice_server_accept.cpp.i
+.PHONY : practice_server_accept.i
+
+# target to preprocess a source file
+practice_server_accept.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_server_accept.dir\build.make CMakeFiles/practice_server_accept.dir/practice_server_accept.cpp.i
+.PHONY : practice_server_accept.cpp.i
+
+practice_server_accept.s: practice_server_accept.cpp.s
+.PHONY : practice_server_accept.s
+
+# target to generate assembly for a file
+practice_server_accept.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_server_accept.dir\build.make CMakeFiles/practice_server_accept.dir/practice_server_accept.cpp.s
+.PHONY : practice_server_accept.cpp.s
+
+practice_server_setup.obj: practice_server_setup.cpp.obj
+.PHONY : practice_server_setup.obj
+
+# target to build an object file
+practice_server_setup.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_server_setup.dir\build.make CMakeFiles/practice_server_setup.dir/practice_server_setup.cpp.obj
+.PHONY : practice_server_setup.cpp.obj
+
+practice_server_setup.i: practice_server_setup.cpp.i
+.PHONY : practice_server_setup.i
+
+# target to preprocess a source file
+practice_server_setup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_server_setup.dir\build.make CMakeFiles/practice_server_setup.dir/practice_server_setup.cpp.i
+.PHONY : practice_server_setup.cpp.i
+
+practice_server_setup.s: practice_server_setup.cpp.s
+.PHONY : practice_server_setup.s
+
+# target to generate assembly for a file
+practice_server_setup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_server_setup.dir\build.make CMakeFiles/practice_server_setup.dir/practice_server_setup.cpp.s
+.PHONY : practice_server_setup.cpp.s
+
+practice_talk_client.obj: practice_talk_client.cpp.obj
+.PHONY : practice_talk_client.obj
+
+# target to build an object file
+practice_talk_client.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_talk_client.dir\build.make CMakeFiles/practice_talk_client.dir/practice_talk_client.cpp.obj
+.PHONY : practice_talk_client.cpp.obj
+
+practice_talk_client.i: practice_talk_client.cpp.i
+.PHONY : practice_talk_client.i
+
+# target to preprocess a source file
+practice_talk_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_talk_client.dir\build.make CMakeFiles/practice_talk_client.dir/practice_talk_client.cpp.i
+.PHONY : practice_talk_client.cpp.i
+
+practice_talk_client.s: practice_talk_client.cpp.s
+.PHONY : practice_talk_client.s
+
+# target to generate assembly for a file
+practice_talk_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_talk_client.dir\build.make CMakeFiles/practice_talk_client.dir/practice_talk_client.cpp.s
+.PHONY : practice_talk_client.cpp.s
+
+practice_tcp_socket.obj: practice_tcp_socket.cpp.obj
+.PHONY : practice_tcp_socket.obj
+
+# target to build an object file
+practice_tcp_socket.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_tcp_socket.dir\build.make CMakeFiles/practice_tcp_socket.dir/practice_tcp_socket.cpp.obj
+.PHONY : practice_tcp_socket.cpp.obj
+
+practice_tcp_socket.i: practice_tcp_socket.cpp.i
+.PHONY : practice_tcp_socket.i
+
+# target to preprocess a source file
+practice_tcp_socket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_tcp_socket.dir\build.make CMakeFiles/practice_tcp_socket.dir/practice_tcp_socket.cpp.i
+.PHONY : practice_tcp_socket.cpp.i
+
+practice_tcp_socket.s: practice_tcp_socket.cpp.s
+.PHONY : practice_tcp_socket.s
+
+# target to generate assembly for a file
+practice_tcp_socket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_tcp_socket.dir\build.make CMakeFiles/practice_tcp_socket.dir/practice_tcp_socket.cpp.s
+.PHONY : practice_tcp_socket.cpp.s
+
 practice_winsock_setup.obj: practice_winsock_setup.cpp.obj
 .PHONY : practice_winsock_setup.obj
 
@@ -160,7 +382,31 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... practice_client_connect
+	@echo ... practice_echo_server
+	@echo ... practice_server_accept
+	@echo ... practice_server_setup
+	@echo ... practice_talk_client
+	@echo ... practice_tcp_socket
 	@echo ... practice_winsock_setup
+	@echo ... practice_client_connect.obj
+	@echo ... practice_client_connect.i
+	@echo ... practice_client_connect.s
+	@echo ... practice_echo_server.obj
+	@echo ... practice_echo_server.i
+	@echo ... practice_echo_server.s
+	@echo ... practice_server_accept.obj
+	@echo ... practice_server_accept.i
+	@echo ... practice_server_accept.s
+	@echo ... practice_server_setup.obj
+	@echo ... practice_server_setup.i
+	@echo ... practice_server_setup.s
+	@echo ... practice_talk_client.obj
+	@echo ... practice_talk_client.i
+	@echo ... practice_talk_client.s
+	@echo ... practice_tcp_socket.obj
+	@echo ... practice_tcp_socket.i
+	@echo ... practice_tcp_socket.s
 	@echo ... practice_winsock_setup.obj
 	@echo ... practice_winsock_setup.i
 	@echo ... practice_winsock_setup.s

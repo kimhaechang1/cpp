@@ -63,10 +63,22 @@ CMAKE_BINARY_DIR = C:\cpp\cpp_basics\module_12\build
 
 # The main recursive "all" target.
 all: CMakeFiles/practice_winsock_setup.dir/all
+all: CMakeFiles/practice_tcp_socket.dir/all
+all: CMakeFiles/practice_server_setup.dir/all
+all: CMakeFiles/practice_server_accept.dir/all
+all: CMakeFiles/practice_client_connect.dir/all
+all: CMakeFiles/practice_echo_server.dir/all
+all: CMakeFiles/practice_talk_client.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/practice_winsock_setup.dir/codegen
+codegen: CMakeFiles/practice_tcp_socket.dir/codegen
+codegen: CMakeFiles/practice_server_setup.dir/codegen
+codegen: CMakeFiles/practice_server_accept.dir/codegen
+codegen: CMakeFiles/practice_client_connect.dir/codegen
+codegen: CMakeFiles/practice_echo_server.dir/codegen
+codegen: CMakeFiles/practice_talk_client.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,6 +87,12 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/practice_winsock_setup.dir/clean
+clean: CMakeFiles/practice_tcp_socket.dir/clean
+clean: CMakeFiles/practice_server_setup.dir/clean
+clean: CMakeFiles/practice_server_accept.dir/clean
+clean: CMakeFiles/practice_client_connect.dir/clean
+clean: CMakeFiles/practice_echo_server.dir/clean
+clean: CMakeFiles/practice_talk_client.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -84,7 +102,7 @@ clean: CMakeFiles/practice_winsock_setup.dir/clean
 CMakeFiles/practice_winsock_setup.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_winsock_setup.dir\build.make CMakeFiles/practice_winsock_setup.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_winsock_setup.dir\build.make CMakeFiles/practice_winsock_setup.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_12\build\CMakeFiles --progress-num=1,2 "Built target practice_winsock_setup"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_12\build\CMakeFiles --progress-num=13,14 "Built target practice_winsock_setup"
 .PHONY : CMakeFiles/practice_winsock_setup.dir/all
 
 # Build rule for subdir invocation for target.
@@ -101,13 +119,205 @@ practice_winsock_setup: CMakeFiles/practice_winsock_setup.dir/rule
 # codegen rule for target.
 CMakeFiles/practice_winsock_setup.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_winsock_setup.dir\build.make CMakeFiles/practice_winsock_setup.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_12\build\CMakeFiles --progress-num=1,2 "Finished codegen for target practice_winsock_setup"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_12\build\CMakeFiles --progress-num=13,14 "Finished codegen for target practice_winsock_setup"
 .PHONY : CMakeFiles/practice_winsock_setup.dir/codegen
 
 # clean rule for target.
 CMakeFiles/practice_winsock_setup.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_winsock_setup.dir\build.make CMakeFiles/practice_winsock_setup.dir/clean
 .PHONY : CMakeFiles/practice_winsock_setup.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/practice_tcp_socket.dir
+
+# All Build rule for target.
+CMakeFiles/practice_tcp_socket.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_tcp_socket.dir\build.make CMakeFiles/practice_tcp_socket.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_tcp_socket.dir\build.make CMakeFiles/practice_tcp_socket.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_12\build\CMakeFiles --progress-num=11,12 "Built target practice_tcp_socket"
+.PHONY : CMakeFiles/practice_tcp_socket.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/practice_tcp_socket.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_12\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/practice_tcp_socket.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_12\build\CMakeFiles 0
+.PHONY : CMakeFiles/practice_tcp_socket.dir/rule
+
+# Convenience name for target.
+practice_tcp_socket: CMakeFiles/practice_tcp_socket.dir/rule
+.PHONY : practice_tcp_socket
+
+# codegen rule for target.
+CMakeFiles/practice_tcp_socket.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_tcp_socket.dir\build.make CMakeFiles/practice_tcp_socket.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_12\build\CMakeFiles --progress-num=11,12 "Finished codegen for target practice_tcp_socket"
+.PHONY : CMakeFiles/practice_tcp_socket.dir/codegen
+
+# clean rule for target.
+CMakeFiles/practice_tcp_socket.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_tcp_socket.dir\build.make CMakeFiles/practice_tcp_socket.dir/clean
+.PHONY : CMakeFiles/practice_tcp_socket.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/practice_server_setup.dir
+
+# All Build rule for target.
+CMakeFiles/practice_server_setup.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_server_setup.dir\build.make CMakeFiles/practice_server_setup.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_server_setup.dir\build.make CMakeFiles/practice_server_setup.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_12\build\CMakeFiles --progress-num=7,8 "Built target practice_server_setup"
+.PHONY : CMakeFiles/practice_server_setup.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/practice_server_setup.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_12\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/practice_server_setup.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_12\build\CMakeFiles 0
+.PHONY : CMakeFiles/practice_server_setup.dir/rule
+
+# Convenience name for target.
+practice_server_setup: CMakeFiles/practice_server_setup.dir/rule
+.PHONY : practice_server_setup
+
+# codegen rule for target.
+CMakeFiles/practice_server_setup.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_server_setup.dir\build.make CMakeFiles/practice_server_setup.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_12\build\CMakeFiles --progress-num=7,8 "Finished codegen for target practice_server_setup"
+.PHONY : CMakeFiles/practice_server_setup.dir/codegen
+
+# clean rule for target.
+CMakeFiles/practice_server_setup.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_server_setup.dir\build.make CMakeFiles/practice_server_setup.dir/clean
+.PHONY : CMakeFiles/practice_server_setup.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/practice_server_accept.dir
+
+# All Build rule for target.
+CMakeFiles/practice_server_accept.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_server_accept.dir\build.make CMakeFiles/practice_server_accept.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_server_accept.dir\build.make CMakeFiles/practice_server_accept.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_12\build\CMakeFiles --progress-num=5,6 "Built target practice_server_accept"
+.PHONY : CMakeFiles/practice_server_accept.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/practice_server_accept.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_12\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/practice_server_accept.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_12\build\CMakeFiles 0
+.PHONY : CMakeFiles/practice_server_accept.dir/rule
+
+# Convenience name for target.
+practice_server_accept: CMakeFiles/practice_server_accept.dir/rule
+.PHONY : practice_server_accept
+
+# codegen rule for target.
+CMakeFiles/practice_server_accept.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_server_accept.dir\build.make CMakeFiles/practice_server_accept.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_12\build\CMakeFiles --progress-num=5,6 "Finished codegen for target practice_server_accept"
+.PHONY : CMakeFiles/practice_server_accept.dir/codegen
+
+# clean rule for target.
+CMakeFiles/practice_server_accept.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_server_accept.dir\build.make CMakeFiles/practice_server_accept.dir/clean
+.PHONY : CMakeFiles/practice_server_accept.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/practice_client_connect.dir
+
+# All Build rule for target.
+CMakeFiles/practice_client_connect.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_client_connect.dir\build.make CMakeFiles/practice_client_connect.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_client_connect.dir\build.make CMakeFiles/practice_client_connect.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_12\build\CMakeFiles --progress-num=1,2 "Built target practice_client_connect"
+.PHONY : CMakeFiles/practice_client_connect.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/practice_client_connect.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_12\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/practice_client_connect.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_12\build\CMakeFiles 0
+.PHONY : CMakeFiles/practice_client_connect.dir/rule
+
+# Convenience name for target.
+practice_client_connect: CMakeFiles/practice_client_connect.dir/rule
+.PHONY : practice_client_connect
+
+# codegen rule for target.
+CMakeFiles/practice_client_connect.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_client_connect.dir\build.make CMakeFiles/practice_client_connect.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_12\build\CMakeFiles --progress-num=1,2 "Finished codegen for target practice_client_connect"
+.PHONY : CMakeFiles/practice_client_connect.dir/codegen
+
+# clean rule for target.
+CMakeFiles/practice_client_connect.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_client_connect.dir\build.make CMakeFiles/practice_client_connect.dir/clean
+.PHONY : CMakeFiles/practice_client_connect.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/practice_echo_server.dir
+
+# All Build rule for target.
+CMakeFiles/practice_echo_server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_echo_server.dir\build.make CMakeFiles/practice_echo_server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_echo_server.dir\build.make CMakeFiles/practice_echo_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_12\build\CMakeFiles --progress-num=3,4 "Built target practice_echo_server"
+.PHONY : CMakeFiles/practice_echo_server.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/practice_echo_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_12\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/practice_echo_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_12\build\CMakeFiles 0
+.PHONY : CMakeFiles/practice_echo_server.dir/rule
+
+# Convenience name for target.
+practice_echo_server: CMakeFiles/practice_echo_server.dir/rule
+.PHONY : practice_echo_server
+
+# codegen rule for target.
+CMakeFiles/practice_echo_server.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_echo_server.dir\build.make CMakeFiles/practice_echo_server.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_12\build\CMakeFiles --progress-num=3,4 "Finished codegen for target practice_echo_server"
+.PHONY : CMakeFiles/practice_echo_server.dir/codegen
+
+# clean rule for target.
+CMakeFiles/practice_echo_server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_echo_server.dir\build.make CMakeFiles/practice_echo_server.dir/clean
+.PHONY : CMakeFiles/practice_echo_server.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/practice_talk_client.dir
+
+# All Build rule for target.
+CMakeFiles/practice_talk_client.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_talk_client.dir\build.make CMakeFiles/practice_talk_client.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_talk_client.dir\build.make CMakeFiles/practice_talk_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_12\build\CMakeFiles --progress-num=9,10 "Built target practice_talk_client"
+.PHONY : CMakeFiles/practice_talk_client.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/practice_talk_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_12\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/practice_talk_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_12\build\CMakeFiles 0
+.PHONY : CMakeFiles/practice_talk_client.dir/rule
+
+# Convenience name for target.
+practice_talk_client: CMakeFiles/practice_talk_client.dir/rule
+.PHONY : practice_talk_client
+
+# codegen rule for target.
+CMakeFiles/practice_talk_client.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_talk_client.dir\build.make CMakeFiles/practice_talk_client.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_12\build\CMakeFiles --progress-num=9,10 "Finished codegen for target practice_talk_client"
+.PHONY : CMakeFiles/practice_talk_client.dir/codegen
+
+# clean rule for target.
+CMakeFiles/practice_talk_client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_talk_client.dir\build.make CMakeFiles/practice_talk_client.dir/clean
+.PHONY : CMakeFiles/practice_talk_client.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

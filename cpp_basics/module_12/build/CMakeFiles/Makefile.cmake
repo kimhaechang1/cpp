@@ -62,4 +62,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/practice_winsock_setup.dir/DependInfo.cmake"
+  "CMakeFiles/practice_tcp_socket.dir/DependInfo.cmake"
+  "CMakeFiles/practice_server_setup.dir/DependInfo.cmake"
+  "CMakeFiles/practice_server_accept.dir/DependInfo.cmake"
+  "CMakeFiles/practice_client_connect.dir/DependInfo.cmake"
+  "CMakeFiles/practice_echo_server.dir/DependInfo.cmake"
+  "CMakeFiles/practice_talk_client.dir/DependInfo.cmake"
   )

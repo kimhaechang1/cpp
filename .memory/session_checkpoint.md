@@ -1,19 +1,21 @@
-# Session Checkpoint: 2026-04-20
+# Session Checkpoint: 2026-04-21 (Final)
 
 ## 🎯 Current Goal
-- Mastering Network Protocol basics (Winsock2) and moving towards TCP communication.
+- Completed TCP Networking Fundamentals and preparing for UDP.
 
 ## ✅ Completed Tasks
-- **Module 12 Step 1**: Winsock2 environment setup completed.
-- **RAII Implementation**: Created `NetworkManager` class with `WSAStartup`/`WSACleanup` in constructor/destructor.
-- **CS Knowledge**: Deeply understood `WORD`, `MAKEWORD`, `0xFF` bitmasking, and DLL loading mechanics.
-- **Tooling**: Updated `tasks.json` for Module 12 and configured Allman-style formatting in `.clang-format`.
+- **TCP Connection Lifecycle**: Mastered the full flow from `socket` to `closesocket`.
+- **Bidirectional Communication**: Successfully implemented an Echo Server/Talk Client system.
+- **Data Integrity**: Understood how `recv` length must be handled correctly to avoid memory garbage.
+- **Debugging Documentation**: Learned to use Win32 API official documentation and SAL annotations ([in], [out]).
+- **Endianness Practice**: Visualized byte swapping for network transmission.
 
 ## 🚀 Next Steps
-- **Module 12 Step 2**: TCP Protocol (3-Way Handshake theory + `socket()` function).
-- **Socket Creation**: Adding socket management to the `NetworkManager` class.
+- **UDP Protocol**: Learning `SOCK_DGRAM`, `sendto`, and `recvfrom`.
+- **Advanced Networking**: Handling packet fragmentation and building a basic Packet Manager.
+- **Cumulative Practice**: Synchronizing game object data (Monster/Player) over the network.
 
 ## ⚠️ Key Constraints & Lessons
-- **Initialization Order**: `WSAStartup` must be called before ANY other Winsock functions (like `socket()`).
-- **Bitwise Logic**: `(value >> 8) & 0xFF` extracts the high byte, `value & 0xFF` extracts the low byte.
-- **RAII is King**: Managing network resources via class lifetimes prevents DLL resource leaks.
+- **TCP is a Stream**: Remember that boundaries don't exist; headers with length are mandatory for real-world apps.
+- **Function Returns**: Always capture the return value of `recv()` to know the actual data size.
+- **Header Knowledge**: `INET_ADDRSTRLEN` is 22 in this MinGW environment, reminding us to rely on macros over hardcoded values.

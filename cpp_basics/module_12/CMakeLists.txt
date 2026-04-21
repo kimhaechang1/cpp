@@ -5,4 +5,17 @@ set(CMAKE_CXX_STANDARD 17)
 
 # Winsock2 Library Linkage
 add_executable(practice_winsock_setup practice_winsock_setup.cpp)
+add_executable(practice_tcp_socket practice_tcp_socket.cpp)
+add_executable(practice_server_setup practice_server_setup.cpp)
+add_executable(practice_server_accept practice_server_accept.cpp)
+add_executable(practice_client_connect practice_client_connect.cpp)
+add_executable(practice_echo_server practice_echo_server.cpp)
+add_executable(practice_talk_client practice_talk_client.cpp)
+
 target_link_libraries(practice_winsock_setup ws2_32)
+target_link_libraries(practice_tcp_socket ws2_32)
+target_link_libraries(practice_server_setup ws2_32)
+target_link_libraries(practice_server_accept ws2_32)
+target_link_libraries(practice_client_connect ws2_32)
+target_link_libraries(practice_echo_server ws2_32)
+target_link_libraries(practice_talk_client ws2_32)

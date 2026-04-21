@@ -1,0 +1,3 @@
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E rm -f CMakeFiles\practice_client_connect.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\practice_client_connect.dir/objects.a @CMakeFiles\practice_client_connect.dir\objects1.rsp
+C:\msys64\ucrt64\bin\c++.exe -Wl,--whole-archive CMakeFiles\practice_client_connect.dir/objects.a -Wl,--no-whole-archive -o practice_client_connect.exe -Wl,--out-implib,libpractice_client_connect.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\practice_client_connect.dir\linkLibs.rsp

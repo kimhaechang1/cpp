@@ -4,5 +4,41 @@
   "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++17 -o CMakeFiles\\practice_winsock_setup.dir\\practice_winsock_setup.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_winsock_setup.cpp",
   "file": "C:/cpp/cpp_basics/module_12/practice_winsock_setup.cpp",
   "output": "CMakeFiles/practice_winsock_setup.dir/practice_winsock_setup.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_12/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++17 -o CMakeFiles\\practice_tcp_socket.dir\\practice_tcp_socket.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_tcp_socket.cpp",
+  "file": "C:/cpp/cpp_basics/module_12/practice_tcp_socket.cpp",
+  "output": "CMakeFiles/practice_tcp_socket.dir/practice_tcp_socket.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_12/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++17 -o CMakeFiles\\practice_server_setup.dir\\practice_server_setup.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_server_setup.cpp",
+  "file": "C:/cpp/cpp_basics/module_12/practice_server_setup.cpp",
+  "output": "CMakeFiles/practice_server_setup.dir/practice_server_setup.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_12/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++17 -o CMakeFiles\\practice_server_accept.dir\\practice_server_accept.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_server_accept.cpp",
+  "file": "C:/cpp/cpp_basics/module_12/practice_server_accept.cpp",
+  "output": "CMakeFiles/practice_server_accept.dir/practice_server_accept.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_12/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++17 -o CMakeFiles\\practice_client_connect.dir\\practice_client_connect.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_client_connect.cpp",
+  "file": "C:/cpp/cpp_basics/module_12/practice_client_connect.cpp",
+  "output": "CMakeFiles/practice_client_connect.dir/practice_client_connect.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_12/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++17 -o CMakeFiles\\practice_echo_server.dir\\practice_echo_server.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_echo_server.cpp",
+  "file": "C:/cpp/cpp_basics/module_12/practice_echo_server.cpp",
+  "output": "CMakeFiles/practice_echo_server.dir/practice_echo_server.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_12/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++17 -o CMakeFiles\\practice_talk_client.dir\\practice_talk_client.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_talk_client.cpp",
+  "file": "C:/cpp/cpp_basics/module_12/practice_talk_client.cpp",
+  "output": "CMakeFiles/practice_talk_client.dir/practice_talk_client.cpp.obj"
 }
 ]

@@ -1,3 +1,9 @@
 C:/cpp/cpp_basics/module_12/build/CMakeFiles/practice_winsock_setup.dir
+C:/cpp/cpp_basics/module_12/build/CMakeFiles/practice_tcp_socket.dir
+C:/cpp/cpp_basics/module_12/build/CMakeFiles/practice_server_setup.dir
+C:/cpp/cpp_basics/module_12/build/CMakeFiles/practice_server_accept.dir
+C:/cpp/cpp_basics/module_12/build/CMakeFiles/practice_client_connect.dir
+C:/cpp/cpp_basics/module_12/build/CMakeFiles/practice_echo_server.dir
+C:/cpp/cpp_basics/module_12/build/CMakeFiles/practice_talk_client.dir
 C:/cpp/cpp_basics/module_12/build/CMakeFiles/edit_cache.dir
 C:/cpp/cpp_basics/module_12/build/CMakeFiles/rebuild_cache.dir

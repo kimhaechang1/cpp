@@ -158,8 +158,11 @@
 
 #### MODULE 12: [신규] 네트워크 프로토콜 기초 (TCP & UDP)
 > 멀티스레드(M11)의 위력을 극대화할 수 있는 실습 무대. 윈도우 기반 소켓 프로그래밍 입문.
-- [x] **Winsock2 환경 세팅**: Windows API 설정 및 통신 흐름(IP/Port) 이해. ([concept](cpp_basics/module_12/concept_winsock_setup.md), [practice](cpp_basics/module_12/practice_winsock_setup.cpp), [deep-dive](cpp_basics/module_12/concept_winapi_types.md))
-- [ ] **신뢰성의 TCP**: 스트림(Stream) 기반 연결형 통신 실습.
+- [x] **Winsock2 환경 세팅**: Windows API 설정 및 통신 흐름(IP/Port) 이해. ([concept](cpp_basics/module_12/concept_winsock_setup.md), [practice](cpp_basics/module_12/practice_winsock_setup.cpp))
+- [x] **소켓 생성과 TCP 기초**: socket() 함수와 3-Way Handshake 이해. ([concept](cpp_basics/module_12/concept_tcp_protocol.md), [practice](cpp_basics/module_12/practice_tcp_socket.cpp))
+- [x] **전화번호 부여와 연결**: `sockaddr_in` 주소 설정(Endianness) 및 `bind`/`listen` 실습 완료. ✅ ([concept](cpp_basics/module_12/concept_addressing_bind.md), [practice](cpp_basics/module_12/practice_server_setup.cpp), [endian-test](cpp_basics/module_12/practice_endianness.cpp))
+- [x] **전화 걸기 (Client-Side)**: `connect`를 통한 서버 접속 및 주소 정보 매칭. ✅ ([concept](cpp_basics/module_12/concept_connect_accept.md), [practice](cpp_basics/module_12/practice_client_connect.cpp))
+- [x] **신뢰성의 TCP**: 스트림(Stream) 기반 실제 데이터 송수신 (`send`/`recv`). ✅ ([concept](cpp_basics/module_12/concept_send_recv.md), [practice](cpp_basics/module_12/practice_echo_server.cpp), [practice](cpp_basics/module_12/practice_talk_client.cpp))
 - [ ] **속도의 UDP**: 데이터그램(Datagram) 기반 비연결형 통신 실습.
 - [ ] **[Cumulative Practice 1]**: TCP/UDP Game Data Sync (범위: TCP/UDP 소켓 통신 + [M1~M10] 몬스터/플레이어 직렬화 전송)
 
