@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeCXXInformation.cmake"
   "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake"
   "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDependentOption.cmake"
+  "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeFindDependencyMacro.cmake"
   "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeGenericSystem.cmake"
   "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake"
   "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake"
@@ -45,6 +46,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.1.1-msvc1/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.1.1-msvc1/CMakeRCCompiler.cmake"
   "CMakeFiles/4.1.1-msvc1/CMakeSystem.cmake"
+  "C:/cpp/vcpkg/installed/x64-mingw-static/share/gtest/GTestConfig.cmake"
+  "C:/cpp/vcpkg/installed/x64-mingw-static/share/gtest/GTestConfigVersion.cmake"
+  "C:/cpp/vcpkg/installed/x64-mingw-static/share/gtest/GTestTargets-debug.cmake"
+  "C:/cpp/vcpkg/installed/x64-mingw-static/share/gtest/GTestTargets-release.cmake"
+  "C:/cpp/vcpkg/installed/x64-mingw-static/share/gtest/GTestTargets.cmake"
   "C:/cpp/vcpkg/scripts/buildsystems/vcpkg.cmake"
   )
 
@@ -68,4 +74,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/practice_client_connect.dir/DependInfo.cmake"
   "CMakeFiles/practice_echo_server.dir/DependInfo.cmake"
   "CMakeFiles/practice_talk_client.dir/DependInfo.cmake"
+  "CMakeFiles/practice_udp_echo_server.dir/DependInfo.cmake"
+  "CMakeFiles/practice_udp_echo_client.dir/DependInfo.cmake"
+  "CMakeFiles/test_dungeon_sync.dir/DependInfo.cmake"
   )

@@ -206,6 +206,141 @@ practice_talk_client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_talk_client.dir\build.make CMakeFiles/practice_talk_client.dir/build
 .PHONY : practice_talk_client/fast
 
+#=============================================================================
+# Target rules for targets named practice_udp_echo_server
+
+# Build rule for target.
+practice_udp_echo_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice_udp_echo_server
+.PHONY : practice_udp_echo_server
+
+# fast build rule for target.
+practice_udp_echo_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_udp_echo_server.dir\build.make CMakeFiles/practice_udp_echo_server.dir/build
+.PHONY : practice_udp_echo_server/fast
+
+#=============================================================================
+# Target rules for targets named practice_udp_echo_client
+
+# Build rule for target.
+practice_udp_echo_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice_udp_echo_client
+.PHONY : practice_udp_echo_client
+
+# fast build rule for target.
+practice_udp_echo_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_udp_echo_client.dir\build.make CMakeFiles/practice_udp_echo_client.dir/build
+.PHONY : practice_udp_echo_client/fast
+
+#=============================================================================
+# Target rules for targets named test_dungeon_sync
+
+# Build rule for target.
+test_dungeon_sync: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_dungeon_sync
+.PHONY : test_dungeon_sync
+
+# fast build rule for target.
+test_dungeon_sync/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_dungeon_sync.dir\build.make CMakeFiles/test_dungeon_sync.dir/build
+.PHONY : test_dungeon_sync/fast
+
+ByteSerializer.obj: ByteSerializer.cpp.obj
+.PHONY : ByteSerializer.obj
+
+# target to build an object file
+ByteSerializer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_dungeon_sync.dir\build.make CMakeFiles/test_dungeon_sync.dir/ByteSerializer.cpp.obj
+.PHONY : ByteSerializer.cpp.obj
+
+ByteSerializer.i: ByteSerializer.cpp.i
+.PHONY : ByteSerializer.i
+
+# target to preprocess a source file
+ByteSerializer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_dungeon_sync.dir\build.make CMakeFiles/test_dungeon_sync.dir/ByteSerializer.cpp.i
+.PHONY : ByteSerializer.cpp.i
+
+ByteSerializer.s: ByteSerializer.cpp.s
+.PHONY : ByteSerializer.s
+
+# target to generate assembly for a file
+ByteSerializer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_dungeon_sync.dir\build.make CMakeFiles/test_dungeon_sync.dir/ByteSerializer.cpp.s
+.PHONY : ByteSerializer.cpp.s
+
+GameMessage.obj: GameMessage.cpp.obj
+.PHONY : GameMessage.obj
+
+# target to build an object file
+GameMessage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_dungeon_sync.dir\build.make CMakeFiles/test_dungeon_sync.dir/GameMessage.cpp.obj
+.PHONY : GameMessage.cpp.obj
+
+GameMessage.i: GameMessage.cpp.i
+.PHONY : GameMessage.i
+
+# target to preprocess a source file
+GameMessage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_dungeon_sync.dir\build.make CMakeFiles/test_dungeon_sync.dir/GameMessage.cpp.i
+.PHONY : GameMessage.cpp.i
+
+GameMessage.s: GameMessage.cpp.s
+.PHONY : GameMessage.s
+
+# target to generate assembly for a file
+GameMessage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_dungeon_sync.dir\build.make CMakeFiles/test_dungeon_sync.dir/GameMessage.cpp.s
+.PHONY : GameMessage.cpp.s
+
+PacketBuilder.obj: PacketBuilder.cpp.obj
+.PHONY : PacketBuilder.obj
+
+# target to build an object file
+PacketBuilder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_dungeon_sync.dir\build.make CMakeFiles/test_dungeon_sync.dir/PacketBuilder.cpp.obj
+.PHONY : PacketBuilder.cpp.obj
+
+PacketBuilder.i: PacketBuilder.cpp.i
+.PHONY : PacketBuilder.i
+
+# target to preprocess a source file
+PacketBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_dungeon_sync.dir\build.make CMakeFiles/test_dungeon_sync.dir/PacketBuilder.cpp.i
+.PHONY : PacketBuilder.cpp.i
+
+PacketBuilder.s: PacketBuilder.cpp.s
+.PHONY : PacketBuilder.s
+
+# target to generate assembly for a file
+PacketBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_dungeon_sync.dir\build.make CMakeFiles/test_dungeon_sync.dir/PacketBuilder.cpp.s
+.PHONY : PacketBuilder.cpp.s
+
+SessionManager.obj: SessionManager.cpp.obj
+.PHONY : SessionManager.obj
+
+# target to build an object file
+SessionManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_dungeon_sync.dir\build.make CMakeFiles/test_dungeon_sync.dir/SessionManager.cpp.obj
+.PHONY : SessionManager.cpp.obj
+
+SessionManager.i: SessionManager.cpp.i
+.PHONY : SessionManager.i
+
+# target to preprocess a source file
+SessionManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_dungeon_sync.dir\build.make CMakeFiles/test_dungeon_sync.dir/SessionManager.cpp.i
+.PHONY : SessionManager.cpp.i
+
+SessionManager.s: SessionManager.cpp.s
+.PHONY : SessionManager.s
+
+# target to generate assembly for a file
+SessionManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_dungeon_sync.dir\build.make CMakeFiles/test_dungeon_sync.dir/SessionManager.cpp.s
+.PHONY : SessionManager.cpp.s
+
 practice_client_connect.obj: practice_client_connect.cpp.obj
 .PHONY : practice_client_connect.obj
 
@@ -350,6 +485,54 @@ practice_tcp_socket.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_tcp_socket.dir\build.make CMakeFiles/practice_tcp_socket.dir/practice_tcp_socket.cpp.s
 .PHONY : practice_tcp_socket.cpp.s
 
+practice_udp_echo_client.obj: practice_udp_echo_client.cpp.obj
+.PHONY : practice_udp_echo_client.obj
+
+# target to build an object file
+practice_udp_echo_client.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_udp_echo_client.dir\build.make CMakeFiles/practice_udp_echo_client.dir/practice_udp_echo_client.cpp.obj
+.PHONY : practice_udp_echo_client.cpp.obj
+
+practice_udp_echo_client.i: practice_udp_echo_client.cpp.i
+.PHONY : practice_udp_echo_client.i
+
+# target to preprocess a source file
+practice_udp_echo_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_udp_echo_client.dir\build.make CMakeFiles/practice_udp_echo_client.dir/practice_udp_echo_client.cpp.i
+.PHONY : practice_udp_echo_client.cpp.i
+
+practice_udp_echo_client.s: practice_udp_echo_client.cpp.s
+.PHONY : practice_udp_echo_client.s
+
+# target to generate assembly for a file
+practice_udp_echo_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_udp_echo_client.dir\build.make CMakeFiles/practice_udp_echo_client.dir/practice_udp_echo_client.cpp.s
+.PHONY : practice_udp_echo_client.cpp.s
+
+practice_udp_echo_server.obj: practice_udp_echo_server.cpp.obj
+.PHONY : practice_udp_echo_server.obj
+
+# target to build an object file
+practice_udp_echo_server.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_udp_echo_server.dir\build.make CMakeFiles/practice_udp_echo_server.dir/practice_udp_echo_server.cpp.obj
+.PHONY : practice_udp_echo_server.cpp.obj
+
+practice_udp_echo_server.i: practice_udp_echo_server.cpp.i
+.PHONY : practice_udp_echo_server.i
+
+# target to preprocess a source file
+practice_udp_echo_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_udp_echo_server.dir\build.make CMakeFiles/practice_udp_echo_server.dir/practice_udp_echo_server.cpp.i
+.PHONY : practice_udp_echo_server.cpp.i
+
+practice_udp_echo_server.s: practice_udp_echo_server.cpp.s
+.PHONY : practice_udp_echo_server.s
+
+# target to generate assembly for a file
+practice_udp_echo_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_udp_echo_server.dir\build.make CMakeFiles/practice_udp_echo_server.dir/practice_udp_echo_server.cpp.s
+.PHONY : practice_udp_echo_server.cpp.s
+
 practice_winsock_setup.obj: practice_winsock_setup.cpp.obj
 .PHONY : practice_winsock_setup.obj
 
@@ -374,6 +557,30 @@ practice_winsock_setup.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_winsock_setup.dir\build.make CMakeFiles/practice_winsock_setup.dir/practice_winsock_setup.cpp.s
 .PHONY : practice_winsock_setup.cpp.s
 
+test_dungeon_sync.obj: test_dungeon_sync.cpp.obj
+.PHONY : test_dungeon_sync.obj
+
+# target to build an object file
+test_dungeon_sync.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_dungeon_sync.dir\build.make CMakeFiles/test_dungeon_sync.dir/test_dungeon_sync.cpp.obj
+.PHONY : test_dungeon_sync.cpp.obj
+
+test_dungeon_sync.i: test_dungeon_sync.cpp.i
+.PHONY : test_dungeon_sync.i
+
+# target to preprocess a source file
+test_dungeon_sync.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_dungeon_sync.dir\build.make CMakeFiles/test_dungeon_sync.dir/test_dungeon_sync.cpp.i
+.PHONY : test_dungeon_sync.cpp.i
+
+test_dungeon_sync.s: test_dungeon_sync.cpp.s
+.PHONY : test_dungeon_sync.s
+
+# target to generate assembly for a file
+test_dungeon_sync.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_dungeon_sync.dir\build.make CMakeFiles/test_dungeon_sync.dir/test_dungeon_sync.cpp.s
+.PHONY : test_dungeon_sync.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -388,7 +595,22 @@ help:
 	@echo ... practice_server_setup
 	@echo ... practice_talk_client
 	@echo ... practice_tcp_socket
+	@echo ... practice_udp_echo_client
+	@echo ... practice_udp_echo_server
 	@echo ... practice_winsock_setup
+	@echo ... test_dungeon_sync
+	@echo ... ByteSerializer.obj
+	@echo ... ByteSerializer.i
+	@echo ... ByteSerializer.s
+	@echo ... GameMessage.obj
+	@echo ... GameMessage.i
+	@echo ... GameMessage.s
+	@echo ... PacketBuilder.obj
+	@echo ... PacketBuilder.i
+	@echo ... PacketBuilder.s
+	@echo ... SessionManager.obj
+	@echo ... SessionManager.i
+	@echo ... SessionManager.s
 	@echo ... practice_client_connect.obj
 	@echo ... practice_client_connect.i
 	@echo ... practice_client_connect.s
@@ -407,9 +629,18 @@ help:
 	@echo ... practice_tcp_socket.obj
 	@echo ... practice_tcp_socket.i
 	@echo ... practice_tcp_socket.s
+	@echo ... practice_udp_echo_client.obj
+	@echo ... practice_udp_echo_client.i
+	@echo ... practice_udp_echo_client.s
+	@echo ... practice_udp_echo_server.obj
+	@echo ... practice_udp_echo_server.i
+	@echo ... practice_udp_echo_server.s
 	@echo ... practice_winsock_setup.obj
 	@echo ... practice_winsock_setup.i
 	@echo ... practice_winsock_setup.s
+	@echo ... test_dungeon_sync.obj
+	@echo ... test_dungeon_sync.i
+	@echo ... test_dungeon_sync.s
 .PHONY : help
 
 

@@ -1,44 +1,86 @@
 [
 {
   "directory": "C:/cpp/cpp_basics/module_12/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++17 -o CMakeFiles\\practice_winsock_setup.dir\\practice_winsock_setup.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_winsock_setup.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++23 -o CMakeFiles\\practice_winsock_setup.dir\\practice_winsock_setup.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_winsock_setup.cpp",
   "file": "C:/cpp/cpp_basics/module_12/practice_winsock_setup.cpp",
   "output": "CMakeFiles/practice_winsock_setup.dir/practice_winsock_setup.cpp.obj"
 },
 {
   "directory": "C:/cpp/cpp_basics/module_12/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++17 -o CMakeFiles\\practice_tcp_socket.dir\\practice_tcp_socket.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_tcp_socket.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++23 -o CMakeFiles\\practice_tcp_socket.dir\\practice_tcp_socket.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_tcp_socket.cpp",
   "file": "C:/cpp/cpp_basics/module_12/practice_tcp_socket.cpp",
   "output": "CMakeFiles/practice_tcp_socket.dir/practice_tcp_socket.cpp.obj"
 },
 {
   "directory": "C:/cpp/cpp_basics/module_12/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++17 -o CMakeFiles\\practice_server_setup.dir\\practice_server_setup.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_server_setup.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++23 -o CMakeFiles\\practice_server_setup.dir\\practice_server_setup.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_server_setup.cpp",
   "file": "C:/cpp/cpp_basics/module_12/practice_server_setup.cpp",
   "output": "CMakeFiles/practice_server_setup.dir/practice_server_setup.cpp.obj"
 },
 {
   "directory": "C:/cpp/cpp_basics/module_12/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++17 -o CMakeFiles\\practice_server_accept.dir\\practice_server_accept.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_server_accept.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++23 -o CMakeFiles\\practice_server_accept.dir\\practice_server_accept.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_server_accept.cpp",
   "file": "C:/cpp/cpp_basics/module_12/practice_server_accept.cpp",
   "output": "CMakeFiles/practice_server_accept.dir/practice_server_accept.cpp.obj"
 },
 {
   "directory": "C:/cpp/cpp_basics/module_12/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++17 -o CMakeFiles\\practice_client_connect.dir\\practice_client_connect.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_client_connect.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++23 -o CMakeFiles\\practice_client_connect.dir\\practice_client_connect.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_client_connect.cpp",
   "file": "C:/cpp/cpp_basics/module_12/practice_client_connect.cpp",
   "output": "CMakeFiles/practice_client_connect.dir/practice_client_connect.cpp.obj"
 },
 {
   "directory": "C:/cpp/cpp_basics/module_12/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++17 -o CMakeFiles\\practice_echo_server.dir\\practice_echo_server.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_echo_server.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++23 -o CMakeFiles\\practice_echo_server.dir\\practice_echo_server.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_echo_server.cpp",
   "file": "C:/cpp/cpp_basics/module_12/practice_echo_server.cpp",
   "output": "CMakeFiles/practice_echo_server.dir/practice_echo_server.cpp.obj"
 },
 {
   "directory": "C:/cpp/cpp_basics/module_12/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++17 -o CMakeFiles\\practice_talk_client.dir\\practice_talk_client.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_talk_client.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++23 -o CMakeFiles\\practice_talk_client.dir\\practice_talk_client.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_talk_client.cpp",
   "file": "C:/cpp/cpp_basics/module_12/practice_talk_client.cpp",
   "output": "CMakeFiles/practice_talk_client.dir/practice_talk_client.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_12/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++23 -o CMakeFiles\\practice_udp_echo_server.dir\\practice_udp_echo_server.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_udp_echo_server.cpp",
+  "file": "C:/cpp/cpp_basics/module_12/practice_udp_echo_server.cpp",
+  "output": "CMakeFiles/practice_udp_echo_server.dir/practice_udp_echo_server.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_12/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++23 -o CMakeFiles\\practice_udp_echo_client.dir\\practice_udp_echo_client.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\practice_udp_echo_client.cpp",
+  "file": "C:/cpp/cpp_basics/module_12/practice_udp_echo_client.cpp",
+  "output": "CMakeFiles/practice_udp_echo_client.dir/practice_udp_echo_client.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_12/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/test_dungeon_sync.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\test_dungeon_sync.dir\\test_dungeon_sync.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\test_dungeon_sync.cpp",
+  "file": "C:/cpp/cpp_basics/module_12/test_dungeon_sync.cpp",
+  "output": "CMakeFiles/test_dungeon_sync.dir/test_dungeon_sync.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_12/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/test_dungeon_sync.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\test_dungeon_sync.dir\\GameMessage.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\GameMessage.cpp",
+  "file": "C:/cpp/cpp_basics/module_12/GameMessage.cpp",
+  "output": "CMakeFiles/test_dungeon_sync.dir/GameMessage.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_12/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/test_dungeon_sync.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\test_dungeon_sync.dir\\PacketBuilder.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\PacketBuilder.cpp",
+  "file": "C:/cpp/cpp_basics/module_12/PacketBuilder.cpp",
+  "output": "CMakeFiles/test_dungeon_sync.dir/PacketBuilder.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_12/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/test_dungeon_sync.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\test_dungeon_sync.dir\\SessionManager.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\SessionManager.cpp",
+  "file": "C:/cpp/cpp_basics/module_12/SessionManager.cpp",
+  "output": "CMakeFiles/test_dungeon_sync.dir/SessionManager.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_12/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/test_dungeon_sync.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\test_dungeon_sync.dir\\ByteSerializer.cpp.obj -c C:\\cpp\\cpp_basics\\module_12\\ByteSerializer.cpp",
+  "file": "C:/cpp/cpp_basics/module_12/ByteSerializer.cpp",
+  "output": "CMakeFiles/test_dungeon_sync.dir/ByteSerializer.cpp.obj"
 }
 ]
