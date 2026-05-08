@@ -1,5 +1,9 @@
 #include "GameMessage.h"
 #include "ByteSerializer.h"
+// [코드 평가 피드백] (의존성 관리)
+// (문제점) `GameMessage.h`에서 이미 `<optional>`, `<vector>`, `<cstdint>`를 인클루드하고 있습니다.
+// 헤더에 있는 내용을 cpp에서 또 인클루드하는 것은 컴파일 시간을 늘리는 주요 원인입니다. (C++ 프로젝트가 커질수록 컴파일 속도 저하 체감이 큼)
+// (개선 방향) 헤더에서 보장된 인클루드는 cpp에서 과감히 지우는 것이 깔끔합니다.
 #include <cstddef>
 #include <cstdint>
 #include <cstring>
@@ -28,6 +32,17 @@ LoginMessage::Deserialize(std::vector<uint8_t> &byteVec, bool isNetwork)
     size_t nameLen = sizeof(info.name);
     stream.ReadCharArray(info.name, nameLen, lastIdx);
     auto idVal = stream.ReadInt(lastIdx);
+    // [코드 평가 피드백] (코드 우아함 & 패턴)
+    // (문제점) 파싱에 실패할 때마다 `has_value()`를 검사하는 보일러플레이트(반복 코드)가 끝없이 등장하여 가독성이 크게 떨어집니다.
+    // (왜 발생하는가?) `std::optional` 껍질을 벗기기 전에 안전한지 확인해야 하기 때문에 구조상 어쩔 수 없이 발생하는 `if`문 도배 현상입니다.
+    // (수정 방법) C++17 환경에서는 매크로(Macro)나 헬퍼 함수를 만들어 이 반복을 한 줄로 줄이는 것이 현업의 정석입니다.
+    // 수정 예시: 파일 상단에 매크로 정의
+    // #define REQUIRE_READ(opt_val, stream_obj) if(!(opt_val).has_value()) { (stream_obj).EndRead(); return std::nullopt; }
+    // 
+    // 사용 예시:
+    // auto idVal = stream.ReadInt(lastIdx);
+    // REQUIRE_READ(idVal, stream);
+    // info.id = idVal.value();
     if (!idVal.has_value())
     {
         stream.EndRead();

@@ -8,6 +8,15 @@
 /* PlayerInfo, Position, LootInfo 구조체를 구현하세요. */
 struct PlayerInfo
 {
+    // [코드 평가 피드백] (우아함 & 안정성)
+    // (문제점) C++에서 구조체 멤버를 초기화하지 않으면 메모리에 남아있던 쓰레기값(Garbage Value)이 그대로 들어갑니다.
+    // (왜 발생하는가?) C++은 성능을 위해 변수를 선언할 때 해당 공간을 0으로 지우는 작업을 의도적으로 생략합니다. 이 상태로 직렬화를 해버리면 의도치 않은 메모리 찌꺼기까지 네트워크로 전송되어 보안 취약점이나 파싱 에러를 유발합니다.
+    // (수정 방법) C++11/17의 기본 멤버 초기화(Default Member Initializer)를 사용하세요.
+    // 수정 예시:
+    // char name[64] = {0};
+    // int id = 0;
+    // int hp = 0;
+    // int atk = 0;
     char name[64];
     int id;
     int hp;
@@ -69,6 +78,13 @@ class GameMessage
 class LoginMessage : public GameMessage
 {
   private:
+    // [코드 평가 피드백] (아키텍처 패턴 & 메모리 수명)
+    // (문제점) 멤버 변수로 구조체를 참조(`&`)로 보관하고 있습니다.
+    // (왜 발생하는가?) 어떤 함수 안에서 지역 변수 `PlayerInfo info;`를 만들고 이를 `LoginMessage`에 넘겼다고 가정해봅시다. 함수가 끝나면 지역 변수 `info`는 스택 메모리에서 소멸(Destroy)되지만, `LoginMessage` 객체가 어딘가의 큐(Queue)에 남아있다면 어떻게 될까요?
+    // `LoginMessage`가 가진 `&pInfo`는 이미 파괴된 쓰레기 메모리 주소를 가리키는 허상 참조(Dangling Reference)가 되어, 나중에 이 값을 직렬화하려 할 때 엉뚱한 값을 읽거나 Segmentation Fault로 서버가 강제 종료됩니다.
+    // (수정 방법) 네트워크 패킷/메시지는 데이터를 복사하여 스스로 완전한 '소유(Ownership)'를 가져야 합니다.
+    // 수정 예시: 참조(&)를 떼고 값(Value)으로 저장하도록 변경하세요.
+    // `PlayerInfo pInfo;` (생성자도 `LoginMessage(const PlayerInfo& pInfo_) : pInfo(pInfo_)` 로 값 복사가 일어나게 변경)
     PlayerInfo &pInfo;
 
   public:

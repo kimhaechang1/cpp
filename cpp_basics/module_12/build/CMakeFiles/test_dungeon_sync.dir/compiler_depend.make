@@ -1284,15 +1284,26 @@ CMakeFiles/test_dungeon_sync.dir/PacketBuilder.cpp.obj: C:/cpp/cpp_basics/module
 CMakeFiles/test_dungeon_sync.dir/SessionManager.cpp.obj: C:/cpp/cpp_basics/module_12/SessionManager.cpp \
   C:/msys64/ucrt64/include/_mingw.h \
   C:/msys64/ucrt64/include/_mingw_mac.h \
+  C:/msys64/ucrt64/include/_mingw_off_t.h \
   C:/msys64/ucrt64/include/_mingw_secapi.h \
+  C:/msys64/ucrt64/include/_mingw_stat64.h \
+  C:/msys64/ucrt64/include/_timeval.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/array \
   C:/msys64/ucrt64/include/c++/15.2.0/backward/binders.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bit \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/alloc_traits.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/allocator.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.tcc \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/char_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/charconv.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/chrono.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/concept_check.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/cpp_type_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/cxxabi_forced.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/enable_special_members.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/erase_if.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/exception_defines.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/exception_ptr.h \
@@ -1300,14 +1311,23 @@ CMakeFiles/test_dungeon_sync.dir/SessionManager.cpp.obj: C:/cpp/cpp_basics/modul
   C:/msys64/ucrt64/include/c++/15.2.0/bits/functexcept.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/functional_hash.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/hash_bytes.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable_policy.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/invoke.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/iterator_concepts.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/localefwd.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/max_size_type.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/memory_resource.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/memoryfwd.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/mofunc_impl.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/move.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/move_only_function.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/nested_exception.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/new_allocator.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/node_handle.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream_insert.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/parse_numbers.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/postypes.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/predefined_ops.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/ptr_traits.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h \
@@ -1317,6 +1337,9 @@ CMakeFiles/test_dungeon_sync.dir/SessionManager.cpp.obj: C:/cpp/cpp_basics/modul
   C:/msys64/ucrt64/include/c++/15.2.0/bits/ranges_util.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/refwrap.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/std_function.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/std_mutex.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h \
@@ -1324,45 +1347,111 @@ CMakeFiles/test_dungeon_sync.dir/SessionManager.cpp.obj: C:/cpp/cpp_basics/modul
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_multimap.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_relops.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tree.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_uninitialized.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/string_view.tcc \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stringfwd.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/unique_lock.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/unordered_map.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/utility.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/version.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/cctype \
+  C:/msys64/ucrt64/include/c++/15.2.0/cerrno \
+  C:/msys64/ucrt64/include/c++/15.2.0/clocale \
   C:/msys64/ucrt64/include/c++/15.2.0/compare \
   C:/msys64/ucrt64/include/c++/15.2.0/concepts \
   C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
+  C:/msys64/ucrt64/include/c++/15.2.0/cstdio \
+  C:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
+  C:/msys64/ucrt64/include/c++/15.2.0/ctime \
+  C:/msys64/ucrt64/include/c++/15.2.0/cwchar \
   C:/msys64/ucrt64/include/c++/15.2.0/debug/assertions.h \
   C:/msys64/ucrt64/include/c++/15.2.0/debug/debug.h \
   C:/msys64/ucrt64/include/c++/15.2.0/exception \
+  C:/msys64/ucrt64/include/c++/15.2.0/ext/aligned_buffer.h \
   C:/msys64/ucrt64/include/c++/15.2.0/ext/alloc_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/ext/atomicity.h \
   C:/msys64/ucrt64/include/c++/15.2.0/ext/numeric_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/ext/string_conversions.h \
   C:/msys64/ucrt64/include/c++/15.2.0/ext/type_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/functional \
   C:/msys64/ucrt64/include/c++/15.2.0/initializer_list \
+  C:/msys64/ucrt64/include/c++/15.2.0/iosfwd \
+  C:/msys64/ucrt64/include/c++/15.2.0/limits \
+  C:/msys64/ucrt64/include/c++/15.2.0/map \
+  C:/msys64/ucrt64/include/c++/15.2.0/mutex \
   C:/msys64/ucrt64/include/c++/15.2.0/new \
   C:/msys64/ucrt64/include/c++/15.2.0/numbers \
   C:/msys64/ucrt64/include/c++/15.2.0/optional \
   C:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/ratio \
+  C:/msys64/ucrt64/include/c++/15.2.0/shared_mutex \
+  C:/msys64/ucrt64/include/c++/15.2.0/stdlib.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/string \
+  C:/msys64/ucrt64/include/c++/15.2.0/string_view \
   C:/msys64/ucrt64/include/c++/15.2.0/tuple \
   C:/msys64/ucrt64/include/c++/15.2.0/type_traits \
   C:/msys64/ucrt64/include/c++/15.2.0/typeinfo \
+  C:/msys64/ucrt64/include/c++/15.2.0/unordered_map \
+  C:/msys64/ucrt64/include/c++/15.2.0/utility \
   C:/msys64/ucrt64/include/c++/15.2.0/vector \
+  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
   C:/msys64/ucrt64/include/corecrt.h \
+  C:/msys64/ucrt64/include/corecrt_startup.h \
+  C:/msys64/ucrt64/include/corecrt_stdio_config.h \
+  C:/msys64/ucrt64/include/corecrt_wctype.h \
+  C:/msys64/ucrt64/include/corecrt_wstdlib.h \
   C:/msys64/ucrt64/include/crtdefs.h \
+  C:/msys64/ucrt64/include/ctype.h \
+  C:/msys64/ucrt64/include/errno.h \
+  C:/msys64/ucrt64/include/limits.h \
+  C:/msys64/ucrt64/include/locale.h \
+  C:/msys64/ucrt64/include/malloc.h \
+  C:/msys64/ucrt64/include/process.h \
+  C:/msys64/ucrt64/include/pthread.h \
+  C:/msys64/ucrt64/include/pthread_compat.h \
+  C:/msys64/ucrt64/include/pthread_signal.h \
+  C:/msys64/ucrt64/include/pthread_time.h \
+  C:/msys64/ucrt64/include/pthread_unistd.h \
+  C:/msys64/ucrt64/include/sched.h \
   C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
+  C:/msys64/ucrt64/include/sec_api/stdio_s.h \
+  C:/msys64/ucrt64/include/sec_api/stdlib_s.h \
+  C:/msys64/ucrt64/include/sec_api/sys/timeb_s.h \
+  C:/msys64/ucrt64/include/sec_api/wchar_s.h \
+  C:/msys64/ucrt64/include/signal.h \
   C:/msys64/ucrt64/include/stddef.h \
   C:/msys64/ucrt64/include/stdint.h \
+  C:/msys64/ucrt64/include/stdio.h \
+  C:/msys64/ucrt64/include/stdlib.h \
+  C:/msys64/ucrt64/include/swprintf.inl \
+  C:/msys64/ucrt64/include/sys/timeb.h \
+  C:/msys64/ucrt64/include/sys/types.h \
+  C:/msys64/ucrt64/include/time.h \
   C:/msys64/ucrt64/include/vadefs.h \
+  C:/msys64/ucrt64/include/wchar.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
   C:/cpp/cpp_basics/module_12/GameMessage.h \
   C:/cpp/cpp_basics/module_12/SessionManager.h
 
@@ -1575,6 +1664,7 @@ CMakeFiles/test_dungeon_sync.dir/test_dungeon_sync.cpp.obj: C:/cpp/cpp_basics/mo
   C:/msys64/ucrt64/include/c++/15.2.0/ratio \
   C:/msys64/ucrt64/include/c++/15.2.0/semaphore \
   C:/msys64/ucrt64/include/c++/15.2.0/set \
+  C:/msys64/ucrt64/include/c++/15.2.0/shared_mutex \
   C:/msys64/ucrt64/include/c++/15.2.0/span \
   C:/msys64/ucrt64/include/c++/15.2.0/sstream \
   C:/msys64/ucrt64/include/c++/15.2.0/stdexcept \
@@ -1995,6 +2085,8 @@ C:/msys64/ucrt64/include/apiset.h:
 
 C:/msys64/ucrt64/include/consoleapi3.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/bits/unordered_map.h:
+
 C:/msys64/ucrt64/include/apisetcconv.h:
 
 C:/msys64/ucrt64/include/psdk_inc/_ip_mreq1.h:
@@ -2091,15 +2183,11 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/exception_defines.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/cxxabi_forced.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/atomic_timed_wait.h:
+C:/msys64/ucrt64/include/c++/15.2.0/bits/enable_special_members.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/node_handle.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/enable_special_members.h:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_facets.tcc:
-
-C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/custom/gtest-printers.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_classes.h:
 
@@ -2163,9 +2251,9 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/move.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/nested_exception.h:
 
-C:/msys64/ucrt64/include/timeapi.h:
-
 C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/gtest-filepath.h:
+
+C:/msys64/ucrt64/include/timeapi.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.h:
 
@@ -2235,9 +2323,9 @@ C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/gtest-param-test.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/functional:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_heap.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/functional:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h:
 
@@ -2353,9 +2441,9 @@ C:/msys64/ucrt64/include/c++/15.2.0/ios:
 
 C:/msys64/ucrt64/include/c++/15.2.0/iosfwd:
 
-C:/msys64/ucrt64/include/mmeapi.h:
-
 C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/gtest-string.h:
+
+C:/msys64/ucrt64/include/mmeapi.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/iostream:
 
@@ -2417,9 +2505,9 @@ C:/msys64/ucrt64/include/c++/15.2.0/vector:
 
 C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h:
 
-C:/msys64/ucrt64/include/corecrt_stdio_config.h:
-
 C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/gtest-death-test-internal.h:
+
+C:/msys64/ucrt64/include/corecrt_stdio_config.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h:
 
@@ -2493,8 +2581,6 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxneconvertintrin.h:
 
 C:/msys64/ucrt64/include/ddeml.h:
 
-C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/custom/gtest-port.h:
-
 C:/msys64/ucrt64/include/debugapi.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/raointintrin.h:
@@ -2521,9 +2607,9 @@ C:/msys64/ucrt64/include/vadefs.h:
 
 C:/msys64/ucrt64/include/memoryapi.h:
 
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2mediaintrin.h:
-
 C:/msys64/ucrt64/include/assert.h:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2mediaintrin.h:
 
 C:/msys64/ucrt64/include/fileapi.h:
 
@@ -2551,9 +2637,9 @@ C:/msys64/ucrt64/include/limits.h:
 
 C:/msys64/ucrt64/include/locale.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:
-
 C:/msys64/ucrt64/include/lzexpand.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:
 
 C:/cpp/cpp_basics/module_12/test_dungeon_sync.cpp:
 
@@ -2569,11 +2655,11 @@ C:/msys64/ucrt64/include/minwindef.h:
 
 C:/msys64/ucrt64/include/mmiscapi.h:
 
+C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/gtest-port-arch.h:
+
 C:/msys64/ucrt64/include/mmsyscom.h:
 
 C:/msys64/ucrt64/include/stddef.h:
-
-C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/gtest-port-arch.h:
 
 C:/msys64/ucrt64/include/mmsystem.h:
 
@@ -2683,6 +2769,8 @@ C:/msys64/ucrt64/include/reason.h:
 
 C:/msys64/ucrt64/include/rpc.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/bits/unique_lock.h:
+
 C:/msys64/ucrt64/include/rpcasync.h:
 
 C:/msys64/ucrt64/include/rpcdce.h:
@@ -2694,6 +2782,8 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512dqintrin.h:
 C:/msys64/ucrt64/include/rpcsal.h:
 
 C:/msys64/ucrt64/include/sal.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/map:
 
 C:/msys64/ucrt64/include/sched.h:
 
@@ -2732,6 +2822,8 @@ C:/msys64/ucrt64/include/swprintf.inl:
 C:/msys64/ucrt64/include/synchapi.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fp16intrin.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/move_only_function.h:
 
 C:/msys64/ucrt64/include/sys/types.h:
 
@@ -2805,9 +2897,9 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxfp16intrin.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxint8intrin.h:
 
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxtf32intrin.h:
-
 C:/msys64/ucrt64/include/c++/15.2.0/atomic:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxtf32intrin.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512bf16intrin.h:
 
@@ -2831,9 +2923,9 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bitalgvlintrin.
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fintrin.h:
 
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fp16vlintrin.h:
-
 C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/gtest-type-util.h:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fp16vlintrin.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/bmi2intrin.h:
 
@@ -2903,8 +2995,6 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/rdseedintrin.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/rtmintrin.h:
 
-C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/gtest-port.h:
-
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/serializeintrin.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sgxintrin.h:
@@ -2961,63 +3051,65 @@ C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/gtest-printers.h:
 
 C:/cpp/cpp_basics/module_12/PacketBuilder.h:
 
-C:/cpp/cpp_basics/module_12/SessionManager.h:
-
-C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/gtest-matchers.h:
-
-C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/gtest-message.h:
-
-C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/gtest-internal.h:
-
-C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/gtest_pred_impl.h:
-
-C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/gtest_prod.h:
-
-C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/gtest-param-util.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/any:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/erase_if.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/mofunc_impl.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/move_only_function.h:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/parse_numbers.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/semaphore_base.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/sstream.tcc:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/std_function.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/std_thread.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_multimap.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tree.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/mutex:
+
+C:/msys64/ucrt64/include/c++/15.2.0/ratio:
+
+C:/msys64/ucrt64/include/c++/15.2.0/shared_mutex:
+
+C:/msys64/ucrt64/include/c++/15.2.0/unordered_map:
+
+C:/cpp/cpp_basics/module_12/SessionManager.h:
+
+C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/gtest-matchers.h:
+
+C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/gtest-internal.h:
+
+C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/gtest-message.h:
+
+C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/gtest_pred_impl.h:
+
+C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/gtest_prod.h:
+
+C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/custom/gtest-port.h:
+
+C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/custom/gtest-printers.h:
+
+C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/gtest-param-util.h:
+
+C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/gtest-port.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/any:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/atomic_timed_wait.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/semaphore_base.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/sstream.tcc:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/std_thread.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/bits/this_thread_sleep.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/unique_lock.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/unordered_map.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/cassert:
 
 C:/msys64/ucrt64/include/c++/15.2.0/iterator:
 
-C:/msys64/ucrt64/include/c++/15.2.0/map:
-
-C:/msys64/ucrt64/include/c++/15.2.0/mutex:
-
-C:/msys64/ucrt64/include/c++/15.2.0/ratio:
-
 C:/msys64/ucrt64/include/c++/15.2.0/set:
-
-C:/msys64/ucrt64/include/c++/15.2.0/unordered_map:
 
 C:/msys64/ucrt64/include/c++/15.2.0/variant:
 
