@@ -164,7 +164,7 @@
 - [x] **전화 걸기 (Client-Side)**: `connect`를 통한 서버 접속 및 주소 정보 매칭. ✅ ([concept](cpp_basics/module_12/concept_connect_accept.md), [practice](cpp_basics/module_12/practice_client_connect.cpp))
 - [x] **신뢰성의 TCP**: 스트림(Stream) 기반 실제 데이터 송수신 (`send`/`recv`). ✅ ([concept](cpp_basics/module_12/concept_send_recv.md), [practice](cpp_basics/module_12/practice_echo_server.cpp), [practice](cpp_basics/module_12/practice_talk_client.cpp))
 - [x] **속도의 UDP**: 데이터그램(Datagram) 기반 비연결형 통신 실습. ✅ ([concept](cpp_basics/module_12/concept_udp_protocol.md), [boundary-test](cpp_basics/module_12/practice_udp_boundary.cpp), [echo-server](cpp_basics/module_12/practice_udp_echo_server.cpp))
-- [ ] **[Cumulative Practice 1]**: TCP/UDP Game Data Sync (범위: TCP/UDP 소켓 통신 + [M1~M10] 몬스터/플레이어 직렬화 전송)
+- [x] **[Cumulative Practice 1]**: TCP/UDP Game Data Sync (범위: TCP/UDP 소켓 통신 + [M1~M10] 몬스터/플레이어 직렬화 전송) ✅ [wrap-up](cpp_basics/module_12/concept_module12_wrapup.md)
 
 #### MODULE 13: [신규] 서버 아키텍처 기초 (Synchronous vs Asynchronous)
 > 진짜 게임 서버의 기틀이 되는 동기식 스레드풀과 멀티플렉싱 비동기 I/O 모델 비교.

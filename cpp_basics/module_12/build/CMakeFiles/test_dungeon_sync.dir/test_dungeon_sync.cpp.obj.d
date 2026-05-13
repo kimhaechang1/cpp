@@ -1,22 +1,30 @@
 CMakeFiles/test_dungeon_sync.dir/test_dungeon_sync.cpp.obj: \
  C:\cpp\cpp_basics\module_12\test_dungeon_sync.cpp \
  C:\cpp\cpp_basics\module_12\GameMessage.h \
- C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
+ C:\cpp\cpp_basics\module_12\ByteSerializer.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
  C:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
- C:/msys64/ucrt64/include/stdint.h C:/msys64/ucrt64/include/crtdefs.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+ C:/msys64/ucrt64/include/stddef.h C:/msys64/ucrt64/include/crtdefs.h \
  C:/msys64/ucrt64/include/corecrt.h C:/msys64/ucrt64/include/_mingw.h \
  C:/msys64/ucrt64/include/_mingw_mac.h \
  C:/msys64/ucrt64/include/_mingw_secapi.h \
  C:/msys64/ucrt64/include/vadefs.h \
  C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
- C:/msys64/ucrt64/include/stddef.h \
- C:/msys64/ucrt64/include/c++/15.2.0/optional \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/version.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/cstdio \
+ C:/msys64/ucrt64/include/stdio.h \
+ C:/msys64/ucrt64/include/corecrt_stdio_config.h \
+ C:/msys64/ucrt64/include/_mingw_off_t.h \
+ C:/msys64/ucrt64/include/swprintf.inl \
+ C:/msys64/ucrt64/include/sec_api/stdio_s.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/optional \
  C:/msys64/ucrt64/include/c++/15.2.0/type_traits \
  C:/msys64/ucrt64/include/c++/15.2.0/exception \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h \
@@ -75,19 +83,10 @@ CMakeFiles/test_dungeon_sync.dir/test_dungeon_sync.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/memory_resource.h \
- C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
  C:/msys64/ucrt64/include/c++/15.2.0/tuple \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/formatfwd.h \
- C:\cpp\cpp_basics\module_12\PacketBuilder.h \
- C:\cpp\cpp_basics\module_12\ByteSerializer.h \
- C:/msys64/ucrt64/include/c++/15.2.0/cstdio \
- C:/msys64/ucrt64/include/stdio.h \
- C:/msys64/ucrt64/include/corecrt_stdio_config.h \
- C:/msys64/ucrt64/include/_mingw_off_t.h \
- C:/msys64/ucrt64/include/swprintf.inl \
- C:/msys64/ucrt64/include/sec_api/stdio_s.h \
  C:/msys64/ucrt64/include/winsock.h C:/msys64/ucrt64/include/windows.h \
  C:/msys64/ucrt64/include/sdkddkver.h C:/msys64/ucrt64/include/excpt.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
@@ -323,6 +322,7 @@ CMakeFiles/test_dungeon_sync.dir/test_dungeon_sync.cpp.obj: \
  C:/msys64/ucrt64/include/psdk_inc/_wsadata.h \
  C:/msys64/ucrt64/include/psdk_inc/_xmitfile.h \
  C:/msys64/ucrt64/include/psdk_inc/_wsa_errnos.h \
+ C:\cpp\cpp_basics\module_12\PacketBuilder.h \
  C:/msys64/ucrt64/include/c++/15.2.0/memory \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tempbuf.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
@@ -414,10 +414,6 @@ CMakeFiles/test_dungeon_sync.dir/test_dungeon_sync.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/array \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/move_only_function.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/mofunc_impl.h \
- C:/msys64/ucrt64/include/c++/15.2.0/map \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tree.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_multimap.h \
  C:/msys64/ucrt64/include/c++/15.2.0/shared_mutex \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/chrono.h \
  C:/msys64/ucrt64/include/c++/15.2.0/ratio \
@@ -446,6 +442,7 @@ CMakeFiles/test_dungeon_sync.dir/test_dungeon_sync.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/unicode-data.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/set \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tree.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_set.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_multiset.h \
  C:/msys64/ucrt64/include/c++/15.2.0/sstream \
@@ -480,7 +477,9 @@ CMakeFiles/test_dungeon_sync.dir/test_dungeon_sync.cpp.obj: \
  C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/gtest-printers.h \
  C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/gtest-internal.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/float.h \
- C:/msys64/ucrt64/include/float.h \
+ C:/msys64/ucrt64/include/float.h C:/msys64/ucrt64/include/c++/15.2.0/map \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_multimap.h \
  C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/gtest-filepath.h \
  C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/gtest-string.h \
  C:/cpp/vcpkg/installed/x64-mingw-static/include/gtest/internal/gtest-type-util.h \
