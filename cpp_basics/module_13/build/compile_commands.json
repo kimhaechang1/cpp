@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/cpp/cpp_basics/module_13/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/test_thread_pool.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\test_thread_pool.dir\\test_thread_pool.cpp.obj -c C:\\cpp\\cpp_basics\\module_13\\test_thread_pool.cpp",
+  "file": "C:/cpp/cpp_basics/module_13/test_thread_pool.cpp",
+  "output": "CMakeFiles/test_thread_pool.dir/test_thread_pool.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_13/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/test_thread_pool.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\test_thread_pool.dir\\ThreadPool.cpp.obj -c C:\\cpp\\cpp_basics\\module_13\\ThreadPool.cpp",
+  "file": "C:/cpp/cpp_basics/module_13/ThreadPool.cpp",
+  "output": "CMakeFiles/test_thread_pool.dir/ThreadPool.cpp.obj"
+}
+]

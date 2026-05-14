@@ -168,7 +168,7 @@
 
 #### MODULE 13: [신규] 서버 아키텍처 기초 (Synchronous vs Asynchronous)
 > 진짜 게임 서버의 기틀이 되는 동기식 스레드풀과 멀티플렉싱 비동기 I/O 모델 비교.
-- [ ] **Thread Pool 모델 (동기식 다중 처리)**: 일꾼(Thread)들을 미리 만들어두고 클라이언트 요청을 Queue를 통해 효율적으로 처리하기 (M11 심화).
+- [x] **Thread Pool 모델 (동기식 다중 처리)**: 일꾼(Thread)들을 미리 만들어두고 클라이언트 요청을 Queue를 통해 효율적으로 처리하기 (M11 심화). ([concept](cpp_basics/module_13/concept_thread_pool.md), [code](cpp_basics/module_13/ThreadPool.h))
 - [ ] **Selector 모델 (비동기 처리 기초)**: `select()` 함수를 활용한 Non-blocking 다중 I/O 처리 맛보기.
 - [ ] **[Cumulative Practice 2]**: Hybrid Architecture Server (범위: 스레드풀/비동기 소켓 + 세션 컨텍스트 관리 + [M1~M10] 버무리기)
 

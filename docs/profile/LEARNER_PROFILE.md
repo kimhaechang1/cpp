@@ -4,14 +4,21 @@
 
 | 항목 | 값 |
 |------|-----|
-| **현재 수준** | 중급 (Module 12 완료 / TCP-UDP 네트워크 기초 마스터) |
+| **현재 수준** | 중급 (Module 13 진행 중 / 동기식 스레드 풀 구조 구현 완료) |
 | **시작일** | 2026-01-12 |
-| **마지막 학습일** | 2026-04-22 (M12 UDP 프로토콜 및 데이터 경계 실습 완료) |
+| **마지막 학습일** | 2026-05-14 (M13 Thread Pool 기반 동기식 다중 처리 구현) |
 | **총 해결 문제 수** | 26 |
 
 ---
 
 ## 🎯 현재 학습 단계
+
+### **Module 13: 서버 아키텍처 기초 (Synchronous vs Asynchronous)** 🏃 진행 중
+**학습 체크리스트:**
+- [x] **Thread Pool 모델**: `std::vector<std::thread>`와 `std::condition_variable`을 활용한 일꾼 관리
+- [x] **동기화 심화**: `std::unique_lock`, OS 대기 큐(Wait Queue), Spurious Wakeup 검증
+- [x] **메모리 배리어**: 하드웨어 CPU 캐시 동기화와 `std::mutex`의 심연 이해
+- [ ] **Selector 모델 (비동기 처리 기초)**: 진행 예정
 
 ### **Module 12: 네트워크 프로토콜 기초 (Winsock2)** ✅ 완료
 **학습 체크리스트 (Basics):**

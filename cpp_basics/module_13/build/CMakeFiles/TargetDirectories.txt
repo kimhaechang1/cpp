@@ -1,0 +1,3 @@
+C:/cpp/cpp_basics/module_13/build/CMakeFiles/test_thread_pool.dir
+C:/cpp/cpp_basics/module_13/build/CMakeFiles/edit_cache.dir
+C:/cpp/cpp_basics/module_13/build/CMakeFiles/rebuild_cache.dir
