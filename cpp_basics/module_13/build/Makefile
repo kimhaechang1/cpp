@@ -128,6 +128,58 @@ test_thread_pool/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_thread_pool.dir\build.make CMakeFiles/test_thread_pool.dir/build
 .PHONY : test_thread_pool/fast
 
+#=============================================================================
+# Target rules for targets named practice_select_server
+
+# Build rule for target.
+practice_select_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice_select_server
+.PHONY : practice_select_server
+
+# fast build rule for target.
+practice_select_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_select_server.dir\build.make CMakeFiles/practice_select_server.dir/build
+.PHONY : practice_select_server/fast
+
+#=============================================================================
+# Target rules for targets named practice_select_client
+
+# Build rule for target.
+practice_select_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice_select_client
+.PHONY : practice_select_client
+
+# fast build rule for target.
+practice_select_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_select_client.dir\build.make CMakeFiles/practice_select_client.dir/build
+.PHONY : practice_select_client/fast
+
+#=============================================================================
+# Target rules for targets named practice_writefds_server
+
+# Build rule for target.
+practice_writefds_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice_writefds_server
+.PHONY : practice_writefds_server
+
+# fast build rule for target.
+practice_writefds_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_server.dir\build.make CMakeFiles/practice_writefds_server.dir/build
+.PHONY : practice_writefds_server/fast
+
+#=============================================================================
+# Target rules for targets named practice_writefds_client
+
+# Build rule for target.
+practice_writefds_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice_writefds_client
+.PHONY : practice_writefds_client
+
+# fast build rule for target.
+practice_writefds_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_client.dir\build.make CMakeFiles/practice_writefds_client.dir/build
+.PHONY : practice_writefds_client/fast
+
 ThreadPool.obj: ThreadPool.cpp.obj
 .PHONY : ThreadPool.obj
 
@@ -151,6 +203,102 @@ ThreadPool.s: ThreadPool.cpp.s
 ThreadPool.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_thread_pool.dir\build.make CMakeFiles/test_thread_pool.dir/ThreadPool.cpp.s
 .PHONY : ThreadPool.cpp.s
+
+practice_select_client.obj: practice_select_client.cpp.obj
+.PHONY : practice_select_client.obj
+
+# target to build an object file
+practice_select_client.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_select_client.dir\build.make CMakeFiles/practice_select_client.dir/practice_select_client.cpp.obj
+.PHONY : practice_select_client.cpp.obj
+
+practice_select_client.i: practice_select_client.cpp.i
+.PHONY : practice_select_client.i
+
+# target to preprocess a source file
+practice_select_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_select_client.dir\build.make CMakeFiles/practice_select_client.dir/practice_select_client.cpp.i
+.PHONY : practice_select_client.cpp.i
+
+practice_select_client.s: practice_select_client.cpp.s
+.PHONY : practice_select_client.s
+
+# target to generate assembly for a file
+practice_select_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_select_client.dir\build.make CMakeFiles/practice_select_client.dir/practice_select_client.cpp.s
+.PHONY : practice_select_client.cpp.s
+
+practice_select_server.obj: practice_select_server.cpp.obj
+.PHONY : practice_select_server.obj
+
+# target to build an object file
+practice_select_server.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_select_server.dir\build.make CMakeFiles/practice_select_server.dir/practice_select_server.cpp.obj
+.PHONY : practice_select_server.cpp.obj
+
+practice_select_server.i: practice_select_server.cpp.i
+.PHONY : practice_select_server.i
+
+# target to preprocess a source file
+practice_select_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_select_server.dir\build.make CMakeFiles/practice_select_server.dir/practice_select_server.cpp.i
+.PHONY : practice_select_server.cpp.i
+
+practice_select_server.s: practice_select_server.cpp.s
+.PHONY : practice_select_server.s
+
+# target to generate assembly for a file
+practice_select_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_select_server.dir\build.make CMakeFiles/practice_select_server.dir/practice_select_server.cpp.s
+.PHONY : practice_select_server.cpp.s
+
+practice_writefds_client.obj: practice_writefds_client.cpp.obj
+.PHONY : practice_writefds_client.obj
+
+# target to build an object file
+practice_writefds_client.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_client.dir\build.make CMakeFiles/practice_writefds_client.dir/practice_writefds_client.cpp.obj
+.PHONY : practice_writefds_client.cpp.obj
+
+practice_writefds_client.i: practice_writefds_client.cpp.i
+.PHONY : practice_writefds_client.i
+
+# target to preprocess a source file
+practice_writefds_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_client.dir\build.make CMakeFiles/practice_writefds_client.dir/practice_writefds_client.cpp.i
+.PHONY : practice_writefds_client.cpp.i
+
+practice_writefds_client.s: practice_writefds_client.cpp.s
+.PHONY : practice_writefds_client.s
+
+# target to generate assembly for a file
+practice_writefds_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_client.dir\build.make CMakeFiles/practice_writefds_client.dir/practice_writefds_client.cpp.s
+.PHONY : practice_writefds_client.cpp.s
+
+practice_writefds_server.obj: practice_writefds_server.cpp.obj
+.PHONY : practice_writefds_server.obj
+
+# target to build an object file
+practice_writefds_server.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_server.dir\build.make CMakeFiles/practice_writefds_server.dir/practice_writefds_server.cpp.obj
+.PHONY : practice_writefds_server.cpp.obj
+
+practice_writefds_server.i: practice_writefds_server.cpp.i
+.PHONY : practice_writefds_server.i
+
+# target to preprocess a source file
+practice_writefds_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_server.dir\build.make CMakeFiles/practice_writefds_server.dir/practice_writefds_server.cpp.i
+.PHONY : practice_writefds_server.cpp.i
+
+practice_writefds_server.s: practice_writefds_server.cpp.s
+.PHONY : practice_writefds_server.s
+
+# target to generate assembly for a file
+practice_writefds_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_server.dir\build.make CMakeFiles/practice_writefds_server.dir/practice_writefds_server.cpp.s
+.PHONY : practice_writefds_server.cpp.s
 
 test_thread_pool.obj: test_thread_pool.cpp.obj
 .PHONY : test_thread_pool.obj
@@ -184,10 +332,26 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... practice_select_client
+	@echo ... practice_select_server
+	@echo ... practice_writefds_client
+	@echo ... practice_writefds_server
 	@echo ... test_thread_pool
 	@echo ... ThreadPool.obj
 	@echo ... ThreadPool.i
 	@echo ... ThreadPool.s
+	@echo ... practice_select_client.obj
+	@echo ... practice_select_client.i
+	@echo ... practice_select_client.s
+	@echo ... practice_select_server.obj
+	@echo ... practice_select_server.i
+	@echo ... practice_select_server.s
+	@echo ... practice_writefds_client.obj
+	@echo ... practice_writefds_client.i
+	@echo ... practice_writefds_client.s
+	@echo ... practice_writefds_server.obj
+	@echo ... practice_writefds_server.i
+	@echo ... practice_writefds_server.s
 	@echo ... test_thread_pool.obj
 	@echo ... test_thread_pool.i
 	@echo ... test_thread_pool.s

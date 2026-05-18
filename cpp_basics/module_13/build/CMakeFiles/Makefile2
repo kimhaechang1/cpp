@@ -63,10 +63,18 @@ CMAKE_BINARY_DIR = C:\cpp\cpp_basics\module_13\build
 
 # The main recursive "all" target.
 all: CMakeFiles/test_thread_pool.dir/all
+all: CMakeFiles/practice_select_server.dir/all
+all: CMakeFiles/practice_select_client.dir/all
+all: CMakeFiles/practice_writefds_server.dir/all
+all: CMakeFiles/practice_writefds_client.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/test_thread_pool.dir/codegen
+codegen: CMakeFiles/practice_select_server.dir/codegen
+codegen: CMakeFiles/practice_select_client.dir/codegen
+codegen: CMakeFiles/practice_writefds_server.dir/codegen
+codegen: CMakeFiles/practice_writefds_client.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,6 +83,10 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/test_thread_pool.dir/clean
+clean: CMakeFiles/practice_select_server.dir/clean
+clean: CMakeFiles/practice_select_client.dir/clean
+clean: CMakeFiles/practice_writefds_server.dir/clean
+clean: CMakeFiles/practice_writefds_client.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -84,7 +96,7 @@ clean: CMakeFiles/test_thread_pool.dir/clean
 CMakeFiles/test_thread_pool.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_thread_pool.dir\build.make CMakeFiles/test_thread_pool.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_thread_pool.dir\build.make CMakeFiles/test_thread_pool.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_13\build\CMakeFiles --progress-num=1,2,3 "Built target test_thread_pool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_13\build\CMakeFiles --progress-num=9,10,11 "Built target test_thread_pool"
 .PHONY : CMakeFiles/test_thread_pool.dir/all
 
 # Build rule for subdir invocation for target.
@@ -101,13 +113,141 @@ test_thread_pool: CMakeFiles/test_thread_pool.dir/rule
 # codegen rule for target.
 CMakeFiles/test_thread_pool.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_thread_pool.dir\build.make CMakeFiles/test_thread_pool.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_13\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target test_thread_pool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_13\build\CMakeFiles --progress-num=9,10,11 "Finished codegen for target test_thread_pool"
 .PHONY : CMakeFiles/test_thread_pool.dir/codegen
 
 # clean rule for target.
 CMakeFiles/test_thread_pool.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_thread_pool.dir\build.make CMakeFiles/test_thread_pool.dir/clean
 .PHONY : CMakeFiles/test_thread_pool.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/practice_select_server.dir
+
+# All Build rule for target.
+CMakeFiles/practice_select_server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_select_server.dir\build.make CMakeFiles/practice_select_server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_select_server.dir\build.make CMakeFiles/practice_select_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_13\build\CMakeFiles --progress-num=3,4 "Built target practice_select_server"
+.PHONY : CMakeFiles/practice_select_server.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/practice_select_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_13\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/practice_select_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_13\build\CMakeFiles 0
+.PHONY : CMakeFiles/practice_select_server.dir/rule
+
+# Convenience name for target.
+practice_select_server: CMakeFiles/practice_select_server.dir/rule
+.PHONY : practice_select_server
+
+# codegen rule for target.
+CMakeFiles/practice_select_server.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_select_server.dir\build.make CMakeFiles/practice_select_server.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_13\build\CMakeFiles --progress-num=3,4 "Finished codegen for target practice_select_server"
+.PHONY : CMakeFiles/practice_select_server.dir/codegen
+
+# clean rule for target.
+CMakeFiles/practice_select_server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_select_server.dir\build.make CMakeFiles/practice_select_server.dir/clean
+.PHONY : CMakeFiles/practice_select_server.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/practice_select_client.dir
+
+# All Build rule for target.
+CMakeFiles/practice_select_client.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_select_client.dir\build.make CMakeFiles/practice_select_client.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_select_client.dir\build.make CMakeFiles/practice_select_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_13\build\CMakeFiles --progress-num=1,2 "Built target practice_select_client"
+.PHONY : CMakeFiles/practice_select_client.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/practice_select_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_13\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/practice_select_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_13\build\CMakeFiles 0
+.PHONY : CMakeFiles/practice_select_client.dir/rule
+
+# Convenience name for target.
+practice_select_client: CMakeFiles/practice_select_client.dir/rule
+.PHONY : practice_select_client
+
+# codegen rule for target.
+CMakeFiles/practice_select_client.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_select_client.dir\build.make CMakeFiles/practice_select_client.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_13\build\CMakeFiles --progress-num=1,2 "Finished codegen for target practice_select_client"
+.PHONY : CMakeFiles/practice_select_client.dir/codegen
+
+# clean rule for target.
+CMakeFiles/practice_select_client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_select_client.dir\build.make CMakeFiles/practice_select_client.dir/clean
+.PHONY : CMakeFiles/practice_select_client.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/practice_writefds_server.dir
+
+# All Build rule for target.
+CMakeFiles/practice_writefds_server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_server.dir\build.make CMakeFiles/practice_writefds_server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_server.dir\build.make CMakeFiles/practice_writefds_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_13\build\CMakeFiles --progress-num=7,8 "Built target practice_writefds_server"
+.PHONY : CMakeFiles/practice_writefds_server.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/practice_writefds_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_13\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/practice_writefds_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_13\build\CMakeFiles 0
+.PHONY : CMakeFiles/practice_writefds_server.dir/rule
+
+# Convenience name for target.
+practice_writefds_server: CMakeFiles/practice_writefds_server.dir/rule
+.PHONY : practice_writefds_server
+
+# codegen rule for target.
+CMakeFiles/practice_writefds_server.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_server.dir\build.make CMakeFiles/practice_writefds_server.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_13\build\CMakeFiles --progress-num=7,8 "Finished codegen for target practice_writefds_server"
+.PHONY : CMakeFiles/practice_writefds_server.dir/codegen
+
+# clean rule for target.
+CMakeFiles/practice_writefds_server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_server.dir\build.make CMakeFiles/practice_writefds_server.dir/clean
+.PHONY : CMakeFiles/practice_writefds_server.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/practice_writefds_client.dir
+
+# All Build rule for target.
+CMakeFiles/practice_writefds_client.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_client.dir\build.make CMakeFiles/practice_writefds_client.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_client.dir\build.make CMakeFiles/practice_writefds_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_13\build\CMakeFiles --progress-num=5,6 "Built target practice_writefds_client"
+.PHONY : CMakeFiles/practice_writefds_client.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/practice_writefds_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_13\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/practice_writefds_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\cpp\cpp_basics\module_13\build\CMakeFiles 0
+.PHONY : CMakeFiles/practice_writefds_client.dir/rule
+
+# Convenience name for target.
+practice_writefds_client: CMakeFiles/practice_writefds_client.dir/rule
+.PHONY : practice_writefds_client
+
+# codegen rule for target.
+CMakeFiles/practice_writefds_client.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_client.dir\build.make CMakeFiles/practice_writefds_client.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\cpp\cpp_basics\module_13\build\CMakeFiles --progress-num=5,6 "Finished codegen for target practice_writefds_client"
+.PHONY : CMakeFiles/practice_writefds_client.dir/codegen
+
+# clean rule for target.
+CMakeFiles/practice_writefds_client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_client.dir\build.make CMakeFiles/practice_writefds_client.dir/clean
+.PHONY : CMakeFiles/practice_writefds_client.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

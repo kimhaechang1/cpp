@@ -68,4 +68,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_thread_pool.dir/DependInfo.cmake"
+  "CMakeFiles/practice_select_server.dir/DependInfo.cmake"
+  "CMakeFiles/practice_select_client.dir/DependInfo.cmake"
+  "CMakeFiles/practice_writefds_server.dir/DependInfo.cmake"
+  "CMakeFiles/practice_writefds_client.dir/DependInfo.cmake"
   )

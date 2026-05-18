@@ -18,7 +18,7 @@
 - [x] **Thread Pool 모델**: `std::vector<std::thread>`와 `std::condition_variable`을 활용한 일꾼 관리
 - [x] **동기화 심화**: `std::unique_lock`, OS 대기 큐(Wait Queue), Spurious Wakeup 검증
 - [x] **메모리 배리어**: 하드웨어 CPU 캐시 동기화와 `std::mutex`의 심연 이해
-- [ ] **Selector 모델 (비동기 처리 기초)**: 진행 예정
+- [x] **Selector 모델 (비동기 처리 기초)**: `select()`, `fd_set`을 활용한 I/O 멀티플렉싱 및 Non-blocking 서버 구현 원리 이해 완료
 
 ### **Module 12: 네트워크 프로토콜 기초 (Winsock2)** ✅ 완료
 **학습 체크리스트 (Basics):**
