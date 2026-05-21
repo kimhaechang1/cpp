@@ -142,6 +142,19 @@ practice_select_server/fast:
 .PHONY : practice_select_server/fast
 
 #=============================================================================
+# Target rules for targets named practice_hybrid_server
+
+# Build rule for target.
+practice_hybrid_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice_hybrid_server
+.PHONY : practice_hybrid_server
+
+# fast build rule for target.
+practice_hybrid_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_hybrid_server.dir\build.make CMakeFiles/practice_hybrid_server.dir/build
+.PHONY : practice_hybrid_server/fast
+
+#=============================================================================
 # Target rules for targets named practice_select_client
 
 # Build rule for target.
@@ -180,12 +193,98 @@ practice_writefds_client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_client.dir\build.make CMakeFiles/practice_writefds_client.dir/build
 .PHONY : practice_writefds_client/fast
 
+#=============================================================================
+# Target rules for targets named test_raid_server
+
+# Build rule for target.
+test_raid_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_raid_server
+.PHONY : test_raid_server
+
+# fast build rule for target.
+test_raid_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_raid_server.dir\build.make CMakeFiles/test_raid_server.dir/build
+.PHONY : test_raid_server/fast
+
+BossMonster.obj: BossMonster.cpp.obj
+.PHONY : BossMonster.obj
+
+# target to build an object file
+BossMonster.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_raid_server.dir\build.make CMakeFiles/test_raid_server.dir/BossMonster.cpp.obj
+.PHONY : BossMonster.cpp.obj
+
+BossMonster.i: BossMonster.cpp.i
+.PHONY : BossMonster.i
+
+# target to preprocess a source file
+BossMonster.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_raid_server.dir\build.make CMakeFiles/test_raid_server.dir/BossMonster.cpp.i
+.PHONY : BossMonster.cpp.i
+
+BossMonster.s: BossMonster.cpp.s
+.PHONY : BossMonster.s
+
+# target to generate assembly for a file
+BossMonster.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_raid_server.dir\build.make CMakeFiles/test_raid_server.dir/BossMonster.cpp.s
+.PHONY : BossMonster.cpp.s
+
+CommandHandler.obj: CommandHandler.cpp.obj
+.PHONY : CommandHandler.obj
+
+# target to build an object file
+CommandHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_raid_server.dir\build.make CMakeFiles/test_raid_server.dir/CommandHandler.cpp.obj
+.PHONY : CommandHandler.cpp.obj
+
+CommandHandler.i: CommandHandler.cpp.i
+.PHONY : CommandHandler.i
+
+# target to preprocess a source file
+CommandHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_raid_server.dir\build.make CMakeFiles/test_raid_server.dir/CommandHandler.cpp.i
+.PHONY : CommandHandler.cpp.i
+
+CommandHandler.s: CommandHandler.cpp.s
+.PHONY : CommandHandler.s
+
+# target to generate assembly for a file
+CommandHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_raid_server.dir\build.make CMakeFiles/test_raid_server.dir/CommandHandler.cpp.s
+.PHONY : CommandHandler.cpp.s
+
+SessionManager.obj: SessionManager.cpp.obj
+.PHONY : SessionManager.obj
+
+# target to build an object file
+SessionManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_raid_server.dir\build.make CMakeFiles/test_raid_server.dir/SessionManager.cpp.obj
+.PHONY : SessionManager.cpp.obj
+
+SessionManager.i: SessionManager.cpp.i
+.PHONY : SessionManager.i
+
+# target to preprocess a source file
+SessionManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_raid_server.dir\build.make CMakeFiles/test_raid_server.dir/SessionManager.cpp.i
+.PHONY : SessionManager.cpp.i
+
+SessionManager.s: SessionManager.cpp.s
+.PHONY : SessionManager.s
+
+# target to generate assembly for a file
+SessionManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_raid_server.dir\build.make CMakeFiles/test_raid_server.dir/SessionManager.cpp.s
+.PHONY : SessionManager.cpp.s
+
 ThreadPool.obj: ThreadPool.cpp.obj
 .PHONY : ThreadPool.obj
 
 # target to build an object file
 ThreadPool.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_thread_pool.dir\build.make CMakeFiles/test_thread_pool.dir/ThreadPool.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_hybrid_server.dir\build.make CMakeFiles/practice_hybrid_server.dir/ThreadPool.cpp.obj
 .PHONY : ThreadPool.cpp.obj
 
 ThreadPool.i: ThreadPool.cpp.i
@@ -194,6 +293,7 @@ ThreadPool.i: ThreadPool.cpp.i
 # target to preprocess a source file
 ThreadPool.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_thread_pool.dir\build.make CMakeFiles/test_thread_pool.dir/ThreadPool.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_hybrid_server.dir\build.make CMakeFiles/practice_hybrid_server.dir/ThreadPool.cpp.i
 .PHONY : ThreadPool.cpp.i
 
 ThreadPool.s: ThreadPool.cpp.s
@@ -202,7 +302,32 @@ ThreadPool.s: ThreadPool.cpp.s
 # target to generate assembly for a file
 ThreadPool.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_thread_pool.dir\build.make CMakeFiles/test_thread_pool.dir/ThreadPool.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_hybrid_server.dir\build.make CMakeFiles/practice_hybrid_server.dir/ThreadPool.cpp.s
 .PHONY : ThreadPool.cpp.s
+
+practice_hybrid_server.obj: practice_hybrid_server.cpp.obj
+.PHONY : practice_hybrid_server.obj
+
+# target to build an object file
+practice_hybrid_server.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_hybrid_server.dir\build.make CMakeFiles/practice_hybrid_server.dir/practice_hybrid_server.cpp.obj
+.PHONY : practice_hybrid_server.cpp.obj
+
+practice_hybrid_server.i: practice_hybrid_server.cpp.i
+.PHONY : practice_hybrid_server.i
+
+# target to preprocess a source file
+practice_hybrid_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_hybrid_server.dir\build.make CMakeFiles/practice_hybrid_server.dir/practice_hybrid_server.cpp.i
+.PHONY : practice_hybrid_server.cpp.i
+
+practice_hybrid_server.s: practice_hybrid_server.cpp.s
+.PHONY : practice_hybrid_server.s
+
+# target to generate assembly for a file
+practice_hybrid_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_hybrid_server.dir\build.make CMakeFiles/practice_hybrid_server.dir/practice_hybrid_server.cpp.s
+.PHONY : practice_hybrid_server.cpp.s
 
 practice_select_client.obj: practice_select_client.cpp.obj
 .PHONY : practice_select_client.obj
@@ -300,6 +425,30 @@ practice_writefds_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice_writefds_server.dir\build.make CMakeFiles/practice_writefds_server.dir/practice_writefds_server.cpp.s
 .PHONY : practice_writefds_server.cpp.s
 
+test_raid_server.obj: test_raid_server.cpp.obj
+.PHONY : test_raid_server.obj
+
+# target to build an object file
+test_raid_server.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_raid_server.dir\build.make CMakeFiles/test_raid_server.dir/test_raid_server.cpp.obj
+.PHONY : test_raid_server.cpp.obj
+
+test_raid_server.i: test_raid_server.cpp.i
+.PHONY : test_raid_server.i
+
+# target to preprocess a source file
+test_raid_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_raid_server.dir\build.make CMakeFiles/test_raid_server.dir/test_raid_server.cpp.i
+.PHONY : test_raid_server.cpp.i
+
+test_raid_server.s: test_raid_server.cpp.s
+.PHONY : test_raid_server.s
+
+# target to generate assembly for a file
+test_raid_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_raid_server.dir\build.make CMakeFiles/test_raid_server.dir/test_raid_server.cpp.s
+.PHONY : test_raid_server.cpp.s
+
 test_thread_pool.obj: test_thread_pool.cpp.obj
 .PHONY : test_thread_pool.obj
 
@@ -332,14 +481,28 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... practice_hybrid_server
 	@echo ... practice_select_client
 	@echo ... practice_select_server
 	@echo ... practice_writefds_client
 	@echo ... practice_writefds_server
+	@echo ... test_raid_server
 	@echo ... test_thread_pool
+	@echo ... BossMonster.obj
+	@echo ... BossMonster.i
+	@echo ... BossMonster.s
+	@echo ... CommandHandler.obj
+	@echo ... CommandHandler.i
+	@echo ... CommandHandler.s
+	@echo ... SessionManager.obj
+	@echo ... SessionManager.i
+	@echo ... SessionManager.s
 	@echo ... ThreadPool.obj
 	@echo ... ThreadPool.i
 	@echo ... ThreadPool.s
+	@echo ... practice_hybrid_server.obj
+	@echo ... practice_hybrid_server.i
+	@echo ... practice_hybrid_server.s
 	@echo ... practice_select_client.obj
 	@echo ... practice_select_client.i
 	@echo ... practice_select_client.s
@@ -352,6 +515,9 @@ help:
 	@echo ... practice_writefds_server.obj
 	@echo ... practice_writefds_server.i
 	@echo ... practice_writefds_server.s
+	@echo ... test_raid_server.obj
+	@echo ... test_raid_server.i
+	@echo ... test_raid_server.s
 	@echo ... test_thread_pool.obj
 	@echo ... test_thread_pool.i
 	@echo ... test_thread_pool.s

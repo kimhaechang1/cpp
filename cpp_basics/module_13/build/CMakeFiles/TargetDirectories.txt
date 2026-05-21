@@ -1,7 +1,9 @@
 C:/cpp/cpp_basics/module_13/build/CMakeFiles/test_thread_pool.dir
 C:/cpp/cpp_basics/module_13/build/CMakeFiles/practice_select_server.dir
+C:/cpp/cpp_basics/module_13/build/CMakeFiles/practice_hybrid_server.dir
 C:/cpp/cpp_basics/module_13/build/CMakeFiles/practice_select_client.dir
 C:/cpp/cpp_basics/module_13/build/CMakeFiles/practice_writefds_server.dir
 C:/cpp/cpp_basics/module_13/build/CMakeFiles/practice_writefds_client.dir
+C:/cpp/cpp_basics/module_13/build/CMakeFiles/test_raid_server.dir
 C:/cpp/cpp_basics/module_13/build/CMakeFiles/edit_cache.dir
 C:/cpp/cpp_basics/module_13/build/CMakeFiles/rebuild_cache.dir

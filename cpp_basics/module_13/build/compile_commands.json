@@ -19,6 +19,18 @@
 },
 {
   "directory": "C:/cpp/cpp_basics/module_13/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++23 -o CMakeFiles\\practice_hybrid_server.dir\\practice_hybrid_server.cpp.obj -c C:\\cpp\\cpp_basics\\module_13\\practice_hybrid_server.cpp",
+  "file": "C:/cpp/cpp_basics/module_13/practice_hybrid_server.cpp",
+  "output": "CMakeFiles/practice_hybrid_server.dir/practice_hybrid_server.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_13/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++23 -o CMakeFiles\\practice_hybrid_server.dir\\ThreadPool.cpp.obj -c C:\\cpp\\cpp_basics\\module_13\\ThreadPool.cpp",
+  "file": "C:/cpp/cpp_basics/module_13/ThreadPool.cpp",
+  "output": "CMakeFiles/practice_hybrid_server.dir/ThreadPool.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_13/build",
   "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++23 -o CMakeFiles\\practice_select_client.dir\\practice_select_client.cpp.obj -c C:\\cpp\\cpp_basics\\module_13\\practice_select_client.cpp",
   "file": "C:/cpp/cpp_basics/module_13/practice_select_client.cpp",
   "output": "CMakeFiles/practice_select_client.dir/practice_select_client.cpp.obj"
@@ -34,5 +46,29 @@
   "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -std=gnu++23 -o CMakeFiles\\practice_writefds_client.dir\\practice_writefds_client.cpp.obj -c C:\\cpp\\cpp_basics\\module_13\\practice_writefds_client.cpp",
   "file": "C:/cpp/cpp_basics/module_13/practice_writefds_client.cpp",
   "output": "CMakeFiles/practice_writefds_client.dir/practice_writefds_client.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_13/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/test_raid_server.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\test_raid_server.dir\\test_raid_server.cpp.obj -c C:\\cpp\\cpp_basics\\module_13\\test_raid_server.cpp",
+  "file": "C:/cpp/cpp_basics/module_13/test_raid_server.cpp",
+  "output": "CMakeFiles/test_raid_server.dir/test_raid_server.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_13/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/test_raid_server.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\test_raid_server.dir\\SessionManager.cpp.obj -c C:\\cpp\\cpp_basics\\module_13\\SessionManager.cpp",
+  "file": "C:/cpp/cpp_basics/module_13/SessionManager.cpp",
+  "output": "CMakeFiles/test_raid_server.dir/SessionManager.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_13/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/test_raid_server.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\test_raid_server.dir\\CommandHandler.cpp.obj -c C:\\cpp\\cpp_basics\\module_13\\CommandHandler.cpp",
+  "file": "C:/cpp/cpp_basics/module_13/CommandHandler.cpp",
+  "output": "CMakeFiles/test_raid_server.dir/CommandHandler.cpp.obj"
+},
+{
+  "directory": "C:/cpp/cpp_basics/module_13/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/test_raid_server.dir/includes_CXX.rsp -std=gnu++23 -o CMakeFiles\\test_raid_server.dir\\BossMonster.cpp.obj -c C:\\cpp\\cpp_basics\\module_13\\BossMonster.cpp",
+  "file": "C:/cpp/cpp_basics/module_13/BossMonster.cpp",
+  "output": "CMakeFiles/test_raid_server.dir/BossMonster.cpp.obj"
 }
 ]

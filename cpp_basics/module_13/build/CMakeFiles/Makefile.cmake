@@ -69,7 +69,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_thread_pool.dir/DependInfo.cmake"
   "CMakeFiles/practice_select_server.dir/DependInfo.cmake"
+  "CMakeFiles/practice_hybrid_server.dir/DependInfo.cmake"
   "CMakeFiles/practice_select_client.dir/DependInfo.cmake"
   "CMakeFiles/practice_writefds_server.dir/DependInfo.cmake"
   "CMakeFiles/practice_writefds_client.dir/DependInfo.cmake"
+  "CMakeFiles/test_raid_server.dir/DependInfo.cmake"
   )
